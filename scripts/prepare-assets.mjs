@@ -2,8 +2,8 @@ import { mkdir, cp, access, writeFile, rename, readdir, readFile } from 'node:fs
 const root = new URL('../', import.meta.url);
 await mkdir(new URL('public/models/', root), { recursive: true });
 await cp(new URL('node_modules/@mediapipe/tasks-vision/wasm/', root), new URL('public/wasm/', root), { recursive: true });
-// MediaPipe's loader expects a global factory. Export it to globalThis when
-// loaded as an ES module inside Vite's module worker (no eval required).
+// Loader MediaPipe cần factory global; cung cấp trên globalThis khi
+// nạp dạng ES module trong Vite Worker, không dùng eval.
 for (const file of await readdir(new URL('public/wasm/', root))) {
   if (!file.endsWith('.js')) continue;
   const path = new URL(`public/wasm/${file}`, root);
@@ -11,7 +11,7 @@ for (const file of await readdir(new URL('public/wasm/', root))) {
 }
 for (const [file, model] of [['hand.task', 'hand_landmarker/hand_landmarker'], ['pose.task', 'pose_landmarker/pose_landmarker_lite']]) {
   const dest = new URL(`public/models/${file}`, root);
-  try { await access(dest); continue; } catch { /* First installation */ }
+  try { await access(dest); continue; } catch { /* Lần cài đặt đầu tiên. */ }
   console.log(`Đang tải mô hình ${file}…`);
   try {
     const res = await fetch(`https://storage.googleapis.com/mediapipe-models/${model}/float16/1/${model.split('/')[1]}.task`, { signal: AbortSignal.timeout(120000) });
@@ -24,7 +24,7 @@ for (const [file, model] of [['hand.task', 'hand_landmarker/hand_landmarker'], [
     process.exitCode = 1;
   }
 }
-// Pinned official model; used only by still-image bracelet analysis.
+// Model chính thức được cố định phiên bản, phục vụ Upload và observation segmentation bổ sung của Live.
 const skin = new URL('public/models/skin.tflite', root);
 try { await access(skin); } catch {
   try {

@@ -1,5 +1,7 @@
 # Mira — AR Bracelet Try-On
 
+Source đã tổ chức theo **MVC kết hợp Feature-Based**: `src/app/`, `src/features/bracelet/`, `src/features/clothing/` và `src/shared/`. Xem [kiến trúc, mapping và kiểm chứng migration](docs/architecture.md). Các báo cáo cũ giữ tên file tại thời điểm viết; bảng mapping giúp tìm vị trí hiện hành.
+
 **Trạng thái hiện tại:** Upload dùng segmentation body-skin kết hợp biên pixel gốc để đo và mask occlusion; đăng ký XY riêng, giữ quaternion/camera và model/PBR. Không thêm control UI. Xem [ảnh A/B, số liệu và giới hạn](docs/upload-occlusion.md). Chưa nghiệm thu trên ảnh người dùng vừa gửi trong chat vì thiếu file gốc có thể đọc bởi Node. Các báo cáo phục hồi trước đó là lịch sử.
 
 **Live Camera:** Hand là nguồn chính, khuỷu tay/Pose là bổ sung. Wrist pose hợp lệ có thể hiện kích thước ước lượng trước khi đủ biên để xác nhận Auto Fit. Có hysteresis và grace tối đa 300ms, giữ đúng cặp ảnh–pose khi một frame lỗi. Giữ calibration khi xoay; model Lumière, PBR, ánh sáng và hành vi Upload được bảo toàn. **Chưa nghiệm thu webcam người thật hoặc lật mu/lòng 180° thật.** Xem [báo cáo hiện tại](docs/live-wrist-continuity.md); [báo cáo trục cổ tay trước đó](docs/live-wrist-axis.md) là lịch sử của bước triển khai trước.
@@ -48,6 +50,7 @@ Bật “Debug Mode” trong bảng vòng tay để xem landmark, Hand 0, tâm v
 ## Kiểm tra
 
 ```bash
+npm run check:architecture
 npm test
 npm run build
 npm run preview
@@ -61,14 +64,10 @@ npm run test:live
 npm run test:live-axis
 npm run test:live-continuity
 npm run test:live-performance
-npm run test:3d-recovery
-npm run test:upload
-npm run test:upload-measurement
-npm run test:session
-npm run test:dynamic
-npm run test:ar
-npm run test:sizing
+npm run test:clothing
 ```
+
+Các lệnh trên đã chạy lại sau migration. Một số suite lịch sử (`test:dynamic`, `test:session` và các suite Upload cũ) còn giả định selector hoặc instrumentation của UI cũ; chúng được giữ lại và cập nhật đường dẫn module, chưa tính vào kết quả kiểm tra migration. Xem phạm vi và bảng mapping tại [architecture.md](docs/architecture.md).
 
 Mặc định dùng Google Chrome đã cài, headless. Nếu không có Chrome, cài Chromium của Playwright:
 
@@ -101,18 +100,18 @@ Xem [báo cáo kiểm tra tổng thể và Debug Mode](docs/bracelet-audit.md), 
 ## Source chính
 
 ```text
-src/vision.worker.ts      Hand + Pose, cùng frame và timestamp
-src/wristGeometry.ts      Fit world/ảnh, forearm association, hệ trục, lọc quaternion
-src/braceletModel.ts      Mesh bangle kín, đá, proxy, PBR, camera CV → Three
-src/braceletRenderer.ts   WebGL, PMREM/ánh sáng, depth-only, bóng và giải phóng GPU
-src/imageWristMeasurement.ts ROI native, nhiều lát cắt, foreground; observation-only
-src/braceletRenderFrame.ts Ranh giới tracking transform / sizing / renderer
-src/imageCoordinates.ts   CSS/letterbox → tọa độ ảnh gốc
-src/imageOcclusion.ts     Mask giới hạn depth/shadow, riêng Upload
-src/useTryOn.ts           Camera/ảnh, đồng bộ, compositing, PNG, cleanup
-src/App.tsx               UI; thêm một tùy chọn cận cảnh liên quan tracking
-src/draw.ts               Renderer áo giữ nguyên
-src/*.test.ts             Kiểm thử toán học và topology
-src/testing/              Fixture QA; không dùng trong inference của ứng dụng
-scripts/verify-ar.mjs     Kiểm thử trình duyệt có thể chạy lại
+src/main.tsx                                  Bootstrap React
+src/app/controllers/useTryOnController.ts      Facade React và vòng đời phiên
+src/app/services/VisionWorkerClient.ts         Worker transport, bitmap, timestamp
+src/app/services/paintTryOn.ts                 Điều phối composition hai feature
+src/app/workers/vision.worker.ts               MediaPipe IMAGE/VIDEO, transfer buffers
+src/features/bracelet/controllers/             Upload và Live controller
+src/features/bracelet/models/                  DTO, thông số vòng, continuity
+src/features/bracelet/services/                Geometry, đo biên, fitting, tracking, Live
+src/features/bracelet/views/rendering/          Three.js, model Lumière và occlusion
+src/features/clothing/                         Placement, controller và Canvas renderer áo
+src/shared/                                   Media input, composition, export, UI chung
+src/features/*/tests/                          Unit tests và fixture riêng feature
+tests/browser/                                Kiểm thử trình duyệt và benchmark
+scripts/prepare-assets.mjs                     Model/WASM (giữ URL hiện có)
 ```

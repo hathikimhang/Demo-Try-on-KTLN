@@ -2,7 +2,7 @@
 <html lang="vi"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="theme-color" content="#f7f7fa"/><meta name="description" content="Mira — Studio thử vòng tay và áo bằng AI, riêng tư ngay trên trình duyệt."/><link rel="icon" type="image/svg+xml" href="/favicon.svg"/><title>Mira — Studio thử đồ AI</title>
 <style>:root{background:#f7f7fa;color-scheme:light}:root[data-theme="dark"]{background:#121016;color-scheme:dark}</style>
 <script>
-  // Apply before the first paint, including when storage is blocked.
+  // Áp dụng trước lần vẽ đầu, kể cả khi bộ nhớ cục bộ bị chặn.
   let savedTheme;
   try { savedTheme = localStorage.getItem('mira-theme'); } catch {}
   const initialTheme = savedTheme === 'light' || savedTheme === 'dark' ? savedTheme : matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
