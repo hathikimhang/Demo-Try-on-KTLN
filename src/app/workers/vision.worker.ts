@@ -109,7 +109,7 @@ self.onmessage = async ({ data }) => {
           points: result.landmarks[0] ?? [], worldPoints: result.worldLandmarks[0] ?? [],
           armPoints: arm?.landmarks[0] ?? [], armWorldPoints: arm?.worldLandmarks[0] ?? [],
           handedness: 'handedness' in result ? result.handedness[0]?.[0]?.categoryName ?? '' : '',
-          timestamp: data.timestamp, mode: data.needArm ? 'forearm' : 'straight-wrist', skin,
+          timestamp: data.timestamp, frameId: data.frameId, pocEnabled: data.pocEnabled === true, mode: data.needArm ? 'forearm' : 'straight-wrist', skin,
         }) : undefined;
         const reply = {
           type: 'result', points: result.landmarks[0] ?? [], worldPoints: result.worldLandmarks[0] ?? [],

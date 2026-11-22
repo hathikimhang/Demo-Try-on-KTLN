@@ -1,3 +1,4 @@
+import type { WristEngineMode } from '../models/wristEngine.types';
 import type { Point } from '../../../shared/types/vision';
 import type { TrackingMode, WristPose, ForearmContour, LiveOrientation } from '../models/wrist.types';
 import { WristFilter } from '../services/tracking/WristFilter';
@@ -20,6 +21,7 @@ import type { BraceletDetection as Detection } from '../models/vision.types';
 import type { InputWristAnalysis } from '../models/wrist.types';
 export function createBraceletState() {
   return {
+    pocFrameId: 0,
     wrist: null as WristPose | null,
     lastDetection: null as Detection | null,
     renderFailed: false,
@@ -69,7 +71,7 @@ export function createBraceletState() {
   };
 }
 export type BraceletSession = ReturnType<typeof createBraceletState> & { source: string; image: HTMLImageElement | null; frame: ImageBitmap | null; points: Point[]; receivedAt: number; capturedAt: number; generation: number; pending: boolean; raf: number };
-export type BraceletAppearance = { color: string; scale: number; showPoints: boolean; trackingMode: TrackingMode; debug: boolean; autoFit: boolean };
+export type BraceletAppearance = { color: string; scale: number; showPoints: boolean; trackingMode: TrackingMode; debug: boolean; engineDebugMode?: WristEngineMode; autoFit: boolean };
 export type BraceletBindings = {
   state: { current: BraceletSession }; appearance: { current: BraceletAppearance }; debugLog: { current: WristDebugLog };
   canvas: { current: HTMLCanvasElement | null }; video: { current: HTMLVideoElement | null };

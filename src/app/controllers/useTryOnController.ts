@@ -1,3 +1,4 @@
+import type { WristEngineMode } from '../../features/bracelet/models/wristEngine.types';
 import { requestCameraStream, releaseCameraStream } from '../../shared/media/cameraSession';
 import { createImageInput, imageInputError } from '../../shared/media/imageInput';
 import { saveCanvasPng } from '../../shared/browser/exportFile';
@@ -28,6 +29,7 @@ export function useTryOn(mode: Mode, color: string, scale: number, showPoints: b
   const canvas = useRef<HTMLCanvasElement>(null);
   const video = useRef<HTMLVideoElement>(null);
   const fileInput = useRef<HTMLInputElement>(null);
+  const [engineDebugMode, setEngineDebugMode] = useState<WristEngineMode>('v1');
   const [source, setSource] = useState<'empty' | 'camera' | 'image'>('empty');
   const [busy, setBusy] = useState(false);
   const [detected, setDetected] = useState(false);
@@ -41,8 +43,8 @@ export function useTryOn(mode: Mode, color: string, scale: number, showPoints: b
   const [debugLog] = useState(() => ({ current: new WristDebugLog() }));
   const [trackingHint, setTrackingHint] = useState('Đưa toàn bộ bàn tay và cổ tay vào khung hình');
   const [state] = useState(() => ({ current: createTryOnRuntime() }));
-  const appearance = useRef({ color, scale, showPoints, trackingMode, debug, autoFit });
-  appearance.current = { color, scale, showPoints, trackingMode, debug, autoFit };
+  const appearance = useRef({ color, scale, showPoints, trackingMode, debug, autoFit, engineDebugMode });
+  appearance.current = { color, scale, showPoints, trackingMode, debug, autoFit, engineDebugMode };
   const publishLive = useCallback(() => {
     const s = state.current, now = performance.now();
     const semantic = `${s.tracking.state}/${s.tracking.reason}/${s.tracking.source}/${s.liveHint}`;
@@ -80,7 +82,7 @@ export function useTryOn(mode: Mode, color: string, scale: number, showPoints: b
   }, []);
 
   useEffect(() => () => stop(), [stop]);
-  useEffect(() => { paint(); }, [color, scale, showPoints, debug, paint]);
+  useEffect(() => { paint(); }, [color, scale, showPoints, debug, engineDebugMode, paint]);
   useEffect(() => {
     if (mode !== 'bracelet') return;
     const s = state.current; if (autoFit) s.sizer.reset(); s.live.reset(); s.frameBuffer.clear(); s.presentation = 'hidden'; s.sizingKey = null;
@@ -163,5 +165,5 @@ export function useTryOn(mode: Mode, color: string, scale: number, showPoints: b
   const clearCalibration = () => { clearCalibrationAction(bindings); };
   const pickWristEdge = (event: { clientX: number; clientY: number }) => { pickWristEdgeAction(bindings, event); };
   const bindings: ApplicationBindings = { state, appearance, canvas, video, debugLog, mode, setTracking, setSizing, setDetected, setTrackingHint, setDebugCount, setCalibration, setError, setLatency, setBusy, setSaved, setSource, paint, updateWrist, publishLive, submit, submitLatestCamera, stop };
-  return { canvas, video, fileInput, source, busy, detected, error, latency, saved, trackingHint, tracking, sizing, startCamera, stop, upload, save, exportDebug, debugCount, calibration, canCalibrate: source === 'image' && !!state.current.imagePose, beginCalibration, clearCalibration, pickWristEdge };
+  return { engineDebugMode, setEngineDebugMode, canvas, video, fileInput, source, busy, detected, error, latency, saved, trackingHint, tracking, sizing, startCamera, stop, upload, save, exportDebug, debugCount, calibration, canCalibrate: source === 'image' && !!state.current.imagePose, beginCalibration, clearCalibration, pickWristEdge };
 }

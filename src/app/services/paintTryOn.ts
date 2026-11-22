@@ -1,3 +1,4 @@
+import { drawWristEngineDebug, matchesPocFrame } from '../../features/bracelet/views/debug/wristEngineDebug';
 import { beginCanvasFrame } from '../../shared/canvas/canvasCompositor';
 import { drawProduct } from '../../features/clothing/controllers/clothingController';
 import { isFrameUsable } from '../../features/bracelet/services/tracking/trackingPolicy';
@@ -41,7 +42,7 @@ export function paintTryOn(bindings: ApplicationBindings) {
   const h = image instanceof HTMLVideoElement ? image.videoHeight : image instanceof ImageBitmap || image instanceof HTMLCanvasElement ? image.height : image.naturalHeight;
   if (!w || !h) return;
   const liveCamera = s.source === 'camera' && mode === 'bracelet';
-  const paintKey = liveCamera ? [image, image instanceof HTMLVideoElement ? image.currentTime : 0, held?.pose ?? s.wrist, appearance.current.color, appearance.current.scale, appearance.current.showPoints, appearance.current.debug, held ? held.mask : s.liveMask, held?.points ?? s.points, w, h] : null;
+  const paintKey = liveCamera ? [image, image instanceof HTMLVideoElement ? image.currentTime : 0, held?.pose ?? s.wrist, appearance.current.color, appearance.current.scale, appearance.current.showPoints, appearance.current.debug, appearance.current.engineDebugMode, held ? held.mask : s.liveMask, held?.points ?? s.points, w, h] : null;
   // RAF vẫn kiểm tra grace và độ cũ ở mỗi nhịp. Composition không đổi
   // không cần vẽ lại bitmap, lớp debug hoặc gửi lại scene GL đã cache.
   if (paintKey && s.painted && paintKey.every((v, i) => v === s.painted![i])) return;
@@ -74,9 +75,14 @@ export function paintTryOn(bindings: ApplicationBindings) {
     }
   } else drawProduct(ctx, points, mode, a.color, a.scale);
   if (a.debug && mode === 'bracelet') {
-    drawWristDebug(ctx, renderPoints, renderWrist, a.scale);
-    if (renderSizing) drawWristMeasurementDebug(ctx, renderSizing.measurement, renderWrist, renderSizing.method, renderFit, s.source === 'camera');
-    if (s.source === 'camera') drawLiveForearmDebug(ctx, held ? held.orientation : s.liveOrientation, renderWrist, held ? held.contour : s.forearmContour);
+    const pocMode = a.engineDebugMode ?? 'v1';
+    if (s.source !== 'camera' || pocMode === 'v1') drawWristDebug(ctx, renderPoints, renderWrist, a.scale);
+    if (renderSizing && (s.source !== 'camera' || pocMode === 'v1')) drawWristMeasurementDebug(ctx, renderSizing.measurement, renderWrist, renderSizing.method, renderFit, s.source === 'camera');
+    if (s.source === 'camera' && pocMode === 'v1') drawLiveForearmDebug(ctx, held ? held.orientation : s.liveOrientation, renderWrist, held ? held.contour : s.forearmContour);
+  }
+  if (a.debug && liveCamera && a.engineDebugMode && a.engineDebugMode !== 'v1') {
+    const poc = s.lastDetection?.liveObservation?.poc;
+    if (matchesPocFrame(poc, s.capturedAt, performance.now(), w, h, !!held)) drawWristEngineDebug(ctx, poc!, a.engineDebugMode, s.liveOrientation);
   }
   if (a.showPoints || a.debug) {
     const ids = mode === 'bracelet' ? points.map((_, i) => i) : [11, 12, 23, 24];

@@ -65,7 +65,7 @@ const { state, mode, appearance, stop, setError } = bindings;
     const reliableEdges = !!edge?.width && edge.confidence >= .8 && (edge.sampleCount ?? 0) >= 5;
     const measureSkin = liveCamera && timestamp - s.lastSkinRequest >= liveSkinInterval(s.skinCostMs, reliableEdges);
     if (measureSkin) s.lastSkinRequest = timestamp;
-    s.worker.postMessage({ type: 'frame', bitmap, video: isVideo, timestamp, needArm: appearance.current.trackingMode === 'forearm', measureSkin, deferArm: isVideo && mode === 'bracelet' && !s.lastDetection?.points.length, observeArm: isVideo && mode === 'bracelet' && s.needsArmObservation }, [bitmap]);
+    s.worker.postMessage({ type: 'frame', bitmap, video: isVideo, timestamp, frameId: liveCamera ? ++s.pocFrameId : undefined, pocEnabled: liveCamera && appearance.current.debug && (appearance.current.engineDebugMode === 'v2' || appearance.current.engineDebugMode === 'compare'), needArm: appearance.current.trackingMode === 'forearm', measureSkin, deferArm: isVideo && mode === 'bracelet' && !s.lastDetection?.points.length, observeArm: isVideo && mode === 'bracelet' && s.needsArmObservation }, [bitmap]);
   } catch { if (generation === s.generation) { stop(); setError('Không đọc được hình ảnh. Hãy thử ảnh JPG/PNG khác hoặc bật lại camera.'); } }
 
 }
