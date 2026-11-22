@@ -1,0 +1,85 @@
+{
+  "checkpoint": "backups/pre-wrist-continuity-20261121T150544Z",
+  "protected": [
+    {
+      "path": "src/braceletModel.ts",
+      "beforeSHA256": "08d318c02debf563be6959e17dd8c4e6198803c6676704c909b1e8bfc980dfbd",
+      "afterSHA256": "08d318c02debf563be6959e17dd8c4e6198803c6676704c909b1e8bfc980dfbd",
+      "unchanged": true
+    },
+    {
+      "path": "src/braceletDimensions.ts",
+      "beforeSHA256": "455250126c504dd563b43b921687862e07bb04a73cf20e37c158175b4190e8c5",
+      "afterSHA256": "455250126c504dd563b43b921687862e07bb04a73cf20e37c158175b4190e8c5",
+      "unchanged": true
+    },
+    {
+      "path": "src/braceletRenderer.ts",
+      "beforeSHA256": "39a8ac3af5a6e6c3fd89a1660d4bd7e0c1e37a98b37846aa0389695df720e9d3",
+      "afterSHA256": "39a8ac3af5a6e6c3fd89a1660d4bd7e0c1e37a98b37846aa0389695df720e9d3",
+      "unchanged": true
+    },
+    {
+      "path": "src/braceletRenderFrame.ts",
+      "beforeSHA256": "e7a813c4832c94c9b1919b6804f62e03e6c7a377ac8faa4b6096312e6beb5491",
+      "afterSHA256": "e7a813c4832c94c9b1919b6804f62e03e6c7a377ac8faa4b6096312e6beb5491",
+      "unchanged": true
+    },
+    {
+      "path": "src/imageWristMeasurement.ts",
+      "beforeSHA256": "5330f274a52e26901f057489f0f7f4bef8e4dbf22c287ccbbcb94efe965ceb08",
+      "afterSHA256": "5330f274a52e26901f057489f0f7f4bef8e4dbf22c287ccbbcb94efe965ceb08",
+      "unchanged": true
+    },
+    {
+      "path": "src/imageCoordinates.ts",
+      "beforeSHA256": "2c44cdcdb5557bcdcc62604b8260072301bd5d1b355e2f8dbe570b2294af4556",
+      "afterSHA256": "2c44cdcdb5557bcdcc62604b8260072301bd5d1b355e2f8dbe570b2294af4556",
+      "unchanged": true
+    },
+    {
+      "path": "src/imageOcclusion.ts",
+      "beforeSHA256": "fa42c65403fbed573f527aaca0c76e1d0d10b99e5a285ef71bd67e2f2d5077aa",
+      "afterSHA256": "fa42c65403fbed573f527aaca0c76e1d0d10b99e5a285ef71bd67e2f2d5077aa",
+      "unchanged": true
+    },
+    {
+      "path": "src/braceletSizing.ts",
+      "beforeSHA256": "65ff0dd5e5f1a0145221298d1a215cf6bc732edb6f9f644f31b0a04fcdc7168c",
+      "afterSHA256": "65ff0dd5e5f1a0145221298d1a215cf6bc732edb6f9f644f31b0a04fcdc7168c",
+      "unchanged": true
+    },
+    {
+      "path": "src/wristGeometry.ts",
+      "beforeSHA256": "ff6ec82db96a978856c106539170eddf93482acbecd76fde352c55b03ecf3237",
+      "afterSHA256": "ff6ec82db96a978856c106539170eddf93482acbecd76fde352c55b03ecf3237",
+      "unchanged": true
+    },
+    {
+      "path": "src/wristRoiTracking.ts",
+      "beforeSHA256": "5b70604d37887a231e1108319dc8bdda3a0425aebcf2c11cd0ad69cf0751e282",
+      "afterSHA256": "5b70604d37887a231e1108319dc8bdda3a0425aebcf2c11cd0ad69cf0751e282",
+      "unchanged": true
+    },
+    {
+      "path": "src/draw.ts",
+      "beforeSHA256": "f31bc9b5b554b6564dac12bd3e8ed050f145a4199c16b37c6b824f3362fa1142",
+      "afterSHA256": "f31bc9b5b554b6564dac12bd3e8ed050f145a4199c16b37c6b824f3362fa1142",
+      "unchanged": true
+    },
+    {
+      "path": "src/style.css",
+      "beforeSHA256": "0d70bf37491dcfacbb43122feedbff4e87040d2437cc7928c1e3b158e06a0fe7",
+      "afterSHA256": "0d70bf37491dcfacbb43122feedbff4e87040d2437cc7928c1e3b158e06a0fe7",
+      "unchanged": true
+    },
+    {
+      "path": "index.html",
+      "beforeSHA256": "5bc2e44d9dd3137ada0f4dc008afc413b2ae53192425838087508efb1871aa42",
+      "afterSHA256": "5bc2e44d9dd3137ada0f4dc008afc413b2ae53192425838087508efb1871aa42",
+      "unchanged": true
+    }
+  ],
+  "AppChange": "Exactly two bracelet instructions corrected: elbow optional. No structure, control, theme or shirt changes.",
+  "AppOnlyExpectedTextChanges": true
+}

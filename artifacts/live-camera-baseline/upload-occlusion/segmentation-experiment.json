@@ -1,0 +1,44 @@
+[
+  {
+    "name": "pointing_up.jpg",
+    "labels": [
+      "background",
+      "hair",
+      "body-skin",
+      "face-skin",
+      "clothes",
+      "others"
+    ],
+    "width": 358,
+    "height": 376,
+    "strong": 16485
+  },
+  {
+    "name": "thumb_up.jpg",
+    "labels": [
+      "background",
+      "hair",
+      "body-skin",
+      "face-skin",
+      "clothes",
+      "others"
+    ],
+    "width": 382,
+    "height": 406,
+    "strong": 32357
+  },
+  {
+    "name": "woman_hands.jpg",
+    "labels": [
+      "background",
+      "hair",
+      "body-skin",
+      "face-skin",
+      "clothes",
+      "others"
+    ],
+    "width": 640,
+    "height": 960,
+    "strong": 50322
+  }
+]

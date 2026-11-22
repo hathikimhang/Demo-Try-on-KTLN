@@ -1,0 +1,16 @@
+{
+  "checkpoint": "pre-live-axis-20261121T124307Z",
+  "branch": "fix/live-camera",
+  "unitTests": {
+    "passed": 163,
+    "failed": 0,
+    "newInThisStep": 36
+  },
+  "build": "TypeScript + Vite PASS",
+  "liveReplay": "PASS twice after NCC seed fix; real Hand/Pose VIDEO on photo captureStream",
+  "liveAxis": "PASS 0/20/45/90/180 IMAGE rotations plus A/B/C same-pose occlusion",
+  "uploadRegression": "PASS on final source: 15 PNGs byte-identical",
+  "hardwareWebcamTested": false,
+  "realPronationSupinationTested": false,
+  "trueMetricSizeCalibrated": false
+}

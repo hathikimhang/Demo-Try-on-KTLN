@@ -1,0 +1,113 @@
+{
+  "checkpoint": "backups/pre-wrist-continuity-20261121T150544Z",
+  "files": [
+    {
+      "path": "src/vision.worker.ts",
+      "status": "modified",
+      "beforeSHA256": "562174173998aff0fc8d99dfb7f06357df2df8b6e5eae55ec115d6fbf9f78897",
+      "afterSHA256": "60afb3f5a1bccccdabc142247ecf2cea54fd1f2711483a271e8e9fc73a48018e"
+    },
+    {
+      "path": "src/App.tsx",
+      "status": "modified",
+      "beforeSHA256": "cd8ea388c24b5ebfaa8a93d701174b6a5f0b46b48c3d47f9dcbffa26de13dfeb",
+      "afterSHA256": "e11c10d46c6932c4dc110b5dc0cd070082150cdc148e00000d44f8ef1dfa8a02"
+    },
+    {
+      "path": "src/liveContinuity.ts",
+      "status": "added",
+      "beforeSHA256": null,
+      "afterSHA256": "8c6593a9a2de15bfcc59d008979875b1de5923877b7d028e9bad25c80a8f0303"
+    },
+    {
+      "path": "src/useTryOn.ts",
+      "status": "modified",
+      "beforeSHA256": "5b65689f2a0a86dce0886a1826e87d6b8b2594d289e85a639fd4d0e185f0d684",
+      "afterSHA256": "bd8ae8f9be1bb0986cc57b76bb009c5907e005b802864d9a914933040129b774"
+    },
+    {
+      "path": "src/wristTracking.ts",
+      "status": "modified",
+      "beforeSHA256": "4474f65e99b5470e61ef6af639b62db905ebf8a66b9271e0079b455e53862305",
+      "afterSHA256": "133b609df61ee2ed6249bc2544c037b8cc8f8c367d225b85a3ebe49be00469af"
+    },
+    {
+      "path": "src/liveWrist.test.ts",
+      "status": "modified",
+      "beforeSHA256": "330b7bb2eb4012edfcc28402aa9e926e70fbe9246dfd12461fc0c216ec8555be",
+      "afterSHA256": "67062dcb1fd9e062a57ce493de8009f595111aae5c1be75a8b4f6ced3baf001a"
+    },
+    {
+      "path": "src/types.ts",
+      "status": "modified",
+      "beforeSHA256": "ef97d8a4811994b4e8ff6e198d6ef67c821a349d324d800ca8f0a0555fc05039",
+      "afterSHA256": "57a63803c91b78c9917ea6e8ab56e8b4bf6f1a38618a21dfaa79d91fabb08976"
+    },
+    {
+      "path": "src/liveContinuity.test.ts",
+      "status": "added",
+      "beforeSHA256": null,
+      "afterSHA256": "9c2cbfc53bf751cbb79bf559633cd78acf788f405a3c806d4b6a314ad2278462"
+    },
+    {
+      "path": "src/liveForearmPose.ts",
+      "status": "modified",
+      "beforeSHA256": "6e7de8ec07a87d968f54cd2440f2e9caebfedaf37dca922c0228dff67fe342bb",
+      "afterSHA256": "ab175873612c1a28f06117eccc93cab4bc12bcac90dd9a32890a32bb1a8b9342"
+    },
+    {
+      "path": "src/liveForearm.test.ts",
+      "status": "modified",
+      "beforeSHA256": "7117acbde4588c15b633e78300727f77c15fc99744ca87b08bbb8ca79605d20b",
+      "afterSHA256": "f3b0ec02c8281d491f351bd38ce86d7f04dca40080eedb562767e1534ef4d939"
+    },
+    {
+      "path": "src/liveWristTracking.ts",
+      "status": "modified",
+      "beforeSHA256": "c3f36d87ebbd8b1c2c97c36fb8d5ddef6c9dc6018bc4d333b6c2baf7ba48ed8b",
+      "afterSHA256": "a35141280c6800970dfc0454b44156706dd358a1b26e6afe73fc34d682c662a2"
+    },
+    {
+      "path": "src/liveWristSizing.ts",
+      "status": "modified",
+      "beforeSHA256": "acc2b58d293ea3d0135bc275ad357f22cb95b4eecf26ad79d4bb245a4cb913c7",
+      "afterSHA256": "89402e4c8f748ea4bc7d7d458626de93dbdbf6d3cd86f4678931b2346527cffe"
+    },
+    {
+      "path": "src/liveFrameBuffer.ts",
+      "status": "added",
+      "beforeSHA256": null,
+      "afterSHA256": "8e1e8a63b7fccd0b4e08cf9de6a0453b34e6fe1964f990440d558d06aa05772c"
+    },
+    {
+      "path": "scripts/verify-live-camera.mjs",
+      "status": "modified",
+      "beforeSHA256": "651918687076024cf6781284855e8d075f7e832f9f73d2787cfb427bbd65b2fe",
+      "afterSHA256": "05a6003165ed98fa4888efbb175c469ff67e36e9a5293aecf0a3b200699c9f67"
+    },
+    {
+      "path": "scripts/verify-live-continuity.mjs",
+      "status": "added",
+      "beforeSHA256": null,
+      "afterSHA256": "401f7f30f8abe3dc04bf6919f6ae0c515e3e8fb086d36088f9906fc98832fb98"
+    },
+    {
+      "path": "package.json",
+      "status": "modified",
+      "beforeSHA256": "ed9a3717b29fb9beb6080afe25143d7170a8a7137f0d5dafc1e8c3432449c06e",
+      "afterSHA256": "0ca98cf9e49a406ded6ab712c53dacf7660c020cb4a0b4abbeaf894da7c2d4fb"
+    },
+    {
+      "path": "README.md",
+      "status": "modified",
+      "beforeSHA256": "0ad6196cef0abcf7dea4157484ca628efc93d404eb8a1905ed77df830d9a5773",
+      "afterSHA256": "3840ea0a0f29b3c1b62a74c38ef0fa8b1ac74973a0a2b9df77b48bbb2c9c1720"
+    },
+    {
+      "path": "docs/live-wrist-continuity.md",
+      "status": "added",
+      "beforeSHA256": null,
+      "afterSHA256": "e300dd85cb0b0160562be74a63ad8054ab3f1633a4b1d1a65e13c8d0632826dd"
+    }
+  ]
+}

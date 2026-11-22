@@ -1,0 +1,113 @@
+{
+  "checkpoint": "backups/pre-live-performance-20261122T023030Z",
+  "files": [
+    {
+      "path": "src/vision.worker.ts",
+      "status": "modified",
+      "beforeSHA256": "60afb3f5a1bccccdabc142247ecf2cea54fd1f2711483a271e8e9fc73a48018e",
+      "afterSHA256": "ba59826ac225f2f11fc2df4cf144bfc56a392807773e09588d89d7911dcebcf5"
+    },
+    {
+      "path": "src/useTryOn.ts",
+      "status": "modified",
+      "beforeSHA256": "bd8ae8f9be1bb0986cc57b76bb009c5907e005b802864d9a914933040129b774",
+      "afterSHA256": "a7f07e9f9c0968fc709be0af22810fa047969597b89d8f6a24413245cb3f6d5e"
+    },
+    {
+      "path": "src/imageWristMeasurement.ts",
+      "status": "modified",
+      "beforeSHA256": "5330f274a52e26901f057489f0f7f4bef8e4dbf22c287ccbbcb94efe965ceb08",
+      "afterSHA256": "b58d0df2822310b9dec74c94a1b7f205f41397a3fc19c940f0c586c311dbd5cf"
+    },
+    {
+      "path": "src/livePerformance.test.ts",
+      "status": "added",
+      "beforeSHA256": null,
+      "afterSHA256": "3d877240eb4cc60c0b10d48c23c4301c0282c994190ffb001efbe848d811dab5"
+    },
+    {
+      "path": "src/liveFrameClock.ts",
+      "status": "added",
+      "beforeSHA256": null,
+      "afterSHA256": "8aa8a3477d890d238c307262d14e1ead0f409430c5bb3145f908fc7c5db2eba3"
+    },
+    {
+      "path": "src/liveVision.ts",
+      "status": "added",
+      "beforeSHA256": null,
+      "afterSHA256": "f13d4fcfd47e0514bc7656dc1152d62eab9b369927d9edeeaca3b0916b0f116d"
+    },
+    {
+      "path": "src/types.ts",
+      "status": "modified",
+      "beforeSHA256": "57a63803c91b78c9917ea6e8ab56e8b4bf6f1a38618a21dfaa79d91fabb08976",
+      "afterSHA256": "2994f8b3d111da2dbaf137818b09bc81076bb8877db66c1bc093181a5d1bfa0c"
+    },
+    {
+      "path": "src/liveForeground.ts",
+      "status": "added",
+      "beforeSHA256": null,
+      "afterSHA256": "d10f238626c0fb4a169630548827fb286a8d9a89ff8f20993951f096c4ce5698"
+    },
+    {
+      "path": "src/livePerformance.ts",
+      "status": "added",
+      "beforeSHA256": null,
+      "afterSHA256": "cf070d68ae188275db5396e0152ff8cdc05cff021a21a9becd470c75afd04766"
+    },
+    {
+      "path": "src/imageWristMeasurement.test.ts",
+      "status": "modified",
+      "beforeSHA256": "454da578d7e3d690c865887b2818f3d7e10f79e2438660463c59efa88d66b3e2",
+      "afterSHA256": "c1c6094fa67e78b745e1b467cc985f8d408126960c598f4e06b83540e0d69e7e"
+    },
+    {
+      "path": "src/liveTaskBudget.ts",
+      "status": "added",
+      "beforeSHA256": null,
+      "afterSHA256": "df220bfbf9e5a2a65172fcf0ff07a02673955f1b98c28d5d1d1dfdbc9fe932d2"
+    },
+    {
+      "path": "src/braceletRenderer.ts",
+      "status": "modified",
+      "beforeSHA256": "39a8ac3af5a6e6c3fd89a1660d4bd7e0c1e37a98b37846aa0389695df720e9d3",
+      "afterSHA256": "d3f9379cc66ecff397f093e08441db6b17332ff81b9b51fd74eb106bc888cb63"
+    },
+    {
+      "path": "scripts/verify-live-performance.mjs",
+      "status": "added",
+      "beforeSHA256": null,
+      "afterSHA256": "f94279fc5623f9fd8758009490aee87e980601a9f8b8e89b907073f6b378047b"
+    },
+    {
+      "path": "scripts/verify-live-axis.mjs",
+      "status": "modified",
+      "beforeSHA256": "988459d45e4b2138a646b10d258b81e3ca1dc1c92703f0b3e5df3f3064708ac3",
+      "afterSHA256": "455e32125d5efec5bf985b1b6feaf03d6152af84c693e4f845e44fb4afc9719e"
+    },
+    {
+      "path": "scripts/verify-upload-occlusion.mjs",
+      "status": "modified",
+      "beforeSHA256": "02a00f1ce3d4ad6e8200d7bef0ab8fa82583eaf9639569810d1a1870ab64c368",
+      "afterSHA256": "ccfaa810aa82ed75e7296d84619c59c24234a9adf0125821c733c989f4d35c4a"
+    },
+    {
+      "path": "docs/live-performance.md",
+      "status": "added",
+      "beforeSHA256": null,
+      "afterSHA256": "eab2f3a06aff78f144748b0a5a027ba43732d72d170c5cabc459a494843bb088"
+    },
+    {
+      "path": "README.md",
+      "status": "modified",
+      "beforeSHA256": "3840ea0a0f29b3c1b62a74c38ef0fa8b1ac74973a0a2b9df77b48bbb2c9c1720",
+      "afterSHA256": "dd2612dea5d67ad19dc7c68cf03e5e9f361eb742069e8738390e957b58722c53"
+    },
+    {
+      "path": "package.json",
+      "status": "modified",
+      "beforeSHA256": "0ca98cf9e49a406ded6ab712c53dacf7660c020cb4a0b4abbeaf894da7c2d4fb",
+      "afterSHA256": "cb857610a74d8c4afded54024bbd024c2cfdadd339172134758620ceb31fc8b1"
+    }
+  ]
+}

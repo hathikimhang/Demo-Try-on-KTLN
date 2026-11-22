@@ -1,0 +1,70 @@
+{
+  "checkpoint": "pre-live-axis-20261121T124307Z",
+  "protected": [
+    {
+      "path": "src/braceletModel.ts",
+      "sha256": "08d318c02debf563be6959e17dd8c4e6198803c6676704c909b1e8bfc980dfbd",
+      "unchangedFromCheckpoint": true
+    },
+    {
+      "path": "src/braceletDimensions.ts",
+      "sha256": "455250126c504dd563b43b921687862e07bb04a73cf20e37c158175b4190e8c5",
+      "unchangedFromCheckpoint": true
+    },
+    {
+      "path": "src/braceletRenderer.ts",
+      "sha256": "39a8ac3af5a6e6c3fd89a1660d4bd7e0c1e37a98b37846aa0389695df720e9d3",
+      "unchangedFromCheckpoint": true
+    },
+    {
+      "path": "src/braceletRenderFrame.ts",
+      "sha256": "e7a813c4832c94c9b1919b6804f62e03e6c7a377ac8faa4b6096312e6beb5491",
+      "unchangedFromCheckpoint": true
+    },
+    {
+      "path": "src/braceletSizing.ts",
+      "sha256": "65ff0dd5e5f1a0145221298d1a215cf6bc732edb6f9f644f31b0a04fcdc7168c",
+      "unchangedFromCheckpoint": true
+    },
+    {
+      "path": "src/imageWristMeasurement.ts",
+      "sha256": "5330f274a52e26901f057489f0f7f4bef8e4dbf22c287ccbbcb94efe965ceb08",
+      "unchangedFromCheckpoint": true
+    },
+    {
+      "path": "src/segmentedWristMeasurement.ts",
+      "sha256": "8c11f633979b18aaf04671223e996d8fb7a9448c2bb0dbf109a05e35b0956ec6",
+      "unchangedFromCheckpoint": true
+    },
+    {
+      "path": "src/imageWristRegistration.ts",
+      "sha256": "0e58c21dbeb14288db3af0774456bee3f8904bad5f72a4fea99b74b23b89c9d2",
+      "unchangedFromCheckpoint": true
+    },
+    {
+      "path": "src/imageOcclusion.ts",
+      "sha256": "fa42c65403fbed573f527aaca0c76e1d0d10b99e5a285ef71bd67e2f2d5077aa",
+      "unchangedFromCheckpoint": true
+    },
+    {
+      "path": "src/App.tsx",
+      "sha256": "565aeab5b95033c570f52cc574e4d9922433e8cfcdddc863b9d449ebe2906a49",
+      "unchangedFromCheckpoint": true
+    },
+    {
+      "path": "src/style.css",
+      "sha256": "28ce9af68a1534b64823a60da13f02ebdbff3fc3eb1fe982122a476387a734ca",
+      "unchangedFromCheckpoint": true
+    },
+    {
+      "path": "src/draw.ts",
+      "sha256": "f31bc9b5b554b6564dac12bd3e8ed050f145a4199c16b37c6b824f3362fa1142",
+      "unchangedFromCheckpoint": true
+    }
+  ],
+  "compatibleSharedChanges": [
+    "wristGeometry.ts: deferAxialCheck defaults false",
+    "wristTracking.ts: new camera orientation reason",
+    "wristRoiTracking.ts: optional Live parameters; default preserved"
+  ]
+}

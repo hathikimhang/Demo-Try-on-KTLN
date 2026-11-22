@@ -1,0 +1,82 @@
+{
+  "baseline": "pre-live-axis-20261121T124307Z",
+  "pngsCompared": 15,
+  "identicalBytes": true,
+  "files": [
+    {
+      "file": "mira-dynamic-pointing-up.jpg-100-A.png",
+      "identicalBytes": true,
+      "sha256": "14dc29cef880e72a63a59f969022050c27fe60c83477cad3471dff47a21af82f"
+    },
+    {
+      "file": "mira-dynamic-pointing-up.jpg-100-B.png",
+      "identicalBytes": true,
+      "sha256": "001422e569f6ffb81b7893906b06162e8fdd1a188617c75cc41853b9bf10537b"
+    },
+    {
+      "file": "mira-dynamic-pointing-up.jpg-98-A.png",
+      "identicalBytes": true,
+      "sha256": "32550e675f526675ed9c04aaea33a6d422c25833895fa4336fcf615894a24f50"
+    },
+    {
+      "file": "mira-dynamic-pointing-up.jpg-98-B.png",
+      "identicalBytes": true,
+      "sha256": "37f5232337fb5351017cb1b54dd756248c54a748ad16f08bb85309b4dd2f417c"
+    },
+    {
+      "file": "mira-dynamic-pointing-up.jpg-measurement.png",
+      "identicalBytes": true,
+      "sha256": "45d3c07bdb9dcee6344860c972bb423e92d91ec5e5df81d06f0d84fcae7bd08a"
+    },
+    {
+      "file": "mira-dynamic-thumb-up.jpg-100-A.png",
+      "identicalBytes": true,
+      "sha256": "b5e8b0530007e1db21aba9782d6af3c1c59fcf679ade5a76578a43afa959bcd2"
+    },
+    {
+      "file": "mira-dynamic-thumb-up.jpg-100-B.png",
+      "identicalBytes": true,
+      "sha256": "5f19f049b550432e728847fd46d70310a9cb4719b9de386bc6c1e23a1b2083fc"
+    },
+    {
+      "file": "mira-dynamic-thumb-up.jpg-98-A.png",
+      "identicalBytes": true,
+      "sha256": "b7b86f4f7b062596beb9064a8f9a388b7239a01f6018fc30e6b44d6f45e87d45"
+    },
+    {
+      "file": "mira-dynamic-thumb-up.jpg-98-B.png",
+      "identicalBytes": true,
+      "sha256": "8417effbd30ccb7f12b5e8cdd900b9a4ec741820573c4cbf384f37d5b44748bf"
+    },
+    {
+      "file": "mira-dynamic-thumb-up.jpg-measurement.png",
+      "identicalBytes": true,
+      "sha256": "b48e0da697ba7db97070cf918f5426ebeb94d748ad7c397237a7b06b55839ae0"
+    },
+    {
+      "file": "mira-dynamic-woman-hands.jpg-100-A.png",
+      "identicalBytes": true,
+      "sha256": "9674b5415311a070bd816348ce1a90eb992d6bfe4891bb96119cb6bd900cf736"
+    },
+    {
+      "file": "mira-dynamic-woman-hands.jpg-100-B.png",
+      "identicalBytes": true,
+      "sha256": "7f3c45e3d15b86eed4849bed6437a578e8486c75aa1cd350b8a2a412d7280d5c"
+    },
+    {
+      "file": "mira-dynamic-woman-hands.jpg-98-A.png",
+      "identicalBytes": true,
+      "sha256": "e1a90dc734f9189250ebeeae5f85b96ee77a1ec51798939bd28dee1c7ee76ac8"
+    },
+    {
+      "file": "mira-dynamic-woman-hands.jpg-98-B.png",
+      "identicalBytes": true,
+      "sha256": "696229f8c463a1703010e16ca7ada87975903d5b0a5f7c7de38a1d5f403d0afd"
+    },
+    {
+      "file": "mira-dynamic-woman-hands.jpg-measurement.png",
+      "identicalBytes": true,
+      "sha256": "e0b68f1d1ac8a4ea7242eab56538179c62f412dd4b4a6bb3d209d38bc88c418f"
+    }
+  ]
+}

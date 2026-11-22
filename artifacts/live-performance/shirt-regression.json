@@ -1,0 +1,41 @@
+{
+  "scope": "Actual Pose IMAGE/VIDEO on official pose.jpg replay, NOT hardware webcam",
+  "checks": [
+    "shirt upload, actual Pose, color, size and PNG",
+    "actual Pose VIDEO, no bracelet processor",
+    "camera cleanup on tab switch"
+  ],
+  "errors": [],
+  "rows": [
+    {
+      "points": 33,
+      "liveObservation": false,
+      "frame": false
+    },
+    {
+      "points": 33,
+      "liveObservation": false,
+      "frame": true
+    },
+    {
+      "points": 33,
+      "liveObservation": false,
+      "frame": true
+    },
+    {
+      "points": 33,
+      "liveObservation": false,
+      "frame": true
+    },
+    {
+      "points": 33,
+      "liveObservation": false,
+      "frame": true
+    },
+    {
+      "points": 33,
+      "liveObservation": false,
+      "frame": true
+    }
+  ]
+}

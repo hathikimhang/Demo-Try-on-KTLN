@@ -1,0 +1,52 @@
+{
+  "scope": "Actual image inference plus synthetic GPU masks; no user photo or physical webcam",
+  "measurements": [
+    {
+      "factor": 1,
+      "wristPx": 78,
+      "innerPx": 86.37875378896156,
+      "fitRatio": 1.107419920371302
+    },
+    {
+      "factor": 4,
+      "wristPx": 313,
+      "innerPx": 346.4569845883394,
+      "fitRatio": 1.1068913245633847
+    },
+    {
+      "factor": 8,
+      "wristPx": 630,
+      "innerPx": 697.5900636043773,
+      "fitRatio": 1.1072858152450433
+    }
+  ],
+  "errors": [],
+  "shaderErrors": [],
+  "manualFallback": {
+    "fixture": "woman_hands.jpg",
+    "rejectedReason": "too-few-slices: cần ít nhất 5 đường cắt có hai biên đáng tin cậy",
+    "annotations": [
+      {
+        "x": 280,
+        "y": 620
+      },
+      {
+        "x": 286,
+        "y": 707
+      }
+    ],
+    "wristPx": 87.20663046932123,
+    "innerPx": 102.44936280164204,
+    "occlusion": "geometric proxy fallback: no trusted foreground mask",
+    "status": "manual"
+  },
+  "occlusion": {
+    "fullPixels": 651,
+    "hidden": 240,
+    "topChanges": 263,
+    "bottomChanges": 0,
+    "zeroDiff": 0,
+    "whiteDiff": 0,
+    "restoreDiff": 0
+  }
+}

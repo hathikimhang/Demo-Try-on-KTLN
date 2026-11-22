@@ -1,0 +1,46 @@
+{
+  "name": "mira-virtual-try-on",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "postinstall": "node scripts/prepare-assets.mjs",
+    "assets": "node scripts/prepare-assets.mjs",
+    "test": "node --import tsx --test src/*.test.ts",
+    "test:ar": "node scripts/verify-ar.mjs",
+    "test:sizing": "node scripts/verify-sizing.mjs",
+    "test:dynamic": "node scripts/verify-dynamic-fit.mjs",
+    "test:session": "node scripts/verify-session-fit.mjs",
+    "test:upload": "node scripts/verify-upload-fit.mjs",
+    "test:upload-measurement": "node scripts/verify-upload-measurement.mjs",
+    "test:3d-recovery": "node scripts/verify-3d-recovery.mjs",
+    "test:upload-occlusion": "node scripts/verify-upload-occlusion.mjs",
+    "test:live": "node scripts/verify-live-camera.mjs",
+    "test:live-axis": "node scripts/verify-live-axis.mjs",
+    "test:live-continuity": "node scripts/verify-live-continuity.mjs",
+    "test:live-performance": "node scripts/verify-live-performance.mjs"
+  },
+  "dependencies": {
+    "@mediapipe/tasks-vision": "0.10.32",
+    "lucide-react": "^0.468.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/three": "0.180.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "playwright": "1.65.1",
+    "tailwindcss": "^4.1.0",
+    "tsx": "^4.19.0",
+    "typescript": "~5.7.2",
+    "vite": "^6.1.0"
+  }
+}

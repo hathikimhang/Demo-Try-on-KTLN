@@ -1,0 +1,32 @@
+{
+  "originalBackupIntact": true,
+  "criticalFiles": [
+    {
+      "file": "src/braceletModel.ts",
+      "unchanged": true,
+      "sha256": "08d318c02debf563be6959e17dd8c4e6198803c6676704c909b1e8bfc980dfbd"
+    },
+    {
+      "file": "src/braceletDimensions.ts",
+      "unchanged": true,
+      "sha256": "455250126c504dd563b43b921687862e07bb04a73cf20e37c158175b4190e8c5"
+    },
+    {
+      "file": "src/wristGeometry.ts",
+      "unchanged": true,
+      "sha256": "4dd708b8fdbaa3616ff6d7060075d484768b26b690176bc3e56ee64adabff91b"
+    },
+    {
+      "file": "src/draw.ts",
+      "unchanged": true,
+      "sha256": "f31bc9b5b554b6564dac12bd3e8ed050f145a4199c16b37c6b824f3362fa1142"
+    },
+    {
+      "file": "src/style.css",
+      "unchanged": true,
+      "sha256": "28ce9af68a1534b64823a60da13f02ebdbff3fc3eb1fe982122a476387a734ca"
+    }
+  ],
+  "appEdit": "Only changed current bracelet default 1.2 to 1; preserved the current slider UI",
+  "segmentationModelSha256": "c6748b1253a99067ef71f7e26ca71096cd449baefa8f101900ea23016507e0e0"
+}

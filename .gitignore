@@ -1,0 +1,21 @@
+
+# Thư viện cài đặt
+node_modules/
+
+# File được tạo khi build
+dist/
+coverage/
+.vite/
+*.tsbuildinfo
+
+# File môi trường chứa thông tin nhạy cảm
+.env
+.env.*
+!.env.example
+
+# File tạm và log
+.DS_Store
+*.log
+
+# Bản sao lưu code cũ
+backups/

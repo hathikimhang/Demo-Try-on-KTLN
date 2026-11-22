@@ -1,0 +1,442 @@
+{
+  "schemaVersion": 1,
+  "units": "scene / normalized image; NOT mm",
+  "samples": [
+    {
+      "timestampMs": 5890.899999976158,
+      "trackingStatus": "tracking",
+      "trackingReason": "ok",
+      "trackingSource": "Hand Landmarker",
+      "phase": "continuous",
+      "viewAngleDegrees": 50.33766028185026,
+      "requestedTrackingMode": "straight-wrist",
+      "workerTrackingMode": "straight-wrist",
+      "effectiveTrackingMode": "straight-wrist",
+      "uploadFallbackReason": null,
+      "roi": null,
+      "roiSeed": {
+        "ready": false,
+        "points": 0,
+        "candidates": 0,
+        "distributed": false
+      },
+      "manualFitMultiplier": 1,
+      "wristRadius": 0.0661878723509338,
+      "braceletInnerRadius": 0.0728066595860272,
+      "calibrationRadiusRatio": null,
+      "distanceScale": 0.21780023358051287,
+      "finalBraceletWorldScale": 0.07137907802551685,
+      "wristProxyScale": 0.06489007093228805,
+      "wristProjectedWidthPx": 74.15297353504997,
+      "braceletProjectedWidthPx": 87.11197593661339,
+      "observedWristWidthPx": null,
+      "measurementConfidence": 0,
+      "fitStatus": "provisional",
+      "message": "Đã hiển thị vòng với kích thước tạm tính (Provisional Fit), chưa đo được biên cổ tay. too-few-slices: cần ít nhất 5 đường cắt có hai biên đáng tin cậy Có thể điều chỉnh Manual Fit; đây chưa phải Auto Fit chính xác.",
+      "imageMeasurement": {
+        "imageWidth": 640,
+        "imageHeight": 960,
+        "roi": {
+          "x": 77,
+          "y": 447,
+          "width": 406,
+          "height": 474,
+          "imageWidth": 640,
+          "imageHeight": 960
+        },
+        "axis": [
+          {
+            "x": 0.37248959436937906,
+            "y": 1.0559727763022269
+          },
+          {
+            "x": 0.5231041767496785,
+            "y": 1.0843012137458377
+          }
+        ],
+        "cuts": [
+          [
+            {
+              "x": 0.3552325681321454,
+              "y": 1.3245994432086998
+            },
+            {
+              "x": 0.4540088424222071,
+              "y": 0.7994329093716945
+            }
+          ],
+          [
+            {
+              "x": 0.36226124864322606,
+              "y": 1.3259214369560683
+            },
+            {
+              "x": 0.4610375229332878,
+              "y": 0.800754903119063
+            }
+          ],
+          [
+            {
+              "x": 0.3692899291543067,
+              "y": 1.3272434307034369
+            },
+            {
+              "x": 0.46806620344436844,
+              "y": 0.8020768968664316
+            }
+          ],
+          [
+            {
+              "x": 0.3763186096653873,
+              "y": 1.3285654244508054
+            },
+            {
+              "x": 0.4750948839554491,
+              "y": 0.8033988906138001
+            }
+          ],
+          [
+            {
+              "x": 0.38334729017646796,
+              "y": 1.3298874181981737
+            },
+            {
+              "x": 0.4821235644665297,
+              "y": 0.8047208843611684
+            }
+          ],
+          [
+            {
+              "x": 0.3903759706875486,
+              "y": 1.3312094119455422
+            },
+            {
+              "x": 0.48915224497761034,
+              "y": 0.8060428781085369
+            }
+          ],
+          [
+            {
+              "x": 0.3974046511986292,
+              "y": 1.3325314056929107
+            },
+            {
+              "x": 0.49618092548869097,
+              "y": 0.8073648718559054
+            }
+          ],
+          [
+            {
+              "x": 0.4044333317097099,
+              "y": 1.3338533994402793
+            },
+            {
+              "x": 0.5032096059997717,
+              "y": 0.808686865603274
+            }
+          ],
+          [
+            {
+              "x": 0.41146201222079054,
+              "y": 1.3351753931876478
+            },
+            {
+              "x": 0.5102382865108523,
+              "y": 0.8100088593506425
+            }
+          ],
+          [
+            {
+              "x": 0.41849069273187117,
+              "y": 1.3364973869350163
+            },
+            {
+              "x": 0.517266967021933,
+              "y": 0.811330853098011
+            }
+          ],
+          [
+            {
+              "x": 0.4255193732429518,
+              "y": 1.3378193806823848
+            },
+            {
+              "x": 0.5242956475330136,
+              "y": 0.8126528468453795
+            }
+          ],
+          [
+            {
+              "x": 0.43254805375403244,
+              "y": 1.3391413744297533
+            },
+            {
+              "x": 0.5313243280440942,
+              "y": 0.813974840592748
+            }
+          ],
+          [
+            {
+              "x": 0.4395767342651131,
+              "y": 1.3404633681771219
+            },
+            {
+              "x": 0.5383530085551749,
+              "y": 0.8152968343401166
+            }
+          ],
+          [
+            {
+              "x": 0.44660541477619375,
+              "y": 1.3417853619244904
+            },
+            {
+              "x": 0.5453816890662555,
+              "y": 0.8166188280874851
+            }
+          ],
+          [
+            {
+              "x": 0.4536340952872744,
+              "y": 1.343107355671859
+            },
+            {
+              "x": 0.5524103695773361,
+              "y": 0.8179408218348536
+            }
+          ]
+        ],
+        "method": "foreground-profile",
+        "rejection": "too-few-slices: cần ít nhất 5 đường cắt có hai biên đáng tin cậy",
+        "rejected": {
+          "foreground-ambiguous: da/nền chưa tách rõ hoặc nền không đồng nhất": 15
+        },
+        "separation": 14.965024711424874,
+        "angleCorrection": 0,
+        "maskAvailable": false
+      },
+      "nativeWristWidthPx": null,
+      "nativeBraceletWidthPx": 87.11197593661339,
+      "effectiveFitMultiplier": 1,
+      "collisionLimited": false
+    },
+    {
+      "timestampMs": 6082,
+      "trackingStatus": "tracking",
+      "trackingReason": "ok",
+      "trackingSource": "Hand Landmarker",
+      "phase": "continuous",
+      "viewAngleDegrees": 50.33766028185026,
+      "requestedTrackingMode": "straight-wrist",
+      "workerTrackingMode": "straight-wrist",
+      "effectiveTrackingMode": "straight-wrist",
+      "uploadFallbackReason": null,
+      "roi": null,
+      "roiSeed": {
+        "ready": false,
+        "points": 0,
+        "candidates": 0,
+        "distributed": false
+      },
+      "manualFitMultiplier": 1,
+      "wristRadius": 0.0661878723509338,
+      "braceletInnerRadius": 0.0728066595860272,
+      "calibrationRadiusRatio": null,
+      "distanceScale": 0.21780023358051287,
+      "finalBraceletWorldScale": 0.07137907802551685,
+      "wristProxyScale": 0.06489007093228805,
+      "wristProjectedWidthPx": 74.15297353504997,
+      "braceletProjectedWidthPx": 87.11197593661339,
+      "observedWristWidthPx": null,
+      "measurementConfidence": 0,
+      "fitStatus": "provisional",
+      "message": "Đã hiển thị vòng với kích thước tạm tính (Provisional Fit), chưa đo được biên cổ tay. too-few-slices: cần ít nhất 5 đường cắt có hai biên đáng tin cậy Có thể điều chỉnh Manual Fit; đây chưa phải Auto Fit chính xác.",
+      "imageMeasurement": {
+        "imageWidth": 640,
+        "imageHeight": 960,
+        "roi": {
+          "x": 77,
+          "y": 447,
+          "width": 406,
+          "height": 474,
+          "imageWidth": 640,
+          "imageHeight": 960
+        },
+        "axis": [
+          {
+            "x": 0.37248959436937906,
+            "y": 1.0559727763022269
+          },
+          {
+            "x": 0.5231041767496785,
+            "y": 1.0843012137458377
+          }
+        ],
+        "cuts": [
+          [
+            {
+              "x": 0.3552325681321454,
+              "y": 1.3245994432086998
+            },
+            {
+              "x": 0.4540088424222071,
+              "y": 0.7994329093716945
+            }
+          ],
+          [
+            {
+              "x": 0.36226124864322606,
+              "y": 1.3259214369560683
+            },
+            {
+              "x": 0.4610375229332878,
+              "y": 0.800754903119063
+            }
+          ],
+          [
+            {
+              "x": 0.3692899291543067,
+              "y": 1.3272434307034369
+            },
+            {
+              "x": 0.46806620344436844,
+              "y": 0.8020768968664316
+            }
+          ],
+          [
+            {
+              "x": 0.3763186096653873,
+              "y": 1.3285654244508054
+            },
+            {
+              "x": 0.4750948839554491,
+              "y": 0.8033988906138001
+            }
+          ],
+          [
+            {
+              "x": 0.38334729017646796,
+              "y": 1.3298874181981737
+            },
+            {
+              "x": 0.4821235644665297,
+              "y": 0.8047208843611684
+            }
+          ],
+          [
+            {
+              "x": 0.3903759706875486,
+              "y": 1.3312094119455422
+            },
+            {
+              "x": 0.48915224497761034,
+              "y": 0.8060428781085369
+            }
+          ],
+          [
+            {
+              "x": 0.3974046511986292,
+              "y": 1.3325314056929107
+            },
+            {
+              "x": 0.49618092548869097,
+              "y": 0.8073648718559054
+            }
+          ],
+          [
+            {
+              "x": 0.4044333317097099,
+              "y": 1.3338533994402793
+            },
+            {
+              "x": 0.5032096059997717,
+              "y": 0.808686865603274
+            }
+          ],
+          [
+            {
+              "x": 0.41146201222079054,
+              "y": 1.3351753931876478
+            },
+            {
+              "x": 0.5102382865108523,
+              "y": 0.8100088593506425
+            }
+          ],
+          [
+            {
+              "x": 0.41849069273187117,
+              "y": 1.3364973869350163
+            },
+            {
+              "x": 0.517266967021933,
+              "y": 0.811330853098011
+            }
+          ],
+          [
+            {
+              "x": 0.4255193732429518,
+              "y": 1.3378193806823848
+            },
+            {
+              "x": 0.5242956475330136,
+              "y": 0.8126528468453795
+            }
+          ],
+          [
+            {
+              "x": 0.43254805375403244,
+              "y": 1.3391413744297533
+            },
+            {
+              "x": 0.5313243280440942,
+              "y": 0.813974840592748
+            }
+          ],
+          [
+            {
+              "x": 0.4395767342651131,
+              "y": 1.3404633681771219
+            },
+            {
+              "x": 0.5383530085551749,
+              "y": 0.8152968343401166
+            }
+          ],
+          [
+            {
+              "x": 0.44660541477619375,
+              "y": 1.3417853619244904
+            },
+            {
+              "x": 0.5453816890662555,
+              "y": 0.8166188280874851
+            }
+          ],
+          [
+            {
+              "x": 0.4536340952872744,
+              "y": 1.343107355671859
+            },
+            {
+              "x": 0.5524103695773361,
+              "y": 0.8179408218348536
+            }
+          ]
+        ],
+        "method": "foreground-profile",
+        "rejection": "too-few-slices: cần ít nhất 5 đường cắt có hai biên đáng tin cậy",
+        "rejected": {
+          "foreground-ambiguous: da/nền chưa tách rõ hoặc nền không đồng nhất": 15
+        },
+        "separation": 14.965024711424874,
+        "angleCorrection": 0,
+        "maskAvailable": false
+      },
+      "nativeWristWidthPx": null,
+      "nativeBraceletWidthPx": 87.11197593661339,
+      "effectiveFitMultiplier": 1,
+      "collisionLimited": false
+    }
+  ]
+}

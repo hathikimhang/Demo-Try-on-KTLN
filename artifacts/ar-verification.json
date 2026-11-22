@@ -1,0 +1,386 @@
+{
+  "geometryViews": [
+    {
+      "name": "Thẳng đứng",
+      "full": 3454,
+      "visible": 3454,
+      "hidden": 0,
+      "clipped": 0,
+      "debugChanged": true,
+      "cleanRestored": true
+    },
+    {
+      "name": "Nằm ngang",
+      "full": 3454,
+      "visible": 3454,
+      "hidden": 0,
+      "clipped": 0,
+      "debugChanged": true,
+      "cleanRestored": true
+    },
+    {
+      "name": "Mặt trong",
+      "full": 3454,
+      "visible": 3454,
+      "hidden": 0,
+      "clipped": 0,
+      "debugChanged": true,
+      "cleanRestored": true
+    },
+    {
+      "name": "Xoay 45°",
+      "full": 3285,
+      "visible": 3285,
+      "hidden": 0,
+      "clipped": 0,
+      "debugChanged": true,
+      "cleanRestored": true
+    },
+    {
+      "name": "Đang xoay ra cạnh",
+      "full": 3040,
+      "visible": 3040,
+      "hidden": 0,
+      "clipped": 0,
+      "debugChanged": true,
+      "cleanRestored": true
+    },
+    {
+      "name": "Mặt ngoài",
+      "full": 3454,
+      "visible": 3454,
+      "hidden": 0,
+      "clipped": 0,
+      "debugChanged": true,
+      "cleanRestored": true
+    },
+    {
+      "name": "Nghiêng 45°",
+      "full": 6810,
+      "visible": 4572,
+      "hidden": 2158,
+      "clipped": 0,
+      "debugChanged": true,
+      "cleanRestored": true
+    },
+    {
+      "name": "Xa camera",
+      "full": 1216,
+      "visible": 1216,
+      "hidden": 0,
+      "clipped": 0,
+      "debugChanged": true,
+      "cleanRestored": true
+    },
+    {
+      "name": "Gần camera",
+      "full": 6187,
+      "visible": 6187,
+      "hidden": 0,
+      "clipped": 0,
+      "debugChanged": true,
+      "cleanRestored": true
+    },
+    {
+      "name": "Nhìn dọc trục (chỉ render)",
+      "full": 7462,
+      "visible": 7316,
+      "hidden": 128,
+      "clipped": 0,
+      "debugChanged": true,
+      "cleanRestored": true
+    }
+  ],
+  "integration": [
+    {
+      "name": "real Hand inference without Pose",
+      "armLandmarks": 0
+    },
+    {
+      "name": "close-up, colors, size and PNG",
+      "passed": true
+    },
+    {
+      "name": "still image reprocessed after switching to forearm",
+      "passed": true
+    },
+    {
+      "name": "strict camera forearm gate / explicit upload fallback",
+      "acceptedFixture": false
+    },
+    {
+      "name": "full-body fixture forearm observation",
+      "hands": 0,
+      "pose": 0,
+      "accepted": false
+    },
+    {
+      "name": "shirt, camera cleanup, mobile",
+      "passed": true
+    },
+    {
+      "name": "debug Tracking, Low Confidence, Lost states, stale frame hidden and replay released",
+      "passed": true
+    },
+    {
+      "name": "manual fit persists across frames and products, colors unchanged, reset works",
+      "passed": true
+    }
+  ],
+  "replay": [
+    {
+      "name": "standing",
+      "count": 4,
+      "accepted": 4,
+      "synced": true,
+      "centers": [
+        {
+          "x": 0.4426657417692115,
+          "y": 1.0656669392879787,
+          "z": 2.0092635543148405
+        },
+        {
+          "x": 0.44278208533839564,
+          "y": 1.0656146639673332,
+          "z": 2.0092844501149947
+        },
+        {
+          "x": 0.44304205366568017,
+          "y": 1.0657428223047798,
+          "z": 2.0092109054192826
+        },
+        {
+          "x": 0.4433820191741555,
+          "y": 1.0656081470896779,
+          "z": 2.009205969247024
+        }
+      ],
+      "radii": [
+        0.06541764887595332,
+        0.06544633535986374,
+        0.06552806506612763,
+        0.06561992026701909
+      ]
+    },
+    {
+      "name": "left",
+      "count": 4,
+      "accepted": 4,
+      "synced": true,
+      "centers": [
+        {
+          "x": 0.3957567077790519,
+          "y": 1.0642886238256755,
+          "z": 2.008904222888103
+        },
+        {
+          "x": 0.39658218054775773,
+          "y": 1.0652141129885595,
+          "z": 2.0086143725931342
+        },
+        {
+          "x": 0.39757640560317276,
+          "y": 1.0648184742590994,
+          "z": 2.0085742230513413
+        },
+        {
+          "x": 0.3987466310378531,
+          "y": 1.064810662239972,
+          "z": 2.008240146070346
+        }
+      ],
+      "radii": [
+        0.06530082835446752,
+        0.06563704175162005,
+        0.06586509577720148,
+        0.06627671983048353
+      ]
+    },
+    {
+      "name": "right",
+      "count": 4,
+      "accepted": 4,
+      "synced": true,
+      "centers": [
+        {
+          "x": 0.48619144546952975,
+          "y": 1.0639021669977924,
+          "z": 2.008928453479788
+        },
+        {
+          "x": 0.4885349740025923,
+          "y": 1.064972576997521,
+          "z": 2.0098607122552132
+        },
+        {
+          "x": 0.4890598643035905,
+          "y": 1.0645428017323442,
+          "z": 2.009519473115659
+        },
+        {
+          "x": 0.48922123436992426,
+          "y": 1.0650336143103623,
+          "z": 2.0091192702518006
+        }
+      ],
+      "radii": [
+        0.06471610898428855,
+        0.06479218105594413,
+        0.06503395695802276,
+        0.06525396974793651
+      ]
+    },
+    {
+      "name": "image-roll-left",
+      "count": 4,
+      "accepted": 4,
+      "synced": true,
+      "centers": [
+        {
+          "x": 0.44183928152612406,
+          "y": 1.0640613459108033,
+          "z": 2.0090342015782947
+        },
+        {
+          "x": 0.4419358483585391,
+          "y": 1.06393048299136,
+          "z": 2.0090370718882062
+        },
+        {
+          "x": 0.4418651652266401,
+          "y": 1.0637427865824272,
+          "z": 2.00895335559912
+        },
+        {
+          "x": 0.4419283216506776,
+          "y": 1.0637671894394385,
+          "z": 2.008893632391906
+        }
+      ],
+      "radii": [
+        0.06592607244773997,
+        0.0659642128260183,
+        0.06595651541446196,
+        0.06599646127230478
+      ]
+    },
+    {
+      "name": "image-roll-right",
+      "count": 4,
+      "accepted": 4,
+      "synced": true,
+      "centers": [
+        {
+          "x": 0.45173982759103554,
+          "y": 1.0679991641201705,
+          "z": 2.006637499486212
+        },
+        {
+          "x": 0.4482005499689981,
+          "y": 1.0672032815908228,
+          "z": 2.007642579547239
+        },
+        {
+          "x": 0.4488599193123908,
+          "y": 1.0659741014352444,
+          "z": 2.0084597527170622
+        },
+        {
+          "x": 0.4483098101675434,
+          "y": 1.0667313690710485,
+          "z": 2.0083513259068315
+        }
+      ],
+      "radii": [
+        0.06732333537532009,
+        0.06661773495907455,
+        0.06631160011599824,
+        0.06634817247635252
+      ]
+    },
+    {
+      "name": "far",
+      "count": 4,
+      "accepted": 4,
+      "synced": true,
+      "centers": [
+        {
+          "x": 0.4443838506129299,
+          "y": 1.0670976317242595,
+          "z": 2.0099789720551735
+        },
+        {
+          "x": 0.4443640983928028,
+          "y": 1.0664975813256348,
+          "z": 2.0111522694646973
+        },
+        {
+          "x": 0.4443695834400807,
+          "y": 1.0666312899380614,
+          "z": 2.0112053201589
+        },
+        {
+          "x": 0.44438056678748317,
+          "y": 1.0667061701251261,
+          "z": 2.0112071529097757
+        }
+      ],
+      "radii": [
+        0.05671892519377883,
+        0.056183887310812905,
+        0.056161166170739456,
+        0.0561770487725494
+      ]
+    },
+    {
+      "name": "near",
+      "count": 4,
+      "accepted": 4,
+      "synced": true,
+      "centers": [
+        {
+          "x": 0.42875387350886973,
+          "y": 1.064707801653009,
+          "z": 2.0089907821933584
+        },
+        {
+          "x": 0.4369346957344584,
+          "y": 1.063989090474631,
+          "z": 2.00722533987188
+        },
+        {
+          "x": 0.4404023469149105,
+          "y": 1.0645294191991124,
+          "z": 2.007604116206322
+        },
+        {
+          "x": 0.4422723053390247,
+          "y": 1.0634586351408202,
+          "z": 2.007552618832825
+        }
+      ],
+      "radii": [
+        0.06948938166448329,
+        0.07187822692460738,
+        0.07241242779009736,
+        0.072739350341208
+      ]
+    }
+  ],
+  "poseCoverage": {
+    "accepted": 192,
+    "rejected": 0,
+    "minVisible": 68,
+    "invisible": [],
+    "manualFits": [
+      1,
+      1.5
+    ],
+    "undersized": {
+      "fit": 0.65,
+      "full": 148,
+      "visible": 5
+    }
+  },
+  "errors": []
+}

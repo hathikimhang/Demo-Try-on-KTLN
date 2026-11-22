@@ -1,0 +1,2092 @@
+{
+  "images": [
+    {
+      "fixture": "pointing_up.jpg",
+      "text": "tracking · ok\nstraight-wrist · landmarks 21/21\nYêu cầu: straight-wrist · worker: straight-wrist · đang dùng: straight-wrist\nTracking source: Hand Landmarker · Continuous Tracking\nView angle: 38.3° (góc tới pháp tuyến, 0–90°)\nROI sẵn sàng: chưa · 0 đặc trưng cổ tay\nFit residual: 5.4% · scale ảnh: 3.21\nView alignment: 0.58 · basis: 1.00\nBán kính/khung: 11.63% · độ vừa 100%\nEstimated wrist diameter: 0.23732 × 0.17087 u\nBracelet inner diameter: 0.26105 × 0.21928 u\nAuto Fit: measured · đo ảnh phù hợp calibration\nHai mép trên ảnh: 82.0 px · 5 lát cắt hợp lệ · 1 ứng viên bị loại\nWrist width (pixels): 82.0 px (quy về mặt phẳng đeo)\nBracelet projected inner diameter (pixels): 90.9 px\nFit ratio: 1.109 · image\nWrist radius: 0.118659 u · Bracelet inner radius: 0.130525 u\nCalibration radius ratio: 0.365782 · Distance scale: 0.318038\nAuto scale: 0.116333 · Final render scale: 0.116333\nEdge quality: 95% (Measurement confidence: chất lượng biên, không phải xác suất AI)\nBase scale: 0.116333 u/model\nManual fit multiplier: 1.000× · Render thực tế: 1.000×\nẢnh gốc: 358 × 376 px · ROI 358 × 266 px (không thu nhỏ)\nBiên cổ tay: 82.0 px gốc · Lỗ vòng chiếu: 90.9 px gốc\nTrục ảnh hiệu chỉnh: 6.2° · Che khuất: proxy giới hạn bằng foreground\nReject: không\nno-persistent-pair: không có hai mép với nền liên tục: 6\nVàng: ROI/đường cắt · xanh dương: trục cẳng tay · xanh ngọc: hai mép thực tế\nFinal world scale: 0.116333 u/model\nFinal bracelet world scale: 0.127966\nProxy world scale: 0.116333 · Bracelet mesh scale: 0.127966 (gồm khoảng hở thiết kế)\nProjected bracelet diameter: 90.9 px (lỗ vòng)\nEstimated wrist width: 82.0 px (proxy đã hiệu chỉnh)\nObserved wrist width: 82.0 px · đo ảnh\nCanvas ngang 358px; px là pixel Canvas, không phải CSS.\nCùng lát cắt/vuông góc trục tay; u là đơn vị scene, KHÔNG phải mm.\nBiên xanh ngọc: đo hợp lệ · cam: biên bị loại · chấm xám: ứng viên\nNét tím: lỗ vòng chiếu · nét vàng: dự đoán, không phải đo da\nĐỏ X · xanh lá Y · xanh dương Z/cẳng tay\nLưới cyan: proxy ước lượng · vòng trắng: Hand 0\nChỉ số hình học, không phải xác suất AI.\nTải log JSON (1 frame)\nLog chỉ có số đo, lưu trong bộ nhớ; tối đa 1800 frame.",
+      "status": "measured",
+      "rawWidth": 82,
+      "slices": 5,
+      "width": 82,
+      "inner": 90.9,
+      "ratio": 1.109,
+      "scale": 0.116333,
+      "final": 0.116333,
+      "quality": 95
+    }
+  ],
+  "provisionalImages": [
+    {
+      "fixture": "thumb_up.jpg",
+      "text": "tracking · ok\nstraight-wrist · landmarks 21/21\nYêu cầu: straight-wrist · worker: straight-wrist · đang dùng: straight-wrist\nTracking source: Hand Landmarker · Continuous Tracking\nView angle: 44.4° (góc tới pháp tuyến, 0–90°)\nROI sẵn sàng: chưa · 0 đặc trưng cổ tay\nFit residual: 5.2% · scale ảnh: 3.43\nView alignment: 0.70 · basis: 1.00\nBán kính/khung: 10.40% · độ vừa 100%\nEstimated wrist diameter: 0.21209 × 0.15271 u\nBracelet inner diameter: 0.23330 × 0.19597 u\nAuto Fit: provisional · kích thước tạm tính từ landmark; chưa đo được biên\nHai mép trên ảnh: — px · 0 lát cắt hợp lệ · 0 ứng viên bị loại\nWrist width (pixels): — px (quy về mặt phẳng đeo)\nBracelet projected inner diameter (pixels): 86.7 px\nFit ratio: — · provisional\nWrist radius: 0.106046 u · Bracelet inner radius: 0.116651 u\nCalibration radius ratio: — · Distance scale: 0.324326\nAuto scale: 0.103967 · Final render scale: 0.103967\nEdge quality: 0% (Measurement confidence: chất lượng biên, không phải xác suất AI)\nBase scale: 0.103967 u/model\nManual fit multiplier: 1.000× · Render thực tế: 1.000×\nẢnh gốc: 382 × 406 px · ROI 307 × 342 px (không thu nhỏ)\nBiên cổ tay: — px gốc · Lỗ vòng chiếu: 86.7 px gốc\nTrục ảnh hiệu chỉnh: 16.4° · Che khuất: tắt — chưa có mặt nạ đáng tin cậy\nReject: inconsistent-contour: các đường cắt không thống nhất\nno-persistent-pair: không có hai mép với nền liên tục: 6 · roi-clipped: thiếu nền ở hai bên: 3\nVàng: ROI/đường cắt · xanh dương: trục cẳng tay · xanh ngọc: hai mép thực tế\nFinal world scale: 0.103967 u/model\nFinal bracelet world scale: 0.114364\nProxy world scale: 0.103967 · Bracelet mesh scale: 0.114364 (gồm khoảng hở thiết kế)\nProjected bracelet diameter: 86.7 px (lỗ vòng)\nEstimated wrist width: 78.7 px (proxy đã hiệu chỉnh)\nObserved wrist width: — px · provisional\nCanvas ngang 382px; px là pixel Canvas, không phải CSS.\nCùng lát cắt/vuông góc trục tay; u là đơn vị scene, KHÔNG phải mm.\nBiên xanh ngọc: đo hợp lệ · cam: biên bị loại · chấm xám: ứng viên\nNét tím: lỗ vòng chiếu · nét vàng: dự đoán, không phải đo da\nĐỏ X · xanh lá Y · xanh dương Z/cẳng tay\nLưới cyan: proxy ước lượng · vòng trắng: Hand 0\nChỉ số hình học, không phải xác suất AI.\nTải log JSON (1 frame)\nLog chỉ có số đo, lưu trong bộ nhớ; tối đa 1800 frame.",
+      "status": "provisional",
+      "rawWidth": null,
+      "slices": 0,
+      "width": null,
+      "inner": 86.7,
+      "ratio": null,
+      "scale": 0.103967,
+      "final": 0.103967,
+      "quality": 0,
+      "diagnostic": {
+        "input": "image",
+        "pose": {
+          "center": {
+            "x": 0.19580627202804385,
+            "y": 0.206384256458189,
+            "z": 1.4780158247915978
+          },
+          "orientation": {
+            "x": -0.4230878505595329,
+            "y": 0.1919108208806083,
+            "z": -0.4103883637759753,
+            "w": 0.7846963096734452
+          },
+          "radius": 0.10396697328415673,
+          "palmLength": 0.30404012373708644,
+          "distanceScale": 0.32432580352003265,
+          "focal": 1.4348167539267018,
+          "aspect": 1.0628272251308901,
+          "handedness": "Right",
+          "source": "straight-wrist"
+        },
+        "wrist": {
+          "x": 0.6376596689224243,
+          "y": 0.6725164651870728,
+          "z": -3.7172091538195673e-7,
+          "visibility": 0
+        },
+        "result": {
+          "width": null,
+          "confidence": 0,
+          "reason": "inconsistent-contour: các đường cắt không thống nhất",
+          "slices": [
+            {
+              "center": {
+                "x": 0.6518596675126632,
+                "y": 0.7253507090629183
+              },
+              "candidates": [
+                {
+                  "point": {
+                    "x": 0.5971115930303419,
+                    "y": 0.7988179070855838
+                  },
+                  "side": -1,
+                  "distancePx": 35,
+                  "quality": 1,
+                  "rejected": false,
+                  "reason": "silhouette"
+                },
+                {
+                  "point": {
+                    "x": 0.7363281252853875,
+                    "y": 0.6120013178279489
+                  },
+                  "side": 1,
+                  "distancePx": 54,
+                  "quality": 1,
+                  "rejected": false,
+                  "reason": "silhouette"
+                }
+              ],
+              "accepted": false,
+              "reason": "",
+              "left": {
+                "x": 0.5978937083800894,
+                "y": 0.7977683756852599
+              },
+              "right": {
+                "x": 0.7355460099356401,
+                "y": 0.6130508492282727
+              }
+            },
+            {
+              "center": {
+                "x": 0.660143000023636,
+                "y": 0.7315234843623473
+              },
+              "candidates": [
+                {
+                  "point": {
+                    "x": 0.6053949255413147,
+                    "y": 0.8049906823850127
+                  },
+                  "side": -1,
+                  "distancePx": 35,
+                  "quality": 1,
+                  "rejected": false,
+                  "reason": "silhouette"
+                },
+                {
+                  "point": {
+                    "x": 0.7430472270968654,
+                    "y": 0.6202731559280253
+                  },
+                  "side": 1,
+                  "distancePx": 53,
+                  "quality": 1,
+                  "rejected": false,
+                  "reason": "silhouette"
+                }
+              ],
+              "accepted": false,
+              "reason": "",
+              "left": {
+                "x": 0.6061770408910622,
+                "y": 0.8039411509846889
+              },
+              "right": {
+                "x": 0.742265111747118,
+                "y": 0.6213226873283492
+              }
+            },
+            {
+              "center": {
+                "x": 0.6684263325346087,
+                "y": 0.7376962596617763
+              },
+              "candidates": [
+                {
+                  "point": {
+                    "x": 0.6152424887517823,
+                    "y": 0.8090643948837941
+                  },
+                  "side": -1,
+                  "distancePx": 34,
+                  "quality": 1,
+                  "rejected": false,
+                  "reason": "silhouette"
+                },
+                {
+                  "point": {
+                    "x": 0.7544590210068279,
+                    "y": 0.6222478056261593
+                  },
+                  "side": 1,
+                  "distancePx": 55,
+                  "quality": 1,
+                  "rejected": false,
+                  "reason": "silhouette"
+                }
+              ],
+              "accepted": false,
+              "reason": "",
+              "left": {
+                "x": 0.6160246041015297,
+                "y": 0.8080148634834703
+              },
+              "right": {
+                "x": 0.7536769056570805,
+                "y": 0.623297337026483
+              }
+            },
+            {
+              "center": {
+                "x": 0.6767096650455815,
+                "y": 0.7438690349612054
+              },
+              "candidates": [
+                {
+                  "point": {
+                    "x": 0.6219615905632602,
+                    "y": 0.8173362329838708
+                  },
+                  "side": -1,
+                  "distancePx": 35,
+                  "quality": 1,
+                  "rejected": false,
+                  "reason": "silhouette"
+                }
+              ],
+              "accepted": false,
+              "reason": "no-persistent-pair: không có hai mép với nền liên tục"
+            },
+            {
+              "center": {
+                "x": 0.6849929975565542,
+                "y": 0.7500418102606343
+              },
+              "candidates": [
+                {
+                  "point": {
+                    "x": 0.7694614553292785,
+                    "y": 0.6366924190256649
+                  },
+                  "side": 1,
+                  "distancePx": 54,
+                  "quality": 1,
+                  "rejected": false,
+                  "reason": "silhouette"
+                }
+              ],
+              "accepted": false,
+              "reason": "no-persistent-pair: không có hai mép với nền liên tục"
+            },
+            {
+              "center": {
+                "x": 0.6932763300675269,
+                "y": 0.7562145855600634
+              },
+              "candidates": [
+                {
+                  "point": {
+                    "x": 0.6385282555852055,
+                    "y": 0.8296817835827288
+                  },
+                  "side": -1,
+                  "distancePx": 35,
+                  "quality": 1,
+                  "rejected": false,
+                  "reason": "silhouette"
+                },
+                {
+                  "point": {
+                    "x": 0.7793090185397461,
+                    "y": 0.6407661315244464
+                  },
+                  "side": 1,
+                  "distancePx": 55,
+                  "quality": 1,
+                  "rejected": false,
+                  "reason": "silhouette"
+                }
+              ],
+              "accepted": false,
+              "reason": "",
+              "left": {
+                "x": 0.639310370934953,
+                "y": 0.828632252182405
+              },
+              "right": {
+                "x": 0.7785269031899986,
+                "y": 0.6418156629247701
+              }
+            },
+            {
+              "center": {
+                "x": 0.7015596625784997,
+                "y": 0.7623873608594923
+              },
+              "candidates": [
+                {
+                  "point": {
+                    "x": 0.6452473573966835,
+                    "y": 0.8379536216828053
+                  },
+                  "side": -1,
+                  "distancePx": 36,
+                  "quality": 1,
+                  "rejected": false,
+                  "reason": "silhouette"
+                },
+                {
+                  "point": {
+                    "x": 0.7907208124497087,
+                    "y": 0.6427407812225802
+                  },
+                  "side": 1,
+                  "distancePx": 57,
+                  "quality": 1,
+                  "rejected": false,
+                  "reason": "silhouette"
+                }
+              ],
+              "accepted": false,
+              "reason": "",
+              "left": {
+                "x": 0.6460294727464309,
+                "y": 0.8369040902824815
+              },
+              "right": {
+                "x": 0.7899386970999612,
+                "y": 0.6437903126229039
+              }
+            },
+            {
+              "center": {
+                "x": 0.7098429950894724,
+                "y": 0.7685601361589214
+              },
+              "candidates": [
+                {
+                  "point": {
+                    "x": 0.655094920607151,
+                    "y": 0.8420273341815868
+                  },
+                  "side": -1,
+                  "distancePx": 35,
+                  "quality": 1,
+                  "rejected": false,
+                  "reason": "silhouette"
+                }
+              ],
+              "accepted": false,
+              "reason": "no-persistent-pair: không có hai mép với nền liên tục"
+            },
+            {
+              "center": {
+                "x": 0.718126327600445,
+                "y": 0.7747329114583503
+              },
+              "candidates": [
+                {
+                  "point": {
+                    "x": 0.6633782531181237,
+                    "y": 0.8482001094810158
+                  },
+                  "side": -1,
+                  "distancePx": 35,
+                  "quality": 1,
+                  "rejected": false,
+                  "reason": "silhouette"
+                }
+              ],
+              "accepted": false,
+              "reason": "no-persistent-pair: không có hai mép với nền liên tục"
+            },
+            {
+              "center": {
+                "x": 0.7264096601114178,
+                "y": 0.7809056867577794
+              },
+              "candidates": [
+                {
+                  "point": {
+                    "x": 0.6700973549296017,
+                    "y": 0.8564719475810924
+                  },
+                  "side": -1,
+                  "distancePx": 36,
+                  "quality": 1,
+                  "rejected": false,
+                  "reason": "silhouette"
+                },
+                {
+                  "point": {
+                    "x": 0.8124423485836371,
+                    "y": 0.6654572327221624
+                  },
+                  "side": 1,
+                  "distancePx": 55,
+                  "quality": 1,
+                  "rejected": false,
+                  "reason": "silhouette"
+                }
+              ],
+              "accepted": false,
+              "reason": "",
+              "left": {
+                "x": 0.670879470279349,
+                "y": 0.8554224161807685
+              },
+              "right": {
+                "x": 0.8116602332338896,
+                "y": 0.6665067641224861
+              }
+            },
+            {
+              "center": {
+                "x": 0.7346929926223905,
+                "y": 0.7870784620572083
+              },
+              "candidates": [
+                {
+                  "point": {
+                    "x": 0.6799449181400692,
+                    "y": 0.8605456600798738
+                  },
+                  "side": -1,
+                  "distancePx": 35,
+                  "quality": 1,
+                  "rejected": false,
+                  "reason": "silhouette"
+                }
+              ],
+              "accepted": false,
+              "reason": "no-persistent-pair: không có hai mép với nền liên tục"
+            },
+            {
+              "center": {
+                "x": 0.7429763251333632,
+                "y": 0.7932512373566374
+              },
+              "candidates": [
+                {
+                  "point": {
+                    "x": 0.686664019951547,
+                    "y": 0.8688174981799504
+                  },
+                  "side": -1,
+                  "distancePx": 36,
+                  "quality": 1,
+                  "rejected": false,
+                  "reason": "silhouette"
+                }
+              ],
+              "accepted": false,
+              "reason": "no-persistent-pair: không có hai mép với nền liên tục"
+            },
+            {
+              "center": {
+                "x": 0.751259657644336,
+                "y": 0.7994240126560663
+              },
+              "candidates": [],
+              "accepted": false,
+              "reason": "roi-clipped: thiếu nền ở hai bên"
+            },
+            {
+              "center": {
+                "x": 0.7595429901553087,
+                "y": 0.8055967879554954
+              },
+              "candidates": [],
+              "accepted": false,
+              "reason": "roi-clipped: thiếu nền ở hai bên"
+            },
+            {
+              "center": {
+                "x": 0.7678263226662814,
+                "y": 0.8117695632549243
+              },
+              "candidates": [],
+              "accepted": false,
+              "reason": "roi-clipped: thiếu nền ở hai bên"
+            }
+          ],
+          "image": {
+            "imageWidth": 382,
+            "imageHeight": 406,
+            "roi": {
+              "x": 75,
+              "y": 64,
+              "width": 307,
+              "height": 342,
+              "imageWidth": 382,
+              "imageHeight": 406
+            },
+            "axis": [
+              {
+                "x": 0.6139930046053594,
+                "y": 0.6971323076941
+              },
+              {
+                "x": 0.7914929869833464,
+                "y": 0.8294060641104358
+              }
+            ],
+            "cuts": [
+              [
+                {
+                  "x": 0.4219177546869137,
+                  "y": 1.033912940758113
+                },
+                {
+                  "x": 0.8818015803384127,
+                  "y": 0.4167884773677237
+                }
+              ],
+              [
+                {
+                  "x": 0.4302010871978865,
+                  "y": 1.0400857160575419
+                },
+                {
+                  "x": 0.8900849128493855,
+                  "y": 0.4229612526671526
+                }
+              ],
+              [
+                {
+                  "x": 0.4384844197088592,
+                  "y": 1.046258491356971
+                },
+                {
+                  "x": 0.8983682453603582,
+                  "y": 0.4291340279665817
+                }
+              ],
+              [
+                {
+                  "x": 0.446767752219832,
+                  "y": 1.0524312666564
+                },
+                {
+                  "x": 0.906651577871331,
+                  "y": 0.43530680326601073
+                }
+              ],
+              [
+                {
+                  "x": 0.4550510847308047,
+                  "y": 1.058604041955829
+                },
+                {
+                  "x": 0.9149349103823037,
+                  "y": 0.4414795785654397
+                }
+              ],
+              [
+                {
+                  "x": 0.4633344172417774,
+                  "y": 1.064776817255258
+                },
+                {
+                  "x": 0.9232182428932764,
+                  "y": 0.44765235386486874
+                }
+              ],
+              [
+                {
+                  "x": 0.47161774975275017,
+                  "y": 1.070949592554687
+                },
+                {
+                  "x": 0.9315015754042492,
+                  "y": 0.4538251291642977
+                }
+              ],
+              [
+                {
+                  "x": 0.47990108226372286,
+                  "y": 1.077122367854116
+                },
+                {
+                  "x": 0.9397849079152218,
+                  "y": 0.45999790446372674
+                }
+              ],
+              [
+                {
+                  "x": 0.48818441477469554,
+                  "y": 1.083295143153545
+                },
+                {
+                  "x": 0.9480682404261945,
+                  "y": 0.4661706797631557
+                }
+              ],
+              [
+                {
+                  "x": 0.49646774728566834,
+                  "y": 1.089467918452974
+                },
+                {
+                  "x": 0.9563515729371673,
+                  "y": 0.47234345506258474
+                }
+              ],
+              [
+                {
+                  "x": 0.504751079796641,
+                  "y": 1.095640693752403
+                },
+                {
+                  "x": 0.96463490544814,
+                  "y": 0.4785162303620137
+                }
+              ],
+              [
+                {
+                  "x": 0.5130344123076137,
+                  "y": 1.101813469051832
+                },
+                {
+                  "x": 0.9729182379591127,
+                  "y": 0.48468900566144274
+                }
+              ],
+              [
+                {
+                  "x": 0.5213177448185865,
+                  "y": 1.107986244351261
+                },
+                {
+                  "x": 0.9812015704700855,
+                  "y": 0.4908617809608717
+                }
+              ],
+              [
+                {
+                  "x": 0.5296010773295592,
+                  "y": 1.11415901965069
+                },
+                {
+                  "x": 0.9894849029810582,
+                  "y": 0.49703455626030074
+                }
+              ],
+              [
+                {
+                  "x": 0.5378844098405319,
+                  "y": 1.120331794950119
+                },
+                {
+                  "x": 0.9977682354920309,
+                  "y": 0.5032073315597296
+                }
+              ]
+            ],
+            "method": "foreground-profile",
+            "rejection": "inconsistent-contour: các đường cắt không thống nhất",
+            "rejected": {
+              "no-persistent-pair: không có hai mép với nền liên tục": 6,
+              "roi-clipped: thiếu nền ở hai bên": 3
+            },
+            "separation": 34.01943615036438,
+            "angleCorrection": 16.385915816030703,
+            "maskAvailable": false
+          },
+          "analysisWidth": 382
+        },
+        "image": {
+          "width": 382,
+          "height": 406
+        }
+      }
+    }
+  ],
+  "replay": [
+    {
+      "name": "standing",
+      "text": "tracking · ok\nstraight-wrist · landmarks 21/21\nTracking source: Hand Landmarker · Continuous Tracking\nView angle: 35.7° (góc tới pháp tuyến, 0–90°)\nROI sẵn sàng: có · 11 đặc trưng cổ tay\nFit residual: 5.3% · scale ảnh: 2.24\nView alignment: 0.52 · basis: 1.00\nBán kính/khung: 8.31% · độ vừa 100%\nEstimated wrist diameter: 0.16948 × 0.12203 u\nBracelet inner diameter: 0.18643 × 0.15660 u\nAuto Fit: measured · đo ảnh phù hợp calibration\nHai mép trên ảnh: 102.4 px · 9 lát cắt hợp lệ · 0 ứng viên bị loại\nWrist width (pixels): 102.6 px (quy về mặt phẳng đeo)\nBracelet projected inner diameter (pixels): 116.1 px\nFit ratio: 1.131 · image\nWrist radius: 0.084742 u · Bracelet inner radius: 0.093217 u\nCalibration radius ratio: 0.360205 · Distance scale: 0.230649\nAuto scale: 0.083081 · Final render scale: 0.083081\nEdge quality: 88% (Measurement confidence: chất lượng biên, không phải xác suất AI)\nBase scale: 0.083081 u/model\nManual fit multiplier: 1.000× · Render thực tế: 1.000×\nFinal world scale: 0.083081 u/model\nFinal bracelet world scale: 0.091389\nProxy world scale: 0.083081 · Bracelet mesh scale: 0.091389 (gồm khoảng hở thiết kế)\nProjected bracelet diameter: 116.1 px (lỗ vòng)\nEstimated wrist width: 104.5 px (proxy đã hiệu chỉnh)\nObserved wrist width: 102.6 px · đo ảnh\nCanvas ngang 640px; px là pixel Canvas, không phải CSS.\nCùng lát cắt/vuông góc trục tay; u là đơn vị scene, KHÔNG phải mm.\nBiên xanh ngọc: đo hợp lệ · cam: biên bị loại · chấm xám: ứng viên\nNét tím: lỗ vòng chiếu · nét vàng: dự đoán, không phải đo da\nĐỏ X · xanh lá Y · xanh dương Z/cẳng tay\nLưới cyan: proxy ước lượng · vòng trắng: Hand 0\nChỉ số hình học, không phải xác suất AI.\nTải log JSON (31 frame)\nLog chỉ có số đo, lưu trong bộ nhớ; tối đa 1800 frame.",
+      "status": "measured",
+      "rawWidth": 102.4,
+      "slices": 9,
+      "width": 102.6,
+      "inner": 116.1,
+      "ratio": 1.131,
+      "scale": 0.083081,
+      "final": 0.083081,
+      "quality": 88
+    },
+    {
+      "name": "far",
+      "text": "tracking · ok\nstraight-wrist · landmarks 21/21\nTracking source: Hand Landmarker · Continuous Tracking\nView angle: 35.6° (góc tới pháp tuyến, 0–90°)\nROI sẵn sàng: có · 7 đặc trưng cổ tay\nFit residual: 5.3% · scale ảnh: 1.57\nView alignment: 0.52 · basis: 1.00\nBán kính/khung: 5.83% · độ vừa 100%\nEstimated wrist diameter: 0.11885 × 0.08557 u\nBracelet inner diameter: 0.13073 × 0.10982 u\nAuto Fit: measured · đo ảnh phù hợp calibration\nHai mép trên ảnh: 72.0 px · 9 lát cắt hợp lệ · 0 ứng viên bị loại\nWrist width (pixels): 72.0 px (quy về mặt phẳng đeo)\nBracelet projected inner diameter (pixels): 81.7 px\nFit ratio: 1.135 · image\nWrist radius: 0.059424 u · Bracelet inner radius: 0.065366 u\nCalibration radius ratio: 0.360205 · Distance scale: 0.161738\nAuto scale: 0.058259 · Final render scale: 0.058259\nEdge quality: 87% (Measurement confidence: chất lượng biên, không phải xác suất AI)\nBase scale: 0.058259 u/model\nManual fit multiplier: 1.000× · Render thực tế: 1.000×\nFinal world scale: 0.058259 u/model\nFinal bracelet world scale: 0.064085\nProxy world scale: 0.058259 · Bracelet mesh scale: 0.064085 (gồm khoảng hở thiết kế)\nProjected bracelet diameter: 81.7 px (lỗ vòng)\nEstimated wrist width: 73.6 px (proxy đã hiệu chỉnh)\nObserved wrist width: 72.0 px · đo ảnh\nCanvas ngang 640px; px là pixel Canvas, không phải CSS.\nCùng lát cắt/vuông góc trục tay; u là đơn vị scene, KHÔNG phải mm.\nBiên xanh ngọc: đo hợp lệ · cam: biên bị loại · chấm xám: ứng viên\nNét tím: lỗ vòng chiếu · nét vàng: dự đoán, không phải đo da\nĐỏ X · xanh lá Y · xanh dương Z/cẳng tay\nLưới cyan: proxy ước lượng · vòng trắng: Hand 0\nChỉ số hình học, không phải xác suất AI.\nTải log JSON (44 frame)\nLog chỉ có số đo, lưu trong bộ nhớ; tối đa 1800 frame.",
+      "status": "measured",
+      "rawWidth": 72,
+      "slices": 9,
+      "width": 72,
+      "inner": 81.7,
+      "ratio": 1.135,
+      "scale": 0.058259,
+      "final": 0.058259,
+      "quality": 87
+    },
+    {
+      "name": "near",
+      "text": "tracking · ok\nstraight-wrist · landmarks 21/21\nTracking source: Hand Landmarker · Continuous Tracking\nView angle: 35.9° (góc tới pháp tuyến, 0–90°)\nROI sẵn sàng: có · 13 đặc trưng cổ tay\nFit residual: 5.3% · scale ảnh: 2.81\nView alignment: 0.52 · basis: 1.00\nBán kính/khung: 10.21% · độ vừa 100%\nEstimated wrist diameter: 0.20837 × 0.15002 u\nBracelet inner diameter: 0.22920 × 0.19253 u\nAuto Fit: measured · đo ảnh phù hợp calibration\nHai mép trên ảnh: 128.2 px · 9 lát cắt hợp lệ · 0 ứng viên bị loại\nWrist width (pixels): 128.7 px (quy về mặt phẳng đeo)\nBracelet projected inner diameter (pixels): 142.4 px\nFit ratio: 1.106 · image\nWrist radius: 0.104183 u · Bracelet inner radius: 0.114602 u\nCalibration radius ratio: 0.360205 · Distance scale: 0.283563\nAuto scale: 0.102141 · Final render scale: 0.102141\nEdge quality: 87% (Measurement confidence: chất lượng biên, không phải xác suất AI)\nBase scale: 0.102141 u/model\nManual fit multiplier: 1.000× · Render thực tế: 1.000×\nFinal world scale: 0.102141 u/model\nFinal bracelet world scale: 0.112355\nProxy world scale: 0.102141 · Bracelet mesh scale: 0.112355 (gồm khoảng hở thiết kế)\nProjected bracelet diameter: 142.4 px (lỗ vòng)\nEstimated wrist width: 128.1 px (proxy đã hiệu chỉnh)\nObserved wrist width: 128.7 px · đo ảnh\nCanvas ngang 640px; px là pixel Canvas, không phải CSS.\nCùng lát cắt/vuông góc trục tay; u là đơn vị scene, KHÔNG phải mm.\nBiên xanh ngọc: đo hợp lệ · cam: biên bị loại · chấm xám: ứng viên\nNét tím: lỗ vòng chiếu · nét vàng: dự đoán, không phải đo da\nĐỏ X · xanh lá Y · xanh dương Z/cẳng tay\nLưới cyan: proxy ước lượng · vòng trắng: Hand 0\nChỉ số hình học, không phải xác suất AI.\nTải log JSON (57 frame)\nLog chỉ có số đo, lưu trong bộ nhớ; tối đa 1800 frame.",
+      "status": "measured",
+      "rawWidth": 128.2,
+      "slices": 9,
+      "width": 128.7,
+      "inner": 142.4,
+      "ratio": 1.106,
+      "scale": 0.102141,
+      "final": 0.102141,
+      "quality": 87
+    },
+    {
+      "name": "roll-45",
+      "text": "tracking · ok\nstraight-wrist · landmarks 21/21\nTracking source: Hand Landmarker · Continuous Tracking\nView angle: 38.9° (góc tới pháp tuyến, 0–90°)\nROI sẵn sàng: chưa · 6 đặc trưng cổ tay\nFit residual: 5.3% · scale ảnh: 2.25\nView alignment: 0.52 · basis: 1.00\nBán kính/khung: 8.30% · độ vừa 100%\nEstimated wrist diameter: 0.16939 × 0.12196 u\nBracelet inner diameter: 0.18633 × 0.15652 u\nAuto Fit: measured · đo ảnh phù hợp calibration\nHai mép trên ảnh: 102.4 px · 9 lát cắt hợp lệ · 0 ứng viên bị loại\nWrist width (pixels): 102.9 px (quy về mặt phẳng đeo)\nBracelet projected inner diameter (pixels): 114.8 px\nFit ratio: 1.116 · image\nWrist radius: 0.084695 u · Bracelet inner radius: 0.093165 u\nCalibration radius ratio: 0.360205 · Distance scale: 0.230520\nAuto scale: 0.083035 · Final render scale: 0.083035\nEdge quality: 88% (Measurement confidence: chất lượng biên, không phải xác suất AI)\nBase scale: 0.083035 u/model\nManual fit multiplier: 1.000× · Render thực tế: 1.000×\nFinal world scale: 0.083035 u/model\nFinal bracelet world scale: 0.091338\nProxy world scale: 0.083035 · Bracelet mesh scale: 0.091338 (gồm khoảng hở thiết kế)\nProjected bracelet diameter: 114.8 px (lỗ vòng)\nEstimated wrist width: 102.6 px (proxy đã hiệu chỉnh)\nObserved wrist width: 102.9 px · đo ảnh\nCanvas ngang 640px; px là pixel Canvas, không phải CSS.\nCùng lát cắt/vuông góc trục tay; u là đơn vị scene, KHÔNG phải mm.\nBiên xanh ngọc: đo hợp lệ · cam: biên bị loại · chấm xám: ứng viên\nNét tím: lỗ vòng chiếu · nét vàng: dự đoán, không phải đo da\nĐỏ X · xanh lá Y · xanh dương Z/cẳng tay\nLưới cyan: proxy ước lượng · vòng trắng: Hand 0\nChỉ số hình học, không phải xác suất AI.\nTải log JSON (70 frame)\nLog chỉ có số đo, lưu trong bộ nhớ; tối đa 1800 frame.",
+      "status": "measured",
+      "rawWidth": 102.4,
+      "slices": 9,
+      "width": 102.9,
+      "inner": 114.8,
+      "ratio": 1.116,
+      "scale": 0.083035,
+      "final": 0.083035,
+      "quality": 88
+    },
+    {
+      "name": "left",
+      "text": "tracking · ok\nstraight-wrist · landmarks 21/21\nTracking source: Hand Landmarker · Continuous Tracking\nView angle: 33.6° (góc tới pháp tuyến, 0–90°)\nROI sẵn sàng: có · 19 đặc trưng cổ tay\nFit residual: 5.3% · scale ảnh: 2.25\nView alignment: 0.50 · basis: 1.00\nBán kính/khung: 8.31% · độ vừa 100%\nEstimated wrist diameter: 0.16948 × 0.12203 u\nBracelet inner diameter: 0.18643 × 0.15660 u\nAuto Fit: measured · đo ảnh phù hợp calibration\nHai mép trên ảnh: 103.5 px · 9 lát cắt hợp lệ · 0 ứng viên bị loại\nWrist width (pixels): 103.7 px (quy về mặt phẳng đeo)\nBracelet projected inner diameter (pixels): 117.0 px\nFit ratio: 1.127 · image\nWrist radius: 0.084741 u · Bracelet inner radius: 0.093215 u\nCalibration radius ratio: 0.360205 · Distance scale: 0.230646\nAuto scale: 0.083080 · Final render scale: 0.083080\nEdge quality: 87% (Measurement confidence: chất lượng biên, không phải xác suất AI)\nBase scale: 0.083080 u/model\nManual fit multiplier: 1.000× · Render thực tế: 1.000×\nFinal world scale: 0.083080 u/model\nFinal bracelet world scale: 0.091388\nProxy world scale: 0.083080 · Bracelet mesh scale: 0.091388 (gồm khoảng hở thiết kế)\nProjected bracelet diameter: 117.0 px (lỗ vòng)\nEstimated wrist width: 105.5 px (proxy đã hiệu chỉnh)\nObserved wrist width: 103.7 px · đo ảnh\nCanvas ngang 640px; px là pixel Canvas, không phải CSS.\nCùng lát cắt/vuông góc trục tay; u là đơn vị scene, KHÔNG phải mm.\nBiên xanh ngọc: đo hợp lệ · cam: biên bị loại · chấm xám: ứng viên\nNét tím: lỗ vòng chiếu · nét vàng: dự đoán, không phải đo da\nĐỏ X · xanh lá Y · xanh dương Z/cẳng tay\nLưới cyan: proxy ước lượng · vòng trắng: Hand 0\nChỉ số hình học, không phải xác suất AI.\nTải log JSON (83 frame)\nLog chỉ có số đo, lưu trong bộ nhớ; tối đa 1800 frame.",
+      "status": "measured",
+      "rawWidth": 103.5,
+      "slices": 9,
+      "width": 103.7,
+      "inner": 117,
+      "ratio": 1.127,
+      "scale": 0.08308,
+      "final": 0.08308,
+      "quality": 87
+    },
+    {
+      "name": "right",
+      "text": "tracking · ok\nstraight-wrist · landmarks 21/21\nTracking source: Hand Landmarker · Continuous Tracking\nView angle: 37.9° (góc tới pháp tuyến, 0–90°)\nROI sẵn sàng: có · 8 đặc trưng cổ tay\nFit residual: 5.3% · scale ảnh: 2.24\nView alignment: 0.53 · basis: 1.00\nBán kính/khung: 8.31% · độ vừa 100%\nEstimated wrist diameter: 0.16944 × 0.12200 u\nBracelet inner diameter: 0.18639 × 0.15657 u\nAuto Fit: measured · đo ảnh phù hợp calibration\nHai mép trên ảnh: 102.4 px · 9 lát cắt hợp lệ · 0 ứng viên bị loại\nWrist width (pixels): 103.5 px (quy về mặt phẳng đeo)\nBracelet projected inner diameter (pixels): 115.4 px\nFit ratio: 1.115 · image\nWrist radius: 0.084722 u · Bracelet inner radius: 0.093194 u\nCalibration radius ratio: 0.360205 · Distance scale: 0.230593\nAuto scale: 0.083061 · Final render scale: 0.083061\nEdge quality: 86% (Measurement confidence: chất lượng biên, không phải xác suất AI)\nBase scale: 0.083061 u/model\nManual fit multiplier: 1.000× · Render thực tế: 1.000×\nFinal world scale: 0.083061 u/model\nFinal bracelet world scale: 0.091367\nProxy world scale: 0.083061 · Bracelet mesh scale: 0.091367 (gồm khoảng hở thiết kế)\nProjected bracelet diameter: 115.4 px (lỗ vòng)\nEstimated wrist width: 103.5 px (proxy đã hiệu chỉnh)\nObserved wrist width: 103.5 px · đo ảnh\nCanvas ngang 640px; px là pixel Canvas, không phải CSS.\nCùng lát cắt/vuông góc trục tay; u là đơn vị scene, KHÔNG phải mm.\nBiên xanh ngọc: đo hợp lệ · cam: biên bị loại · chấm xám: ứng viên\nNét tím: lỗ vòng chiếu · nét vàng: dự đoán, không phải đo da\nĐỏ X · xanh lá Y · xanh dương Z/cẳng tay\nLưới cyan: proxy ước lượng · vòng trắng: Hand 0\nChỉ số hình học, không phải xác suất AI.\nTải log JSON (96 frame)\nLog chỉ có số đo, lưu trong bộ nhớ; tối đa 1800 frame.",
+      "status": "measured",
+      "rawWidth": 102.4,
+      "slices": 9,
+      "width": 103.5,
+      "inner": 115.4,
+      "ratio": 1.115,
+      "scale": 0.083061,
+      "final": 0.083061,
+      "quality": 86
+    }
+  ],
+  "errors": [],
+  "actualMeasurement": {
+    "input": "image",
+    "pose": {
+      "center": {
+        "x": 0.19580627202804385,
+        "y": 0.206384256458189,
+        "z": 1.4780158247915978
+      },
+      "orientation": {
+        "x": -0.4230878505595329,
+        "y": 0.1919108208806083,
+        "z": -0.4103883637759753,
+        "w": 0.7846963096734452
+      },
+      "radius": 0.10396697328415673,
+      "palmLength": 0.30404012373708644,
+      "distanceScale": 0.32432580352003265,
+      "focal": 1.4348167539267018,
+      "aspect": 1.0628272251308901,
+      "handedness": "Right",
+      "source": "straight-wrist"
+    },
+    "wrist": {
+      "x": 0.6376596689224243,
+      "y": 0.6725164651870728,
+      "z": -3.7172091538195673e-7,
+      "visibility": 0
+    },
+    "result": {
+      "width": null,
+      "confidence": 0,
+      "reason": "inconsistent-contour: các đường cắt không thống nhất",
+      "slices": [
+        {
+          "center": {
+            "x": 0.6518596675126632,
+            "y": 0.7253507090629183
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.5971115930303419,
+                "y": 0.7988179070855838
+              },
+              "side": -1,
+              "distancePx": 35,
+              "quality": 1,
+              "rejected": false,
+              "reason": "silhouette"
+            },
+            {
+              "point": {
+                "x": 0.7363281252853875,
+                "y": 0.6120013178279489
+              },
+              "side": 1,
+              "distancePx": 54,
+              "quality": 1,
+              "rejected": false,
+              "reason": "silhouette"
+            }
+          ],
+          "accepted": false,
+          "reason": "",
+          "left": {
+            "x": 0.5978937083800894,
+            "y": 0.7977683756852599
+          },
+          "right": {
+            "x": 0.7355460099356401,
+            "y": 0.6130508492282727
+          }
+        },
+        {
+          "center": {
+            "x": 0.660143000023636,
+            "y": 0.7315234843623473
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.6053949255413147,
+                "y": 0.8049906823850127
+              },
+              "side": -1,
+              "distancePx": 35,
+              "quality": 1,
+              "rejected": false,
+              "reason": "silhouette"
+            },
+            {
+              "point": {
+                "x": 0.7430472270968654,
+                "y": 0.6202731559280253
+              },
+              "side": 1,
+              "distancePx": 53,
+              "quality": 1,
+              "rejected": false,
+              "reason": "silhouette"
+            }
+          ],
+          "accepted": false,
+          "reason": "",
+          "left": {
+            "x": 0.6061770408910622,
+            "y": 0.8039411509846889
+          },
+          "right": {
+            "x": 0.742265111747118,
+            "y": 0.6213226873283492
+          }
+        },
+        {
+          "center": {
+            "x": 0.6684263325346087,
+            "y": 0.7376962596617763
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.6152424887517823,
+                "y": 0.8090643948837941
+              },
+              "side": -1,
+              "distancePx": 34,
+              "quality": 1,
+              "rejected": false,
+              "reason": "silhouette"
+            },
+            {
+              "point": {
+                "x": 0.7544590210068279,
+                "y": 0.6222478056261593
+              },
+              "side": 1,
+              "distancePx": 55,
+              "quality": 1,
+              "rejected": false,
+              "reason": "silhouette"
+            }
+          ],
+          "accepted": false,
+          "reason": "",
+          "left": {
+            "x": 0.6160246041015297,
+            "y": 0.8080148634834703
+          },
+          "right": {
+            "x": 0.7536769056570805,
+            "y": 0.623297337026483
+          }
+        },
+        {
+          "center": {
+            "x": 0.6767096650455815,
+            "y": 0.7438690349612054
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.6219615905632602,
+                "y": 0.8173362329838708
+              },
+              "side": -1,
+              "distancePx": 35,
+              "quality": 1,
+              "rejected": false,
+              "reason": "silhouette"
+            }
+          ],
+          "accepted": false,
+          "reason": "no-persistent-pair: không có hai mép với nền liên tục"
+        },
+        {
+          "center": {
+            "x": 0.6849929975565542,
+            "y": 0.7500418102606343
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.7694614553292785,
+                "y": 0.6366924190256649
+              },
+              "side": 1,
+              "distancePx": 54,
+              "quality": 1,
+              "rejected": false,
+              "reason": "silhouette"
+            }
+          ],
+          "accepted": false,
+          "reason": "no-persistent-pair: không có hai mép với nền liên tục"
+        },
+        {
+          "center": {
+            "x": 0.6932763300675269,
+            "y": 0.7562145855600634
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.6385282555852055,
+                "y": 0.8296817835827288
+              },
+              "side": -1,
+              "distancePx": 35,
+              "quality": 1,
+              "rejected": false,
+              "reason": "silhouette"
+            },
+            {
+              "point": {
+                "x": 0.7793090185397461,
+                "y": 0.6407661315244464
+              },
+              "side": 1,
+              "distancePx": 55,
+              "quality": 1,
+              "rejected": false,
+              "reason": "silhouette"
+            }
+          ],
+          "accepted": false,
+          "reason": "",
+          "left": {
+            "x": 0.639310370934953,
+            "y": 0.828632252182405
+          },
+          "right": {
+            "x": 0.7785269031899986,
+            "y": 0.6418156629247701
+          }
+        },
+        {
+          "center": {
+            "x": 0.7015596625784997,
+            "y": 0.7623873608594923
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.6452473573966835,
+                "y": 0.8379536216828053
+              },
+              "side": -1,
+              "distancePx": 36,
+              "quality": 1,
+              "rejected": false,
+              "reason": "silhouette"
+            },
+            {
+              "point": {
+                "x": 0.7907208124497087,
+                "y": 0.6427407812225802
+              },
+              "side": 1,
+              "distancePx": 57,
+              "quality": 1,
+              "rejected": false,
+              "reason": "silhouette"
+            }
+          ],
+          "accepted": false,
+          "reason": "",
+          "left": {
+            "x": 0.6460294727464309,
+            "y": 0.8369040902824815
+          },
+          "right": {
+            "x": 0.7899386970999612,
+            "y": 0.6437903126229039
+          }
+        },
+        {
+          "center": {
+            "x": 0.7098429950894724,
+            "y": 0.7685601361589214
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.655094920607151,
+                "y": 0.8420273341815868
+              },
+              "side": -1,
+              "distancePx": 35,
+              "quality": 1,
+              "rejected": false,
+              "reason": "silhouette"
+            }
+          ],
+          "accepted": false,
+          "reason": "no-persistent-pair: không có hai mép với nền liên tục"
+        },
+        {
+          "center": {
+            "x": 0.718126327600445,
+            "y": 0.7747329114583503
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.6633782531181237,
+                "y": 0.8482001094810158
+              },
+              "side": -1,
+              "distancePx": 35,
+              "quality": 1,
+              "rejected": false,
+              "reason": "silhouette"
+            }
+          ],
+          "accepted": false,
+          "reason": "no-persistent-pair: không có hai mép với nền liên tục"
+        },
+        {
+          "center": {
+            "x": 0.7264096601114178,
+            "y": 0.7809056867577794
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.6700973549296017,
+                "y": 0.8564719475810924
+              },
+              "side": -1,
+              "distancePx": 36,
+              "quality": 1,
+              "rejected": false,
+              "reason": "silhouette"
+            },
+            {
+              "point": {
+                "x": 0.8124423485836371,
+                "y": 0.6654572327221624
+              },
+              "side": 1,
+              "distancePx": 55,
+              "quality": 1,
+              "rejected": false,
+              "reason": "silhouette"
+            }
+          ],
+          "accepted": false,
+          "reason": "",
+          "left": {
+            "x": 0.670879470279349,
+            "y": 0.8554224161807685
+          },
+          "right": {
+            "x": 0.8116602332338896,
+            "y": 0.6665067641224861
+          }
+        },
+        {
+          "center": {
+            "x": 0.7346929926223905,
+            "y": 0.7870784620572083
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.6799449181400692,
+                "y": 0.8605456600798738
+              },
+              "side": -1,
+              "distancePx": 35,
+              "quality": 1,
+              "rejected": false,
+              "reason": "silhouette"
+            }
+          ],
+          "accepted": false,
+          "reason": "no-persistent-pair: không có hai mép với nền liên tục"
+        },
+        {
+          "center": {
+            "x": 0.7429763251333632,
+            "y": 0.7932512373566374
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.686664019951547,
+                "y": 0.8688174981799504
+              },
+              "side": -1,
+              "distancePx": 36,
+              "quality": 1,
+              "rejected": false,
+              "reason": "silhouette"
+            }
+          ],
+          "accepted": false,
+          "reason": "no-persistent-pair: không có hai mép với nền liên tục"
+        },
+        {
+          "center": {
+            "x": 0.751259657644336,
+            "y": 0.7994240126560663
+          },
+          "candidates": [],
+          "accepted": false,
+          "reason": "roi-clipped: thiếu nền ở hai bên"
+        },
+        {
+          "center": {
+            "x": 0.7595429901553087,
+            "y": 0.8055967879554954
+          },
+          "candidates": [],
+          "accepted": false,
+          "reason": "roi-clipped: thiếu nền ở hai bên"
+        },
+        {
+          "center": {
+            "x": 0.7678263226662814,
+            "y": 0.8117695632549243
+          },
+          "candidates": [],
+          "accepted": false,
+          "reason": "roi-clipped: thiếu nền ở hai bên"
+        }
+      ],
+      "image": {
+        "imageWidth": 382,
+        "imageHeight": 406,
+        "roi": {
+          "x": 75,
+          "y": 64,
+          "width": 307,
+          "height": 342,
+          "imageWidth": 382,
+          "imageHeight": 406
+        },
+        "axis": [
+          {
+            "x": 0.6139930046053594,
+            "y": 0.6971323076941
+          },
+          {
+            "x": 0.7914929869833464,
+            "y": 0.8294060641104358
+          }
+        ],
+        "cuts": [
+          [
+            {
+              "x": 0.4219177546869137,
+              "y": 1.033912940758113
+            },
+            {
+              "x": 0.8818015803384127,
+              "y": 0.4167884773677237
+            }
+          ],
+          [
+            {
+              "x": 0.4302010871978865,
+              "y": 1.0400857160575419
+            },
+            {
+              "x": 0.8900849128493855,
+              "y": 0.4229612526671526
+            }
+          ],
+          [
+            {
+              "x": 0.4384844197088592,
+              "y": 1.046258491356971
+            },
+            {
+              "x": 0.8983682453603582,
+              "y": 0.4291340279665817
+            }
+          ],
+          [
+            {
+              "x": 0.446767752219832,
+              "y": 1.0524312666564
+            },
+            {
+              "x": 0.906651577871331,
+              "y": 0.43530680326601073
+            }
+          ],
+          [
+            {
+              "x": 0.4550510847308047,
+              "y": 1.058604041955829
+            },
+            {
+              "x": 0.9149349103823037,
+              "y": 0.4414795785654397
+            }
+          ],
+          [
+            {
+              "x": 0.4633344172417774,
+              "y": 1.064776817255258
+            },
+            {
+              "x": 0.9232182428932764,
+              "y": 0.44765235386486874
+            }
+          ],
+          [
+            {
+              "x": 0.47161774975275017,
+              "y": 1.070949592554687
+            },
+            {
+              "x": 0.9315015754042492,
+              "y": 0.4538251291642977
+            }
+          ],
+          [
+            {
+              "x": 0.47990108226372286,
+              "y": 1.077122367854116
+            },
+            {
+              "x": 0.9397849079152218,
+              "y": 0.45999790446372674
+            }
+          ],
+          [
+            {
+              "x": 0.48818441477469554,
+              "y": 1.083295143153545
+            },
+            {
+              "x": 0.9480682404261945,
+              "y": 0.4661706797631557
+            }
+          ],
+          [
+            {
+              "x": 0.49646774728566834,
+              "y": 1.089467918452974
+            },
+            {
+              "x": 0.9563515729371673,
+              "y": 0.47234345506258474
+            }
+          ],
+          [
+            {
+              "x": 0.504751079796641,
+              "y": 1.095640693752403
+            },
+            {
+              "x": 0.96463490544814,
+              "y": 0.4785162303620137
+            }
+          ],
+          [
+            {
+              "x": 0.5130344123076137,
+              "y": 1.101813469051832
+            },
+            {
+              "x": 0.9729182379591127,
+              "y": 0.48468900566144274
+            }
+          ],
+          [
+            {
+              "x": 0.5213177448185865,
+              "y": 1.107986244351261
+            },
+            {
+              "x": 0.9812015704700855,
+              "y": 0.4908617809608717
+            }
+          ],
+          [
+            {
+              "x": 0.5296010773295592,
+              "y": 1.11415901965069
+            },
+            {
+              "x": 0.9894849029810582,
+              "y": 0.49703455626030074
+            }
+          ],
+          [
+            {
+              "x": 0.5378844098405319,
+              "y": 1.120331794950119
+            },
+            {
+              "x": 0.9977682354920309,
+              "y": 0.5032073315597296
+            }
+          ]
+        ],
+        "method": "foreground-profile",
+        "rejection": "inconsistent-contour: các đường cắt không thống nhất",
+        "rejected": {
+          "no-persistent-pair: không có hai mép với nền liên tục": 6,
+          "roi-clipped: thiếu nền ở hai bên": 3
+        },
+        "separation": 34.01943615036438,
+        "angleCorrection": 16.385915816030703,
+        "maskAvailable": false
+      },
+      "analysisWidth": 382
+    },
+    "image": {
+      "width": 382,
+      "height": 406
+    }
+  },
+  "measurementFailure": {
+    "native": true,
+    "maxDifference": 2,
+    "differenceCount": 101548,
+    "analysis": {
+      "pose": {
+        "center": {
+          "x": 0.19580627202804385,
+          "y": 0.206384256458189,
+          "z": 1.4780158247915978
+        },
+        "orientation": {
+          "x": -0.3914210223409652,
+          "y": 0.2502452311867464,
+          "z": -0.518024776933751,
+          "w": 0.7182041757192609
+        },
+        "radius": 0.10396697328415673,
+        "palmLength": 0.30404012373708644,
+        "distanceScale": 0.32432580352003265,
+        "focal": 1.4348167539267018,
+        "aspect": 1.0628272251308901,
+        "handedness": "Right",
+        "source": "straight-wrist"
+      },
+      "reason": "ok",
+      "metrics": {
+        "imageScale": 3.42623946419359,
+        "scaleSpread": 0.08167556455386915,
+        "fitResidual": 0.052065019266382594,
+        "basisCondition": 1,
+        "viewAlignment": 0.6991509599849124
+      }
+    },
+    "measurement": {
+      "width": null,
+      "confidence": 0,
+      "reason": "inconsistent-contour: các đường cắt không thống nhất",
+      "slices": [
+        {
+          "center": {
+            "x": 0.6518596675126632,
+            "y": 0.7253507090629183
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.5971115930303419,
+                "y": 0.7988179070855838
+              },
+              "side": -1,
+              "distancePx": 35,
+              "quality": 1,
+              "rejected": false,
+              "reason": "silhouette"
+            },
+            {
+              "point": {
+                "x": 0.7363281252853875,
+                "y": 0.6120013178279489
+              },
+              "side": 1,
+              "distancePx": 54,
+              "quality": 1,
+              "rejected": false,
+              "reason": "silhouette"
+            }
+          ],
+          "accepted": false,
+          "reason": "",
+          "left": {
+            "x": 0.5978937083800894,
+            "y": 0.7977683756852599
+          },
+          "right": {
+            "x": 0.7355460099356401,
+            "y": 0.6130508492282727
+          }
+        },
+        {
+          "center": {
+            "x": 0.660143000023636,
+            "y": 0.7315234843623473
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.6053949255413147,
+                "y": 0.8049906823850127
+              },
+              "side": -1,
+              "distancePx": 35,
+              "quality": 1,
+              "rejected": false,
+              "reason": "silhouette"
+            },
+            {
+              "point": {
+                "x": 0.7430472270968654,
+                "y": 0.6202731559280253
+              },
+              "side": 1,
+              "distancePx": 53,
+              "quality": 1,
+              "rejected": false,
+              "reason": "silhouette"
+            }
+          ],
+          "accepted": false,
+          "reason": "",
+          "left": {
+            "x": 0.6061770408910622,
+            "y": 0.8039411509846889
+          },
+          "right": {
+            "x": 0.742265111747118,
+            "y": 0.6213226873283492
+          }
+        },
+        {
+          "center": {
+            "x": 0.6684263325346087,
+            "y": 0.7376962596617763
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.6152424887517823,
+                "y": 0.8090643948837941
+              },
+              "side": -1,
+              "distancePx": 34,
+              "quality": 1,
+              "rejected": false,
+              "reason": "silhouette"
+            },
+            {
+              "point": {
+                "x": 0.7544590210068279,
+                "y": 0.6222478056261593
+              },
+              "side": 1,
+              "distancePx": 55,
+              "quality": 1,
+              "rejected": false,
+              "reason": "silhouette"
+            }
+          ],
+          "accepted": false,
+          "reason": "",
+          "left": {
+            "x": 0.6160246041015297,
+            "y": 0.8080148634834703
+          },
+          "right": {
+            "x": 0.7536769056570805,
+            "y": 0.623297337026483
+          }
+        },
+        {
+          "center": {
+            "x": 0.6767096650455815,
+            "y": 0.7438690349612054
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.6219615905632602,
+                "y": 0.8173362329838708
+              },
+              "side": -1,
+              "distancePx": 35,
+              "quality": 1,
+              "rejected": false,
+              "reason": "silhouette"
+            }
+          ],
+          "accepted": false,
+          "reason": "no-persistent-pair: không có hai mép với nền liên tục"
+        },
+        {
+          "center": {
+            "x": 0.6849929975565542,
+            "y": 0.7500418102606343
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.7694614553292785,
+                "y": 0.6366924190256649
+              },
+              "side": 1,
+              "distancePx": 54,
+              "quality": 1,
+              "rejected": false,
+              "reason": "silhouette"
+            }
+          ],
+          "accepted": false,
+          "reason": "no-persistent-pair: không có hai mép với nền liên tục"
+        },
+        {
+          "center": {
+            "x": 0.6932763300675269,
+            "y": 0.7562145855600634
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.6385282555852055,
+                "y": 0.8296817835827288
+              },
+              "side": -1,
+              "distancePx": 35,
+              "quality": 1,
+              "rejected": false,
+              "reason": "silhouette"
+            },
+            {
+              "point": {
+                "x": 0.7793090185397461,
+                "y": 0.6407661315244464
+              },
+              "side": 1,
+              "distancePx": 55,
+              "quality": 1,
+              "rejected": false,
+              "reason": "silhouette"
+            }
+          ],
+          "accepted": false,
+          "reason": "",
+          "left": {
+            "x": 0.639310370934953,
+            "y": 0.828632252182405
+          },
+          "right": {
+            "x": 0.7785269031899986,
+            "y": 0.6418156629247701
+          }
+        },
+        {
+          "center": {
+            "x": 0.7015596625784997,
+            "y": 0.7623873608594923
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.6452473573966835,
+                "y": 0.8379536216828053
+              },
+              "side": -1,
+              "distancePx": 36,
+              "quality": 1,
+              "rejected": false,
+              "reason": "silhouette"
+            },
+            {
+              "point": {
+                "x": 0.7907208124497087,
+                "y": 0.6427407812225802
+              },
+              "side": 1,
+              "distancePx": 57,
+              "quality": 1,
+              "rejected": false,
+              "reason": "silhouette"
+            }
+          ],
+          "accepted": false,
+          "reason": "",
+          "left": {
+            "x": 0.6460294727464309,
+            "y": 0.8369040902824815
+          },
+          "right": {
+            "x": 0.7899386970999612,
+            "y": 0.6437903126229039
+          }
+        },
+        {
+          "center": {
+            "x": 0.7098429950894724,
+            "y": 0.7685601361589214
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.655094920607151,
+                "y": 0.8420273341815868
+              },
+              "side": -1,
+              "distancePx": 35,
+              "quality": 1,
+              "rejected": false,
+              "reason": "silhouette"
+            }
+          ],
+          "accepted": false,
+          "reason": "no-persistent-pair: không có hai mép với nền liên tục"
+        },
+        {
+          "center": {
+            "x": 0.718126327600445,
+            "y": 0.7747329114583503
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.6633782531181237,
+                "y": 0.8482001094810158
+              },
+              "side": -1,
+              "distancePx": 35,
+              "quality": 1,
+              "rejected": false,
+              "reason": "silhouette"
+            }
+          ],
+          "accepted": false,
+          "reason": "no-persistent-pair: không có hai mép với nền liên tục"
+        },
+        {
+          "center": {
+            "x": 0.7264096601114178,
+            "y": 0.7809056867577794
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.6700973549296017,
+                "y": 0.8564719475810924
+              },
+              "side": -1,
+              "distancePx": 36,
+              "quality": 1,
+              "rejected": false,
+              "reason": "silhouette"
+            },
+            {
+              "point": {
+                "x": 0.8124423485836371,
+                "y": 0.6654572327221624
+              },
+              "side": 1,
+              "distancePx": 55,
+              "quality": 1,
+              "rejected": false,
+              "reason": "silhouette"
+            }
+          ],
+          "accepted": false,
+          "reason": "",
+          "left": {
+            "x": 0.670879470279349,
+            "y": 0.8554224161807685
+          },
+          "right": {
+            "x": 0.8116602332338896,
+            "y": 0.6665067641224861
+          }
+        },
+        {
+          "center": {
+            "x": 0.7346929926223905,
+            "y": 0.7870784620572083
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.6799449181400692,
+                "y": 0.8605456600798738
+              },
+              "side": -1,
+              "distancePx": 35,
+              "quality": 1,
+              "rejected": false,
+              "reason": "silhouette"
+            }
+          ],
+          "accepted": false,
+          "reason": "no-persistent-pair: không có hai mép với nền liên tục"
+        },
+        {
+          "center": {
+            "x": 0.7429763251333632,
+            "y": 0.7932512373566374
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.686664019951547,
+                "y": 0.8688174981799504
+              },
+              "side": -1,
+              "distancePx": 36,
+              "quality": 1,
+              "rejected": false,
+              "reason": "silhouette"
+            }
+          ],
+          "accepted": false,
+          "reason": "no-persistent-pair: không có hai mép với nền liên tục"
+        },
+        {
+          "center": {
+            "x": 0.751259657644336,
+            "y": 0.7994240126560663
+          },
+          "candidates": [],
+          "accepted": false,
+          "reason": "roi-clipped: thiếu nền ở hai bên"
+        },
+        {
+          "center": {
+            "x": 0.7595429901553087,
+            "y": 0.8055967879554954
+          },
+          "candidates": [],
+          "accepted": false,
+          "reason": "roi-clipped: thiếu nền ở hai bên"
+        },
+        {
+          "center": {
+            "x": 0.7678263226662814,
+            "y": 0.8117695632549243
+          },
+          "candidates": [],
+          "accepted": false,
+          "reason": "roi-clipped: thiếu nền ở hai bên"
+        }
+      ],
+      "image": {
+        "imageWidth": 382,
+        "imageHeight": 406,
+        "roi": {
+          "x": 75,
+          "y": 64,
+          "width": 307,
+          "height": 342,
+          "imageWidth": 382,
+          "imageHeight": 406
+        },
+        "axis": [
+          {
+            "x": 0.6139930046053594,
+            "y": 0.6971323076941
+          },
+          {
+            "x": 0.7914929869833464,
+            "y": 0.8294060641104358
+          }
+        ],
+        "cuts": [
+          [
+            {
+              "x": 0.4219177546869137,
+              "y": 1.033912940758113
+            },
+            {
+              "x": 0.8818015803384127,
+              "y": 0.4167884773677237
+            }
+          ],
+          [
+            {
+              "x": 0.4302010871978865,
+              "y": 1.0400857160575419
+            },
+            {
+              "x": 0.8900849128493855,
+              "y": 0.4229612526671526
+            }
+          ],
+          [
+            {
+              "x": 0.4384844197088592,
+              "y": 1.046258491356971
+            },
+            {
+              "x": 0.8983682453603582,
+              "y": 0.4291340279665817
+            }
+          ],
+          [
+            {
+              "x": 0.446767752219832,
+              "y": 1.0524312666564
+            },
+            {
+              "x": 0.906651577871331,
+              "y": 0.43530680326601073
+            }
+          ],
+          [
+            {
+              "x": 0.4550510847308047,
+              "y": 1.058604041955829
+            },
+            {
+              "x": 0.9149349103823037,
+              "y": 0.4414795785654397
+            }
+          ],
+          [
+            {
+              "x": 0.4633344172417774,
+              "y": 1.064776817255258
+            },
+            {
+              "x": 0.9232182428932764,
+              "y": 0.44765235386486874
+            }
+          ],
+          [
+            {
+              "x": 0.47161774975275017,
+              "y": 1.070949592554687
+            },
+            {
+              "x": 0.9315015754042492,
+              "y": 0.4538251291642977
+            }
+          ],
+          [
+            {
+              "x": 0.47990108226372286,
+              "y": 1.077122367854116
+            },
+            {
+              "x": 0.9397849079152218,
+              "y": 0.45999790446372674
+            }
+          ],
+          [
+            {
+              "x": 0.48818441477469554,
+              "y": 1.083295143153545
+            },
+            {
+              "x": 0.9480682404261945,
+              "y": 0.4661706797631557
+            }
+          ],
+          [
+            {
+              "x": 0.49646774728566834,
+              "y": 1.089467918452974
+            },
+            {
+              "x": 0.9563515729371673,
+              "y": 0.47234345506258474
+            }
+          ],
+          [
+            {
+              "x": 0.504751079796641,
+              "y": 1.095640693752403
+            },
+            {
+              "x": 0.96463490544814,
+              "y": 0.4785162303620137
+            }
+          ],
+          [
+            {
+              "x": 0.5130344123076137,
+              "y": 1.101813469051832
+            },
+            {
+              "x": 0.9729182379591127,
+              "y": 0.48468900566144274
+            }
+          ],
+          [
+            {
+              "x": 0.5213177448185865,
+              "y": 1.107986244351261
+            },
+            {
+              "x": 0.9812015704700855,
+              "y": 0.4908617809608717
+            }
+          ],
+          [
+            {
+              "x": 0.5296010773295592,
+              "y": 1.11415901965069
+            },
+            {
+              "x": 0.9894849029810582,
+              "y": 0.49703455626030074
+            }
+          ],
+          [
+            {
+              "x": 0.5378844098405319,
+              "y": 1.120331794950119
+            },
+            {
+              "x": 0.9977682354920309,
+              "y": 0.5032073315597296
+            }
+          ]
+        ],
+        "method": "foreground-profile",
+        "rejection": "inconsistent-contour: các đường cắt không thống nhất",
+        "rejected": {
+          "no-persistent-pair: không có hai mép với nền liên tục": 6,
+          "roi-clipped: thiếu nền ở hai bên": 3
+        },
+        "separation": 34.198662893916996,
+        "angleCorrection": 16.385915816030703
+      },
+      "analysisWidth": 382
+    }
+  },
+  "continuous": [
+    {
+      "width": 103.5,
+      "inner": 115.4,
+      "ratio": 1.115
+    },
+    {
+      "width": 112.6,
+      "inner": 115.4,
+      "ratio": 1.025
+    },
+    {
+      "width": 114,
+      "inner": 120.4,
+      "ratio": 1.056
+    },
+    {
+      "width": 115.2,
+      "inner": 125.5,
+      "ratio": 1.09
+    },
+    {
+      "width": 115.9,
+      "inner": 127.6,
+      "ratio": 1.101
+    },
+    {
+      "width": 117.4,
+      "inner": 129.3,
+      "ratio": 1.102
+    },
+    {
+      "width": 118.5,
+      "inner": 131,
+      "ratio": 1.105
+    },
+    {
+      "width": 119.2,
+      "inner": 132.1,
+      "ratio": 1.108
+    },
+    {
+      "width": 119.2,
+      "inner": 132.5,
+      "ratio": 1.112
+    },
+    {
+      "width": 119.6,
+      "inner": 132.9,
+      "ratio": 1.111
+    },
+    {
+      "width": 120.7,
+      "inner": 133.6,
+      "ratio": 1.107
+    },
+    {
+      "width": 120.7,
+      "inner": 134.1,
+      "ratio": 1.111
+    },
+    {
+      "width": 120.7,
+      "inner": 134.9,
+      "ratio": 1.118
+    },
+    {
+      "width": 121.1,
+      "inner": 135.3,
+      "ratio": 1.117
+    },
+    {
+      "width": 122.6,
+      "inner": 135.7,
+      "ratio": 1.107
+    },
+    {
+      "width": 121.8,
+      "inner": 136.2,
+      "ratio": 1.117
+    },
+    {
+      "width": 122.6,
+      "inner": 136.8,
+      "ratio": 1.116
+    },
+    {
+      "width": 123.7,
+      "inner": 137.4,
+      "ratio": 1.111
+    },
+    {
+      "width": 123.7,
+      "inner": 137.7,
+      "ratio": 1.113
+    },
+    {
+      "width": 124.1,
+      "inner": 137.9,
+      "ratio": 1.111
+    },
+    {
+      "width": 124.1,
+      "inner": 138.1,
+      "ratio": 1.113
+    },
+    {
+      "width": 124.1,
+      "inner": 138.3,
+      "ratio": 1.115
+    },
+    {
+      "width": 124.1,
+      "inner": 138.4,
+      "ratio": 1.115
+    },
+    {
+      "width": 123,
+      "inner": 138.5,
+      "ratio": 1.126
+    },
+    {
+      "width": 124.1,
+      "inner": 138.6,
+      "ratio": 1.116
+    }
+  ]
+}

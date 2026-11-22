@@ -1,0 +1,337 @@
+{
+  "scope": "Headless Chrome, actual MediaPipe VIDEO on photo captureStream 30fps. NOT hardware webcam, not physical 3D wrist rotation. Same image resolution/material/lighting before and after.",
+  "baseline": "backups/pre-live-performance-20261122T023030Z",
+  "phases": [
+    {
+      "phase": "stationary",
+      "before": {
+        "cameraFPS": 17.691374957761976,
+        "inferenceFPS": 7.255451527621485,
+        "actualWebGLFPS": 7.255451527621485,
+        "mainHandlerMs": {
+          "count": 73,
+          "mean": 80.9356164382643,
+          "p50": 100.80000000074506,
+          "p95": 113.60000000149012,
+          "max": 122.19999999925494
+        },
+        "captureToPoseReadyMs": {
+          "count": 0,
+          "mean": 0,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "resultGapMs": {
+          "count": 72,
+          "mean": 135.95972222219117,
+          "p50": 122.89999999850988,
+          "p95": 266.0999999977648,
+          "max": 282.30000000074506
+        },
+        "reactCommitsPerSecond": 7.255451527621485,
+        "longTasks": 55,
+        "maxPendingRequests": 1,
+        "duplicateCameraFrameRequests": 0,
+        "hiddenPoseResults": 0
+      },
+      "after": {
+        "cameraFPS": 29.925236618154436,
+        "inferenceFPS": 25.550783424802958,
+        "actualWebGLFPS": 25.550783424802958,
+        "mainHandlerMs": {
+          "count": 257,
+          "mean": 4.691828793791713,
+          "p50": 4.699999999254942,
+          "p95": 5,
+          "max": 6.399999998509884
+        },
+        "captureToPoseReadyMs": {
+          "count": 0,
+          "mean": 0,
+          "p50": null,
+          "p95": null,
+          "max": null
+        },
+        "resultGapMs": {
+          "count": 256,
+          "mean": 38.79453125000873,
+          "p50": 35.5,
+          "p95": 37.30000000074506,
+          "max": 172.09999999776483
+        },
+        "reactCommitsPerSecond": 3.4796786765295855,
+        "longTasks": 0,
+        "maxPendingRequests": 1,
+        "duplicateCameraFrameRequests": 0,
+        "hiddenPoseResults": 0
+      }
+    },
+    {
+      "phase": "motion",
+      "before": {
+        "cameraFPS": 14.807991362832642,
+        "inferenceFPS": 5.992531621748326,
+        "actualWebGLFPS": 5.992531621748326,
+        "mainHandlerMs": {
+          "count": 121,
+          "mean": 105.79834710745033,
+          "p50": 101.30000000074506,
+          "p95": 280.3999999985099,
+          "max": 365.30000000074506
+        },
+        "captureToPoseReadyMs": {
+          "count": 121,
+          "mean": 165.50495867766747,
+          "p50": 139.09999999776483,
+          "p95": 300,
+          "max": 383.69999999925494
+        },
+        "resultGapMs": {
+          "count": 120,
+          "mean": 165.68166666667287,
+          "p50": 124.39999999850988,
+          "p95": 440.9000000022352,
+          "max": 527.3000000007451
+        },
+        "reactCommitsPerSecond": 5.992531621748326,
+        "longTasks": 84,
+        "maxPendingRequests": 1,
+        "duplicateCameraFrameRequests": 0,
+        "hiddenPoseResults": 0
+      },
+      "after": {
+        "cameraFPS": 29.99835009074836,
+        "inferenceFPS": 21.848798316095056,
+        "actualWebGLFPS": 21.848798316095056,
+        "mainHandlerMs": {
+          "count": 437,
+          "mean": 4.66636155601122,
+          "p50": 4.600000001490116,
+          "p95": 5.399999998509884,
+          "max": 7.199999999254942
+        },
+        "captureToPoseReadyMs": {
+          "count": 437,
+          "mean": 45.4009153317805,
+          "p50": 36.900000002235174,
+          "p95": 55.70000000298023,
+          "max": 180.5
+        },
+        "resultGapMs": {
+          "count": 436,
+          "mean": 45.75160550459399,
+          "p50": 37.19999999925494,
+          "p95": 56.30000000074506,
+          "max": 183.39999999850988
+        },
+        "reactCommitsPerSecond": 3.5998020108898032,
+        "longTasks": 0,
+        "maxPendingRequests": 1,
+        "duplicateCameraFrameRequests": 0,
+        "hiddenPoseResults": 0
+      }
+    },
+    {
+      "phase": "fast-stop",
+      "before": {
+        "cameraFPS": 16.71665273611966,
+        "inferenceFPS": 7.374993854170437,
+        "actualWebGLFPS": 7.374993854170437,
+        "mainHandlerMs": {
+          "count": 30,
+          "mean": 82.43333333320916,
+          "p50": 100.29999999701977,
+          "p95": 123.40000000223517,
+          "max": 131.69999999925494
+        },
+        "captureToPoseReadyMs": {
+          "count": 30,
+          "mean": 134.68000000032285,
+          "p50": 125.79999999701977,
+          "p95": 170.90000000223517,
+          "max": 171.30000000074506
+        },
+        "resultGapMs": {
+          "count": 29,
+          "mean": 136.10689655164705,
+          "p50": 123.30000000074506,
+          "p95": 273.3999999985099,
+          "max": 284.20000000298023
+        },
+        "reactCommitsPerSecond": 7.12916072569809,
+        "longTasks": 22,
+        "maxPendingRequests": 1,
+        "duplicateCameraFrameRequests": 0,
+        "hiddenPoseResults": 0
+      },
+      "after": {
+        "cameraFPS": 29.953571963462213,
+        "inferenceFPS": 24.462083770160806,
+        "actualWebGLFPS": 24.21247067046529,
+        "mainHandlerMs": {
+          "count": 98,
+          "mean": 4.756122449222876,
+          "p50": 4.800000000745058,
+          "p95": 5.100000001490116,
+          "max": 5.400000002235174
+        },
+        "captureToPoseReadyMs": {
+          "count": 98,
+          "mean": 40.85306122427692,
+          "p50": 35.599999997764826,
+          "p95": 54.099999997764826,
+          "max": 169
+        },
+        "resultGapMs": {
+          "count": 97,
+          "mean": 41.2051546391983,
+          "p50": 35.80000000074506,
+          "p95": 54.100000001490116,
+          "max": 170.10000000149012
+        },
+        "reactCommitsPerSecond": 3.7441964954327767,
+        "longTasks": 0,
+        "maxPendingRequests": 1,
+        "duplicateCameraFrameRequests": 0,
+        "hiddenPoseResults": 0
+      }
+    },
+    {
+      "phase": "distance",
+      "before": {
+        "cameraFPS": 15.826211538143134,
+        "inferenceFPS": 5.99730121445424,
+        "actualWebGLFPS": 5.99730121445424,
+        "mainHandlerMs": {
+          "count": 36,
+          "mean": 101.73333333339542,
+          "p50": 98,
+          "p95": 310.80000000074506,
+          "max": 328.8999999985099
+        },
+        "captureToPoseReadyMs": {
+          "count": 36,
+          "mean": 164.28055555549346,
+          "p50": 151.19999999925494,
+          "p95": 328.80000000074506,
+          "max": 347.69999999925494
+        },
+        "resultGapMs": {
+          "count": 35,
+          "mean": 157.92000000008514,
+          "p50": 118.69999999925494,
+          "p95": 469.4000000022352,
+          "max": 487.6000000014901
+        },
+        "reactCommitsPerSecond": 5.99730121445424,
+        "longTasks": 24,
+        "maxPendingRequests": 1,
+        "duplicateCameraFrameRequests": 0,
+        "hiddenPoseResults": 0
+      },
+      "after": {
+        "cameraFPS": 29.990003332222592,
+        "inferenceFPS": 22.159280239920026,
+        "actualWebGLFPS": 22.325891369543484,
+        "mainHandlerMs": {
+          "count": 133,
+          "mean": 4.5661654136514755,
+          "p50": 4.600000001490116,
+          "p95": 5.5,
+          "max": 6.899999998509884
+        },
+        "captureToPoseReadyMs": {
+          "count": 133,
+          "mean": 44.71729323332359,
+          "p50": 39.30000000074506,
+          "p95": 51,
+          "max": 171.60000000149012
+        },
+        "resultGapMs": {
+          "count": 132,
+          "mean": 45.080303030286096,
+          "p50": 39.5,
+          "p95": 50.899999998509884,
+          "max": 172.69999999925494
+        },
+        "reactCommitsPerSecond": 3.4988337220926358,
+        "longTasks": 0,
+        "maxPendingRequests": 1,
+        "duplicateCameraFrameRequests": 0,
+        "hiddenPoseResults": 0
+      }
+    },
+    {
+      "phase": "absent",
+      "before": {
+        "cameraFPS": 29.9795593913241,
+        "inferenceFPS": 31.79650238473768,
+        "actualWebGLFPS": 0.4542357483533954,
+        "mainHandlerMs": {
+          "count": 70,
+          "mean": 1.2857142859271595,
+          "p50": 1.1000000014901161,
+          "p95": 1.8999999985098839,
+          "max": 9
+        },
+        "captureToPoseReadyMs": {
+          "count": 70,
+          "mean": 20.01714285723865,
+          "p50": 17.900000002235174,
+          "p95": 18.800000000745058,
+          "max": 167.89999999850988
+        },
+        "resultGapMs": {
+          "count": 69,
+          "mean": 29.571014492732026,
+          "p50": 32.899999998509884,
+          "p95": 33.80000000074506,
+          "max": 33.899999998509884
+        },
+        "reactCommitsPerSecond": 32.250738133091076,
+        "longTasks": 0,
+        "maxPendingRequests": 1,
+        "duplicateCameraFrameRequests": 7,
+        "hiddenPoseResults": 60
+      },
+      "after": {
+        "cameraFPS": 29.97139094503746,
+        "inferenceFPS": 28.154943008974584,
+        "actualWebGLFPS": 0.9082239680314382,
+        "mainHandlerMs": {
+          "count": 62,
+          "mean": 0.23225806491269219,
+          "p50": 0.10000000149011612,
+          "p95": 0.30000000074505806,
+          "max": 3.800000000745058
+        },
+        "captureToPoseReadyMs": {
+          "count": 62,
+          "mean": 22.18225806434789,
+          "p50": 19.899999998509884,
+          "p95": 20.300000000745058,
+          "max": 169.60000000149012
+        },
+        "resultGapMs": {
+          "count": 61,
+          "mean": 33.25409836065574,
+          "p50": 33.399999998509884,
+          "p95": 34.69999999925494,
+          "max": 42.70000000298023
+        },
+        "reactCommitsPerSecond": 4.99523182417291,
+        "longTasks": 0,
+        "maxPendingRequests": 1,
+        "duplicateCameraFrameRequests": 0,
+        "hiddenPoseResults": 52
+      }
+    }
+  ],
+  "limitations": [
+    "Photo replay/headless, not a physical camera or 3D wrist turn.",
+    "Camera presented count, inference and actual GL counts are separate.",
+    "No claim of 30 fresh poses per second in every phase.",
+    "Sensor-to-screen latency is not measured without browser captureTime metadata."
+  ]
+}

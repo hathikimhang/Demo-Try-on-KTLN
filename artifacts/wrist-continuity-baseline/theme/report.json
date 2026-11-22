@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": [
+    "light/dark desktop",
+    "desktop/mobile320px/390px layout",
+    "keyboard toggle",
+    "reload persistence",
+    "system preference",
+    "stored override",
+    "storage blocked fallback",
+    "dark help dialog",
+    "actual Upload output pixels identical when toggling, canvas node preserved"
+  ],
+  "errors": []
+}

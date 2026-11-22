@@ -1,0 +1,39 @@
+{
+  "scope": "Upload with real MediaPipe Hand/Pose inference; no physical webcam",
+  "images": [
+    {
+      "fixture": "pointing_up.jpg",
+      "message": "Auto Fit thành công: đã xác định cổ tay và ước lượng kích thước hiển thị từ biên ảnh; chưa phải số đo mm.",
+      "modes": "Yêu cầu: forearm · worker: forearm · đang dùng: straight-wrist · fallback: no-forearm",
+      "method": "measured",
+      "scale": 0.110443,
+      "proxy": 0.110443,
+      "inner": 86.4,
+      "intrinsic": 0.347263,
+      "ratio": 1.108,
+      "source": "Hand Landmarker",
+      "text": "tracking · ok\nstraight-wrist · landmarks 21/21\nYêu cầu: forearm · worker: forearm · đang dùng: straight-wrist · fallback: no-forearm\nTracking source: Hand Landmarker · Continuous Tracking\nView angle: 38.3° (góc tới pháp tuyến, 0–90°)\nROI sẵn sàng: chưa · 0 đặc trưng cổ tay\nFit residual: 5.4% · scale ảnh: 3.21\nView alignment: 0.58 · basis: 1.00\nBán kính/khung: 11.04% · độ vừa 100%\nEstimated wrist diameter: 0.22530 × 0.16222 u\nBracelet inner diameter: 0.24783 × 0.20818 u\nAuto Fit: measured · đo ảnh phù hợp calibration\nHai mép trên ảnh: 78.0 px · 15 lát cắt hợp lệ · 0 ứng viên bị loại\nWrist width (pixels): 78.0 px (quy về mặt phẳng đeo)\nBracelet projected inner diameter (pixels): 86.4 px\nFit ratio: 1.108 · image\nWrist radius: 0.112652 u · Bracelet inner radius: 0.123917 u\nCalibration radius ratio: 0.347263 · Distance scale: 0.318038\nAuto scale: 0.110443 · Final render scale: 0.110443\nEdge quality: 92% (Measurement confidence: chất lượng biên, không phải xác suất AI)\nBase scale: 0.110443 u/model\nManual fit multiplier: 1.000×\nRender thực tế: 1.000×\nẢnh gốc: 358 × 376 px · ROI 358 × 266 px (không thu nhỏ)\nBiên cổ tay: 78.0 px gốc · Lỗ vòng chiếu: 86.4 px gốc\nTrục ảnh hiệu chỉnh: 0.0° · Che khuất: proxy giới hạn bằng foreground\nReject: không\nVàng: ROI/đường cắt · xanh dương: trục cẳng tay · xanh ngọc: hai mép thực tế\nFinal world scale: 0.110443 u/model\nFinal bracelet world scale: 0.121487\nProxy world scale: 0.110443 · Bracelet mesh scale: 0.121487 (gồm khoảng hở thiết kế)\nProjected bracelet diameter: 86.4 px (lỗ vòng)\nEstimated wrist width: 78.0 px (proxy đã hiệu chỉnh)\nObserved wrist width: 78.0 px · đo ảnh\nCanvas ngang 358px; px là pixel Canvas, không phải CSS.\nCùng lát cắt/vuông góc trục tay; u là đơn vị scene, KHÔNG phải mm.\nBiên xanh ngọc: đo hợp lệ · cam: biên bị loại · chấm xám: ứng viên\nNét tím: lỗ vòng chiếu · nét vàng: dự đoán, không phải đo da\nĐỏ X · xanh lá Y · xanh dương Z/cẳng tay\nLưới cyan: proxy ước lượng · vòng trắng: Hand 0\nChỉ số hình học, không phải xác suất AI.\nTải log JSON (1 frame)\nLog chỉ có số đo, lưu trong bộ nhớ; tối đa 1800 frame.",
+      "requests": 1
+    },
+    {
+      "fixture": "thumb_up.jpg",
+      "message": "Auto Fit thành công: đã xác định cổ tay và ước lượng kích thước hiển thị từ biên ảnh; chưa phải số đo mm.",
+      "modes": "Yêu cầu: forearm · worker: forearm · đang dùng: straight-wrist · fallback: no-forearm",
+      "method": "measured",
+      "scale": 0.118432,
+      "proxy": 0.118432,
+      "inner": 99.1,
+      "intrinsic": 0.365165,
+      "ratio": 1.101,
+      "source": "Hand Landmarker",
+      "text": "tracking · ok\nstraight-wrist · landmarks 21/21\nYêu cầu: forearm · worker: forearm · đang dùng: straight-wrist · fallback: no-forearm\nTracking source: Hand Landmarker · Continuous Tracking\nView angle: 44.4° (góc tới pháp tuyến, 0–90°)\nROI sẵn sàng: chưa · 0 đặc trưng cổ tay\nFit residual: 5.2% · scale ảnh: 3.43\nView alignment: 0.70 · basis: 1.00\nBán kính/khung: 11.84% · độ vừa 100%\nEstimated wrist diameter: 0.24160 × 0.17395 u\nBracelet inner diameter: 0.26576 × 0.22324 u\nAuto Fit: measured · đo ảnh phù hợp calibration\nHai mép trên ảnh: 90.0 px · 15 lát cắt hợp lệ · 0 ứng viên bị loại\nWrist width (pixels): 90.0 px (quy về mặt phẳng đeo)\nBracelet projected inner diameter (pixels): 99.1 px\nFit ratio: 1.101 · image\nWrist radius: 0.120801 u · Bracelet inner radius: 0.132881 u\nCalibration radius ratio: 0.365165 · Distance scale: 0.324326\nAuto scale: 0.118432 · Final render scale: 0.118432\nEdge quality: 90% (Measurement confidence: chất lượng biên, không phải xác suất AI)\nBase scale: 0.118432 u/model\nManual fit multiplier: 1.000×\nRender thực tế: 1.000×\nẢnh gốc: 382 × 406 px · ROI 307 × 342 px (không thu nhỏ)\nBiên cổ tay: 90.0 px gốc · Lỗ vòng chiếu: 99.1 px gốc\nTrục ảnh hiệu chỉnh: 0.0° · Che khuất: proxy giới hạn bằng foreground\nReject: không\nVàng: ROI/đường cắt · xanh dương: trục cẳng tay · xanh ngọc: hai mép thực tế\nFinal world scale: 0.118432 u/model\nFinal bracelet world scale: 0.130276\nProxy world scale: 0.118432 · Bracelet mesh scale: 0.130276 (gồm khoảng hở thiết kế)\nProjected bracelet diameter: 99.1 px (lỗ vòng)\nEstimated wrist width: 90.0 px (proxy đã hiệu chỉnh)\nObserved wrist width: 90.0 px · đo ảnh\nCanvas ngang 382px; px là pixel Canvas, không phải CSS.\nCùng lát cắt/vuông góc trục tay; u là đơn vị scene, KHÔNG phải mm.\nBiên xanh ngọc: đo hợp lệ · cam: biên bị loại · chấm xám: ứng viên\nNét tím: lỗ vòng chiếu · nét vàng: dự đoán, không phải đo da\nĐỏ X · xanh lá Y · xanh dương Z/cẳng tay\nLưới cyan: proxy ước lượng · vòng trắng: Hand 0\nChỉ số hình học, không phải xác suất AI.\nTải log JSON (1 frame)\nLog chỉ có số đo, lưu trong bộ nhớ; tối đa 1800 frame.",
+      "requests": 1
+    }
+  ],
+  "errors": [],
+  "failure": {
+    "error": "Error: uncertain edges rendered as provisional, no invented calibration",
+    "debug": "tracking · ok\nstraight-wrist · landmarks 21/21\nYêu cầu: forearm · worker: forearm · đang dùng: straight-wrist · fallback: arm-match\nTracking source: Hand Landmarker · Continuous Tracking\nView angle: 50.3° (góc tới pháp tuyến, 0–90°)\nROI sẵn sàng: chưa · 0 đặc trưng cổ tay\nFit residual: 4.5% · scale ảnh: 2.20\nView alignment: 0.31 · basis: 1.00\nBán kính/khung: 7.87% · độ vừa 100%\nEstimated wrist diameter: 0.16064 × 0.11566 u\nBracelet inner diameter: 0.17670 × 0.14843 u\nAuto Fit: measured · đo ảnh phù hợp calibration\nHai mép trên ảnh: 90.0 px · 7 lát cắt hợp lệ · 4 ứng viên bị loại\nWrist width (pixels): 90.0 px (quy về mặt phẳng đeo)\nBracelet projected inner diameter (pixels): 105.7 px\nFit ratio: 1.175 · image\nWrist radius: 0.080318 u · Bracelet inner radius: 0.088349 u\nCalibration radius ratio: 0.361536 · Distance scale: 0.217800\nAuto scale: 0.078743 · Final render scale: 0.078743\nEdge quality: 83% (Measurement confidence: chất lượng biên, không phải xác suất AI)\nBase scale: 0.078743 u/model\nManual fit multiplier: 1.000×\nRender thực tế: 1.000×\nẢnh gốc: 640 × 960 px · ROI 406 × 474 px (không thu nhỏ)\nBiên cổ tay: 90.0 px gốc · Lỗ vòng chiếu: 105.7 px gốc\nTrục ảnh hiệu chỉnh: 0.0° · Che khuất: proxy giới hạn bằng foreground\nReject: không\nimplausible-pair: tâm/bề rộng không hợp lý: 1 · skin-core-uncertain: tâm lát cắt không đủ tin cậy là da tay: 4\nVàng: ROI/đường cắt · xanh dương: trục cẳng tay · xanh ngọc: hai mép thực tế\nFinal world scale: 0.078743 u/model\nFinal bracelet world scale: 0.086617\nProxy world scale: 0.078743 · Bracelet mesh scale: 0.086617 (gồm khoảng hở thiết kế)\nProjected bracelet diameter: 105.7 px (lỗ vòng)\nEstimated wrist width: 90.0 px (proxy đã hiệu chỉnh)\nObserved wrist width: 90.0 px · đo ảnh\nCanvas ngang 640px; px là pixel Canvas, không phải CSS.\nCùng lát cắt/vuông góc trục tay; u là đơn vị scene, KHÔNG phải mm.\nBiên xanh ngọc: đo hợp lệ · cam: biên bị loại · chấm xám: ứng viên\nNét tím: lỗ vòng chiếu · nét vàng: dự đoán, không phải đo da\nĐỏ X · xanh lá Y · xanh dương Z/cẳng tay\nLưới cyan: proxy ước lượng · vòng trắng: Hand 0\nChỉ số hình học, không phải xác suất AI.\nTải log JSON (1 frame)\nLog chỉ có số đo, lưu trong bộ nhớ; tối đa 1800 frame.",
+    "upload": "Auto Fit thành công: đã xác định cổ tay và ước lượng kích thước hiển thị từ biên ảnh; chưa phải số đo mm."
+  }
+}

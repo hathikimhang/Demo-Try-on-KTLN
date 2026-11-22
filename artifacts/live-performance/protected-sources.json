@@ -1,0 +1,107 @@
+{
+  "checkpoint": "backups/pre-live-performance-20261122T023030Z",
+  "protected": [
+    {
+      "path": "src/liveWristSizing.ts",
+      "beforeSHA256": "89402e4c8f748ea4bc7d7d458626de93dbdbf6d3cd86f4678931b2346527cffe",
+      "afterSHA256": "89402e4c8f748ea4bc7d7d458626de93dbdbf6d3cd86f4678931b2346527cffe",
+      "unchanged": true
+    },
+    {
+      "path": "src/liveForearmPose.ts",
+      "beforeSHA256": "ab175873612c1a28f06117eccc93cab4bc12bcac90dd9a32890a32bb1a8b9342",
+      "afterSHA256": "ab175873612c1a28f06117eccc93cab4bc12bcac90dd9a32890a32bb1a8b9342",
+      "unchanged": true
+    },
+    {
+      "path": "src/liveWristFrame.ts",
+      "beforeSHA256": "86c1a94bad5e9a654e86ade0a749ff0d1b0fbeed0beaed9cfb2972b30ab6c60a",
+      "afterSHA256": "86c1a94bad5e9a654e86ade0a749ff0d1b0fbeed0beaed9cfb2972b30ab6c60a",
+      "unchanged": true
+    },
+    {
+      "path": "src/liveWristTracking.ts",
+      "beforeSHA256": "a35141280c6800970dfc0454b44156706dd358a1b26e6afe73fc34d682c662a2",
+      "afterSHA256": "a35141280c6800970dfc0454b44156706dd358a1b26e6afe73fc34d682c662a2",
+      "unchanged": true
+    },
+    {
+      "path": "src/liveContinuity.ts",
+      "beforeSHA256": "8c6593a9a2de15bfcc59d008979875b1de5923877b7d028e9bad25c80a8f0303",
+      "afterSHA256": "8c6593a9a2de15bfcc59d008979875b1de5923877b7d028e9bad25c80a8f0303",
+      "unchanged": true
+    },
+    {
+      "path": "src/braceletModel.ts",
+      "beforeSHA256": "08d318c02debf563be6959e17dd8c4e6198803c6676704c909b1e8bfc980dfbd",
+      "afterSHA256": "08d318c02debf563be6959e17dd8c4e6198803c6676704c909b1e8bfc980dfbd",
+      "unchanged": true
+    },
+    {
+      "path": "src/braceletDimensions.ts",
+      "beforeSHA256": "455250126c504dd563b43b921687862e07bb04a73cf20e37c158175b4190e8c5",
+      "afterSHA256": "455250126c504dd563b43b921687862e07bb04a73cf20e37c158175b4190e8c5",
+      "unchanged": true
+    },
+    {
+      "path": "src/braceletRenderFrame.ts",
+      "beforeSHA256": "e7a813c4832c94c9b1919b6804f62e03e6c7a377ac8faa4b6096312e6beb5491",
+      "afterSHA256": "e7a813c4832c94c9b1919b6804f62e03e6c7a377ac8faa4b6096312e6beb5491",
+      "unchanged": true
+    },
+    {
+      "path": "src/imageCoordinates.ts",
+      "beforeSHA256": "2c44cdcdb5557bcdcc62604b8260072301bd5d1b355e2f8dbe570b2294af4556",
+      "afterSHA256": "2c44cdcdb5557bcdcc62604b8260072301bd5d1b355e2f8dbe570b2294af4556",
+      "unchanged": true
+    },
+    {
+      "path": "src/imageOcclusion.ts",
+      "beforeSHA256": "fa42c65403fbed573f527aaca0c76e1d0d10b99e5a285ef71bd67e2f2d5077aa",
+      "afterSHA256": "fa42c65403fbed573f527aaca0c76e1d0d10b99e5a285ef71bd67e2f2d5077aa",
+      "unchanged": true
+    },
+    {
+      "path": "src/segmentedWristMeasurement.ts",
+      "beforeSHA256": "8c11f633979b18aaf04671223e996d8fb7a9448c2bb0dbf109a05e35b0956ec6",
+      "afterSHA256": "8c11f633979b18aaf04671223e996d8fb7a9448c2bb0dbf109a05e35b0956ec6",
+      "unchanged": true
+    },
+    {
+      "path": "src/wristGeometry.ts",
+      "beforeSHA256": "ff6ec82db96a978856c106539170eddf93482acbecd76fde352c55b03ecf3237",
+      "afterSHA256": "ff6ec82db96a978856c106539170eddf93482acbecd76fde352c55b03ecf3237",
+      "unchanged": true
+    },
+    {
+      "path": "src/wristRoiTracking.ts",
+      "beforeSHA256": "5b70604d37887a231e1108319dc8bdda3a0425aebcf2c11cd0ad69cf0751e282",
+      "afterSHA256": "5b70604d37887a231e1108319dc8bdda3a0425aebcf2c11cd0ad69cf0751e282",
+      "unchanged": true
+    },
+    {
+      "path": "src/draw.ts",
+      "beforeSHA256": "f31bc9b5b554b6564dac12bd3e8ed050f145a4199c16b37c6b824f3362fa1142",
+      "afterSHA256": "f31bc9b5b554b6564dac12bd3e8ed050f145a4199c16b37c6b824f3362fa1142",
+      "unchanged": true
+    },
+    {
+      "path": "src/App.tsx",
+      "beforeSHA256": "e11c10d46c6932c4dc110b5dc0cd070082150cdc148e00000d44f8ef1dfa8a02",
+      "afterSHA256": "e11c10d46c6932c4dc110b5dc0cd070082150cdc148e00000d44f8ef1dfa8a02",
+      "unchanged": true
+    },
+    {
+      "path": "src/style.css",
+      "beforeSHA256": "0d70bf37491dcfacbb43122feedbff4e87040d2437cc7928c1e3b158e06a0fe7",
+      "afterSHA256": "0d70bf37491dcfacbb43122feedbff4e87040d2437cc7928c1e3b158e06a0fe7",
+      "unchanged": true
+    },
+    {
+      "path": "index.html",
+      "beforeSHA256": "5bc2e44d9dd3137ada0f4dc008afc413b2ae53192425838087508efb1871aa42",
+      "afterSHA256": "5bc2e44d9dd3137ada0f4dc008afc413b2ae53192425838087508efb1871aa42",
+      "unchanged": true
+    }
+  ]
+}

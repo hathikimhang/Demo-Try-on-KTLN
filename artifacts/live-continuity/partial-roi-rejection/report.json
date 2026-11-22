@@ -1,0 +1,91 @@
+{
+  "scope": "Real MediaPipe VIDEO inference on a photo/canvas captureStream. NOT a hardware webcam or real 3D hand rotation.",
+  "cases": [
+    {
+      "name": "stationary",
+      "state": "TRACKING",
+      "radius": 0.08427248765135477,
+      "intrinsic": 0.35829773587020536,
+      "distance": 0.23059058894703752,
+      "wristPx": 102.97495887324499,
+      "braceletPx": 114.80635918361337,
+      "observedPx": 100,
+      "manual": 1,
+      "maxRotationDelta": 0.006087145087021037
+    },
+    {
+      "name": "far-image-scale-0.8",
+      "state": "TRACKING",
+      "radius": 0.06707235756901639,
+      "intrinsic": 0.35609672682971605,
+      "distance": 0.18466110005667663,
+      "wristPx": 82.11522148894119,
+      "braceletPx": 91.54597102151014,
+      "observedPx": 81,
+      "manual": 1,
+      "maxRotationDelta": 0.0029273664566418396
+    },
+    {
+      "name": "near-image-scale-1.15",
+      "state": "TRACKING",
+      "radius": 0.09841114886560497,
+      "intrinsic": 0.36356449495934345,
+      "distance": 0.2653766245971858,
+      "wristPx": 119.96975948685281,
+      "braceletPx": 133.81269713105075,
+      "observedPx": 119,
+      "manual": 1,
+      "maxRotationDelta": 0.0029926208733269334
+    },
+    {
+      "name": "observed-image-roll--0.3",
+      "state": "TRACKING",
+      "radius": 0.08466541202953069,
+      "intrinsic": 0.3606306184865919,
+      "distance": 0.23016710633068643,
+      "wristPx": 104.11673998985376,
+      "braceletPx": 115.89609438835058,
+      "observedPx": 101,
+      "manual": 1,
+      "maxRotationDelta": 0.005842621294357596
+    },
+    {
+      "name": "observed-image-roll-0.3",
+      "state": "TRACKING",
+      "radius": 0.08471846575101045,
+      "intrinsic": 0.3606306184865919,
+      "distance": 0.2303113354941707,
+      "wristPx": 103.07587156336368,
+      "braceletPx": 115.06578512551592,
+      "observedPx": 104,
+      "manual": 1,
+      "maxRotationDelta": 0.010605912711379499
+    },
+    {
+      "name": "observed-image-roll-0",
+      "state": "TRACKING",
+      "radius": 0.08427452317397878,
+      "intrinsic": 0.35826487739197216,
+      "distance": 0.2306173079107637,
+      "wristPx": 103.01558633890522,
+      "braceletPx": 114.83557716516742,
+      "observedPx": 103,
+      "manual": 1,
+      "maxRotationDelta": 0.007320151201334653
+    },
+    {
+      "name": "manual-130-independent",
+      "state": "TRACKING",
+      "radius": 0.0842815134130764,
+      "intrinsic": 0.3582981262763554,
+      "distance": 0.23061503440565204,
+      "wristPx": 102.96466878880152,
+      "braceletPx": 149.38952862217462,
+      "observedPx": 103,
+      "manual": 1.3,
+      "maxRotationDelta": 0.004661004250303558
+    }
+  ],
+  "errors": [],
+  "failure": "Error: Timeout: real ROI correspondences after Hand loss"
+}

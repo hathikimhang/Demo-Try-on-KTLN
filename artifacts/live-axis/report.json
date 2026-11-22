@@ -1,0 +1,139 @@
+{
+  "scope": "Real Hand/Pose/segmentation inference on a photo captureStream; observed image rotations, NOT physical wrist pronation/supination or hardware webcam.",
+  "cases": [
+    {
+      "imageRotationDegrees": 0,
+      "validFrames": 5,
+      "state": "TRACKING",
+      "forearmSource": "contour-rgb",
+      "depthSource": "assumed-straight",
+      "orientationConfidence": 0.8732867932066459,
+      "orientationReason": "ok",
+      "centreImagePx": {
+        "x": 318.182391367152,
+        "y": 385.34326560535277
+      },
+      "normalAlignmentDegrees": 0.0106619263011023,
+      "intrinsic": 0.35541306428539277,
+      "wristWidthPx": 89.99161522773736,
+      "observedWidthPx": 90,
+      "braceletWidthPx": 100.45876623456871,
+      "axis": {
+        "x": 0.28973674807678973,
+        "y": 0.8630522456192826,
+        "z": 0.41375528775521475
+      }
+    },
+    {
+      "imageRotationDegrees": 20,
+      "validFrames": 5,
+      "state": "TRACKING",
+      "forearmSource": "contour-rgb",
+      "depthSource": "assumed-straight",
+      "orientationConfidence": 0.8700664190975349,
+      "orientationReason": "ok",
+      "centreImagePx": {
+        "x": 311.140845656556,
+        "y": 383.6404813651965
+      },
+      "normalAlignmentDegrees": 0.04429179976366219,
+      "intrinsic": 0.35545065176093116,
+      "wristWidthPx": 89.902355120505,
+      "observedWidthPx": 91,
+      "braceletWidthPx": 100.45262378614126,
+      "axis": {
+        "x": -0.04018291558958321,
+        "y": 0.909500904424685,
+        "z": 0.41375528775521464
+      }
+    },
+    {
+      "imageRotationDegrees": 45,
+      "validFrames": 5,
+      "state": "TRACKING",
+      "forearmSource": "contour-rgb",
+      "depthSource": "assumed-straight",
+      "orientationConfidence": 0.8707743675878218,
+      "orientationReason": "ok",
+      "centreImagePx": {
+        "x": 303.83400652073345,
+        "y": 378.21530869416154
+      },
+      "normalAlignmentDegrees": 0.08863877218552346,
+      "intrinsic": 0.35545065176093116,
+      "wristWidthPx": 89.91330300377307,
+      "observedWidthPx": 93,
+      "braceletWidthPx": 100.49190355050662,
+      "axis": {
+        "x": -0.42229129671612947,
+        "y": 0.8065213094347906,
+        "z": 0.41375528775521464
+      }
+    },
+    {
+      "imageRotationDegrees": 90,
+      "validFrames": 5,
+      "state": "TRACKING",
+      "forearmSource": "contour-rgb",
+      "depthSource": "assumed-straight",
+      "orientationConfidence": 0.8692983259063859,
+      "orientationReason": "ok",
+      "centreImagePx": {
+        "x": 298.59101164292906,
+        "y": 362.95684058010386
+      },
+      "normalAlignmentDegrees": 0.12487876671253233,
+      "intrinsic": 0.35545065176093116,
+      "wristWidthPx": 89.85911460142788,
+      "observedWidthPx": 92,
+      "braceletWidthPx": 100.42036557419515,
+      "axis": {
+        "x": -0.8654790829724995,
+        "y": 0.2824048845039353,
+        "z": 0.41375528775521464
+      }
+    },
+    {
+      "imageRotationDegrees": 180,
+      "validFrames": 5,
+      "state": "TRACKING",
+      "forearmSource": "contour-rgb",
+      "depthSource": "assumed-straight",
+      "orientationConfidence": 0.8700994007853101,
+      "orientationReason": "ok",
+      "centreImagePx": {
+        "x": 321.12170384406085,
+        "y": 343.5673933878819
+      },
+      "normalAlignmentDegrees": 0.0321934396449082,
+      "intrinsic": 0.35545065176093116,
+      "wristWidthPx": 89.86250169439552,
+      "observedWidthPx": 92,
+      "braceletWidthPx": 100.41642648310571,
+      "axis": {
+        "x": -0.27530176122906413,
+        "y": -0.8677646582563588,
+        "z": 0.41375528775521464
+      }
+    }
+  ],
+  "errors": [],
+  "twentyObservedAxisRotationDegrees": 21.306228994660763,
+  "twentyCentreRotationResidualPx": 0.24211824165100787,
+  "occlusion": {
+    "maskPresent": true,
+    "fullPixels": 2673,
+    "visiblePixels": 1738,
+    "hiddenPixels": 879,
+    "hiddenOutsideForeground": 0,
+    "unmaskedHiddenOutsideForeground": 0,
+    "radius": 0.07247825833711673,
+    "manual": 1,
+    "quaternion": {
+      "x": -0.5272993590374437,
+      "y": -0.12279108911716778,
+      "z": -0.15509514297740246,
+      "w": 0.8263311872469414
+    }
+  }
+}

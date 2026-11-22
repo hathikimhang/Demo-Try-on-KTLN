@@ -1,0 +1,15 @@
+{
+  "unitTests": {
+    "pass": 190,
+    "fail": 0
+  },
+  "typescriptBuild": "pass",
+  "performanceBeforeAfter": "pass; actual replay scope/remaining limits in comparison.json and docs",
+  "continuity": "pass",
+  "axisOcclusion": "pass",
+  "liveFitROIReacquisition": "pass; real ROI correspondences in this run",
+  "upload": "15 PNG byte-identical; fast/legacy native measurements and masks equal",
+  "shirt": "pass",
+  "protectedSources": "17 byte-identical",
+  "hardwareWebcamTested": false
+}

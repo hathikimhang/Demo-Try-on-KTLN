@@ -1,0 +1,1015 @@
+{
+  "initialDebug": "tracking · ok\nstraight-wrist · landmarks 21/21\nYêu cầu: straight-wrist · worker: straight-wrist · đang dùng: straight-wrist\nTracking source: Hand Landmarker · Continuous Tracking\nView angle: 50.3° (góc tới pháp tuyến, 0–90°)\nROI sẵn sàng: chưa · 0 đặc trưng cổ tay\nFit residual: 4.5% · scale ảnh: 2.20\nView alignment: 0.31 · basis: 1.00\nBán kính/khung: 6.49% · độ vừa 100%\nEstimated wrist diameter: 0.13238 × 0.09531 u\nBracelet inner diameter: 0.14561 × 0.12232 u\nAuto Fit: manual · hiệu chuẩn thủ công\nHai mép trên ảnh: — px · 0 lát cắt hợp lệ · 0 ứng viên bị loại\nWrist width (pixels): — px (quy về mặt phẳng đeo)\nBracelet projected inner diameter (pixels): 87.1 px\nFit ratio: — · manual\nWrist radius: 0.066188 u · Bracelet inner radius: 0.072807 u\nCalibration radius ratio: 0.297934 · Distance scale: 0.217800\nAuto scale: 0.064890 · Final render scale: 0.064890\nEdge quality: 0% (Measurement confidence: chất lượng biên, không phải xác suất AI)\nBase scale: 0.064890 u/model\nManual fit multiplier: 1.000×\nRender thực tế: 1.000×\nẢnh gốc: 640 × 960 px · ROI 406 × 474 px (không thu nhỏ)\nBiên cổ tay: — px gốc · Lỗ vòng chiếu: 87.1 px gốc\nTrục ảnh hiệu chỉnh: 0.0° · Che khuất: tắt — chưa có mặt nạ đáng tin cậy\nReject: too-few-slices: cần ít nhất 5 đường cắt có hai biên đáng tin cậy\nforeground-ambiguous: da/nền chưa tách rõ hoặc nền không đồng nhất: 15\nVàng: ROI/đường cắt · xanh dương: trục cẳng tay · xanh ngọc: hai mép thực tế\nFinal world scale: 0.064890 u/model\nFinal bracelet world scale: 0.071379\nProxy world scale: 0.064890 · Bracelet mesh scale: 0.071379 (gồm khoảng hở thiết kế)\nProjected bracelet diameter: 87.1 px (lỗ vòng)\nEstimated wrist width: 74.2 px (proxy đã hiệu chỉnh)\nObserved wrist width: — px · manual\nCanvas ngang 640px; px là pixel Canvas, không phải CSS.\nCùng lát cắt/vuông góc trục tay; u là đơn vị scene, KHÔNG phải mm.\nBiên xanh ngọc: đo hợp lệ · cam: biên bị loại · chấm xám: ứng viên\nNét tím: lỗ vòng chiếu · nét vàng: dự đoán, không phải đo da\nĐỏ X · xanh lá Y · xanh dương Z/cẳng tay\nLưới cyan: proxy ước lượng · vòng trắng: Hand 0\nChỉ số hình học, không phải xác suất AI.\nTải log JSON (0 frame)\nLog chỉ có số đo, lưu trong bộ nhớ; tối đa 1800 frame.",
+  "fits": [
+    {
+      "percent": 70,
+      "baseScale": 0.06489,
+      "finalScale": 0.045423
+    },
+    {
+      "percent": 100,
+      "baseScale": 0.06489,
+      "finalScale": 0.06489
+    },
+    {
+      "percent": 160,
+      "baseScale": 0.06489,
+      "finalScale": 0.103824
+    },
+    {
+      "percent": 240,
+      "baseScale": 0.06489,
+      "finalScale": 0.155736
+    },
+    {
+      "percent": 350,
+      "baseScale": 0.06489,
+      "finalScale": 0.227115
+    },
+    {
+      "percent": 100,
+      "baseScale": 0.06489,
+      "finalScale": 0.06489
+    }
+  ],
+  "beforeAfter": {
+    "measurement": {
+      "width": null,
+      "confidence": 0,
+      "reason": "Chưa thấy đủ hai biên cổ tay; đổi nền/ánh sáng hoặc dùng Manual Calibration",
+      "slices": [
+        {
+          "center": {
+            "x": 0.4126534830041256,
+            "y": 1.0635270262871896
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.40832457223364477,
+                "y": 1.086542665224402
+              },
+              "side": -1,
+              "distancePx": 10,
+              "quality": 0.709139412738736,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.40789168115659663,
+                "y": 1.088844229118123
+              },
+              "side": -1,
+              "distancePx": 11,
+              "quality": 0.7205406725642924,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.4074587900795486,
+                "y": 1.0911457930118442
+              },
+              "side": -1,
+              "distancePx": 12,
+              "quality": 0.726663995781889,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.40702589900250047,
+                "y": 1.0934473569055654
+              },
+              "side": -1,
+              "distancePx": 13,
+              "quality": 0.6774517695127416,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.4269388885467122,
+                "y": 0.9875754177943897
+              },
+              "side": 1,
+              "distancePx": 33,
+              "quality": 0.676655016195165,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.42737177962376033,
+                "y": 0.9852738539006685
+              },
+              "side": 1,
+              "distancePx": 34,
+              "quality": 0.722914069197486,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.42780467070080835,
+                "y": 0.9829722900069473
+              },
+              "side": 1,
+              "distancePx": 35,
+              "quality": 0.8117540354307387,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.4282375617778565,
+                "y": 0.980670726113226
+              },
+              "side": 1,
+              "distancePx": 36,
+              "quality": 0.866263226960974,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.42867045285490457,
+                "y": 0.9783691622195048
+              },
+              "side": 1,
+              "distancePx": 37,
+              "quality": 0.8473443080420552,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            }
+          ],
+          "accepted": false,
+          "reason": "Không đủ hai biên rõ"
+        },
+        {
+          "center": {
+            "x": 0.42068626073107485,
+            "y": 1.0650378762841823
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.4163573499605941,
+                "y": 1.0880535152213944
+              },
+              "side": -1,
+              "distancePx": 10,
+              "quality": 0.7217808104289134,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.41592445888354596,
+                "y": 1.0903550791151158
+              },
+              "side": -1,
+              "distancePx": 11,
+              "quality": 0.7365980986939447,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.4154915678064979,
+                "y": 1.092656643008837
+              },
+              "side": -1,
+              "distancePx": 12,
+              "quality": 0.6918764973645646,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.4150586767294498,
+                "y": 1.094958206902558
+              },
+              "side": -1,
+              "distancePx": 13,
+              "quality": 0.6481808696827092,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.4358374484277577,
+                "y": 0.9844831400039399
+              },
+              "side": 1,
+              "distancePx": 35,
+              "quality": 0.7074580741291547,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.4362703395048058,
+                "y": 0.9821815761102187
+              },
+              "side": 1,
+              "distancePx": 36,
+              "quality": 0.7752265629030437,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.43670323058185384,
+                "y": 0.9798800122164975
+              },
+              "side": 1,
+              "distancePx": 37,
+              "quality": 0.854294549219433,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            }
+          ],
+          "accepted": false,
+          "reason": "Không đủ hai biên rõ"
+        },
+        {
+          "center": {
+            "x": 0.42871903845802417,
+            "y": 1.0665487262811748
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.42439012768754336,
+                "y": 1.089564365218387
+              },
+              "side": -1,
+              "distancePx": 10,
+              "quality": 0.7277204355260322,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.4239572366104953,
+                "y": 1.0918659291121082
+              },
+              "side": -1,
+              "distancePx": 11,
+              "quality": 0.7429626072603249,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.4235243455334472,
+                "y": 1.0941674930058294
+              },
+              "side": -1,
+              "distancePx": 12,
+              "quality": 0.6940622889173148,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.42309145445639906,
+                "y": 1.0964690568995505
+              },
+              "side": -1,
+              "distancePx": 13,
+              "quality": 0.6501287568817469,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            }
+          ],
+          "accepted": false,
+          "reason": "Không đủ hai biên rõ"
+        },
+        {
+          "center": {
+            "x": 0.43675181618497344,
+            "y": 1.0680595762781675
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.4324229054144927,
+                "y": 1.0910752152153795
+              },
+              "side": -1,
+              "distancePx": 10,
+              "quality": 0.7288743042463179,
+              "rejected": true,
+              "reason": "Chờ kiểm tra hình dạng nhiều lát cắt"
+            },
+            {
+              "point": {
+                "x": 0.43199001433744455,
+                "y": 1.093376779109101
+              },
+              "side": -1,
+              "distancePx": 11,
+              "quality": 0.6692575848106709,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.4315571232603965,
+                "y": 1.095678343002822
+              },
+              "side": -1,
+              "distancePx": 12,
+              "quality": 0.618444415833706,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.4436780734177428,
+                "y": 1.031234553978628
+              },
+              "side": 1,
+              "distancePx": 16,
+              "quality": 0.6740177839829258,
+              "rejected": true,
+              "reason": "Chờ kiểm tra hình dạng nhiều lát cắt"
+            },
+            {
+              "point": {
+                "x": 0.4441109644947908,
+                "y": 1.028932990084907
+              },
+              "side": 1,
+              "distancePx": 17,
+              "quality": 0.6694625258495901,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            }
+          ],
+          "accepted": false,
+          "reason": "Chờ kiểm tra hình dạng nhiều lát cắt",
+          "left": {
+            "x": 0.4324229054144927,
+            "y": 1.0910752152153795
+          },
+          "right": {
+            "x": 0.4436780734177428,
+            "y": 1.031234553978628
+          }
+        },
+        {
+          "center": {
+            "x": 0.44478459391192277,
+            "y": 1.06957042627516
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.440455683141442,
+                "y": 1.0925860652123722
+              },
+              "side": -1,
+              "distancePx": 10,
+              "quality": 0.7278648496298898,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.4400227920643939,
+                "y": 1.0948876291060934
+              },
+              "side": -1,
+              "distancePx": 11,
+              "quality": 0.746354712100836,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.4395899009873458,
+                "y": 1.0971891929998145
+              },
+              "side": -1,
+              "distancePx": 12,
+              "quality": 0.7659255012630832,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.4391570099102977,
+                "y": 1.0994907568935357
+              },
+              "side": -1,
+              "distancePx": 13,
+              "quality": 0.7342878039368022,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.43872411883324963,
+                "y": 1.1017923207872569
+              },
+              "side": -1,
+              "distancePx": 14,
+              "quality": 0.707487388641026,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.43829122775620155,
+                "y": 1.104093884680978
+              },
+              "side": -1,
+              "distancePx": 15,
+              "quality": 0.6663502883593411,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.4616673459167979,
+                "y": 0.9798094344200328
+              },
+              "side": 1,
+              "distancePx": 39,
+              "quality": 0.6937726857062823,
+              "rejected": true,
+              "reason": "Màu da xuất hiện lại phía ngoài: bóng/texture hoặc nền mơ hồ"
+            },
+            {
+              "point": {
+                "x": 0.46210023699384606,
+                "y": 0.9775078705263115
+              },
+              "side": 1,
+              "distancePx": 40,
+              "quality": 0.7272859570649253,
+              "rejected": true,
+              "reason": "Màu da xuất hiện lại phía ngoài: bóng/texture hoặc nền mơ hồ"
+            },
+            {
+              "point": {
+                "x": 0.46253312807089414,
+                "y": 0.9752063066325903
+              },
+              "side": 1,
+              "distancePx": 41,
+              "quality": 0.7402005393475153,
+              "rejected": true,
+              "reason": "Màu da xuất hiện lại phía ngoài: bóng/texture hoặc nền mơ hồ"
+            },
+            {
+              "point": {
+                "x": 0.46989227638071146,
+                "y": 0.9360797204393297
+              },
+              "side": 1,
+              "distancePx": 58,
+              "quality": 0.6205088105430415,
+              "rejected": true,
+              "reason": "Màu da xuất hiện lại phía ngoài: bóng/texture hoặc nền mơ hồ"
+            },
+            {
+              "point": {
+                "x": 0.4703251674577596,
+                "y": 0.9337781565456085
+              },
+              "side": 1,
+              "distancePx": 59,
+              "quality": 0.662234841436187,
+              "rejected": true,
+              "reason": "Màu da xuất hiện lại phía ngoài: bóng/texture hoặc nền mơ hồ"
+            },
+            {
+              "point": {
+                "x": 0.4707580585348076,
+                "y": 0.9314765926518872
+              },
+              "side": 1,
+              "distancePx": 60,
+              "quality": 0.691574825397664,
+              "rejected": true,
+              "reason": "Màu da xuất hiện lại phía ngoài: bóng/texture hoặc nền mơ hồ"
+            },
+            {
+              "point": {
+                "x": 0.47119094961185576,
+                "y": 0.929175028758166
+              },
+              "side": 1,
+              "distancePx": 61,
+              "quality": 0.7017272518251305,
+              "rejected": true,
+              "reason": "Màu da xuất hiện lại phía ngoài: bóng/texture hoặc nền mơ hồ"
+            },
+            {
+              "point": {
+                "x": 0.4716238406889038,
+                "y": 0.9268734648644448
+              },
+              "side": 1,
+              "distancePx": 62,
+              "quality": 0.6958632060100239,
+              "rejected": true,
+              "reason": "Màu da xuất hiện lại phía ngoài: bóng/texture hoặc nền mơ hồ"
+            }
+          ],
+          "accepted": false,
+          "reason": "Không đủ hai biên rõ"
+        },
+        {
+          "center": {
+            "x": 0.4528173716388721,
+            "y": 1.0710812762721527
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.4476226787142951,
+                "y": 1.0987000429968072
+              },
+              "side": -1,
+              "distancePx": 12,
+              "quality": 0.787559943144562,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.447189787637247,
+                "y": 1.1010016068905284
+              },
+              "side": -1,
+              "distancePx": 13,
+              "quality": 0.8226550357805985,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.44675689656019896,
+                "y": 1.1033031707842496
+              },
+              "side": -1,
+              "distancePx": 14,
+              "quality": 0.8234705524362812,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.4463240054831508,
+                "y": 1.1056047346779707
+              },
+              "side": -1,
+              "distancePx": 15,
+              "quality": 0.789979259229865,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.4458911144061028,
+                "y": 1.1079062985716919
+              },
+              "side": -1,
+              "distancePx": 16,
+              "quality": 0.6914083096744779,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            }
+          ],
+          "accepted": false,
+          "reason": "Không đủ hai biên rõ"
+        },
+        {
+          "center": {
+            "x": 0.46085014936582136,
+            "y": 1.0725921262691451
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.45565545644124444,
+                "y": 1.1002108929938
+              },
+              "side": -1,
+              "distancePx": 12,
+              "quality": 0.7970283062332013,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.4552225653641963,
+                "y": 1.1025124568875209
+              },
+              "side": -1,
+              "distancePx": 13,
+              "quality": 0.8182649488223854,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.4547896742871483,
+                "y": 1.1048140207812422
+              },
+              "side": -1,
+              "distancePx": 14,
+              "quality": 0.8076756558518461,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.45435678321010015,
+                "y": 1.1071155846749634
+              },
+              "side": -1,
+              "distancePx": 15,
+              "quality": 0.7214819871584723,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.45392389213305206,
+                "y": 1.1094171485686846
+              },
+              "side": -1,
+              "distancePx": 16,
+              "quality": 0.6268574502563373,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            }
+          ],
+          "accepted": false,
+          "reason": "Không đủ hai biên rõ"
+        },
+        {
+          "center": {
+            "x": 0.4688829270927707,
+            "y": 1.0741029762661378
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.4641211252452418,
+                "y": 1.099420179097071
+              },
+              "side": -1,
+              "distancePx": 11,
+              "quality": 0.8164416335878463,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.4636882341681937,
+                "y": 1.1017217429907924
+              },
+              "side": -1,
+              "distancePx": 12,
+              "quality": 0.8440532377878244,
+              "rejected": true,
+              "reason": "Chờ kiểm tra hình dạng nhiều lát cắt"
+            },
+            {
+              "point": {
+                "x": 0.46325534309114563,
+                "y": 1.1040233068845133
+              },
+              "side": -1,
+              "distancePx": 13,
+              "quality": 0.7814360462478472,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.46282245201409755,
+                "y": 1.1063248707782347
+              },
+              "side": -1,
+              "distancePx": 14,
+              "quality": 0.6963411955231027,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.4623895609370494,
+                "y": 1.1086264346719559
+              },
+              "side": -1,
+              "distancePx": 15,
+              "quality": 0.5989830242843539,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.4732118378632515,
+                "y": 1.0510873373289256
+              },
+              "side": 1,
+              "distancePx": 10,
+              "quality": 0.6822939989583566,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.4736447289402996,
+                "y": 1.0487857734352044
+              },
+              "side": 1,
+              "distancePx": 11,
+              "quality": 0.6874788141613944,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.47407762001734766,
+                "y": 1.0464842095414832
+              },
+              "side": 1,
+              "distancePx": 12,
+              "quality": 0.6893397253676979,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.4745105110943958,
+                "y": 1.044182645647762
+              },
+              "side": 1,
+              "distancePx": 13,
+              "quality": 0.6908805343067633,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.4749434021714438,
+                "y": 1.041881081754041
+              },
+              "side": 1,
+              "distancePx": 14,
+              "quality": 0.7036902769739276,
+              "rejected": true,
+              "reason": "Chờ kiểm tra hình dạng nhiều lát cắt"
+            },
+            {
+              "point": {
+                "x": 0.47537629324849195,
+                "y": 1.0395795178603195
+              },
+              "side": 1,
+              "distancePx": 15,
+              "quality": 0.6681672821419105,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            }
+          ],
+          "accepted": false,
+          "reason": "Chờ kiểm tra hình dạng nhiều lát cắt",
+          "left": {
+            "x": 0.4636882341681937,
+            "y": 1.1017217429907924
+          },
+          "right": {
+            "x": 0.4749434021714438,
+            "y": 1.041881081754041
+          }
+        },
+        {
+          "center": {
+            "x": 0.47691570481972,
+            "y": 1.0756138262631303
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.48124461559020076,
+                "y": 1.0525981873259183
+              },
+              "side": 1,
+              "distancePx": 10,
+              "quality": 0.7354621152325042,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            },
+            {
+              "point": {
+                "x": 0.4816775066672489,
+                "y": 1.050296623432197
+              },
+              "side": 1,
+              "distancePx": 11,
+              "quality": 0.6643450878717203,
+              "rejected": false,
+              "reason": "Ứng viên biên"
+            }
+          ],
+          "accepted": false,
+          "reason": "Không đủ hai biên rõ"
+        }
+      ],
+      "analysisWidth": 427
+    },
+    "before": {
+      "method": "manual",
+      "message": "old landmark prior",
+      "confidence": 0,
+      "frameWidth": 640,
+      "fitMode": "Visual Auto Fit",
+      "status": "manual",
+      "effectiveFitMultiplier": 1,
+      "collisionLimited": false,
+      "nativeWristWidthPx": null,
+      "nativeBraceletWidthPx": null,
+      "rawWristWidthPx": null,
+      "acceptedSlices": 0,
+      "rejectedCandidates": 12,
+      "proxyWorldScale": 0.06489007093228805,
+      "braceletWorldScale": 0.07137907802551685,
+      "calibrationRadius": null,
+      "distanceScale": 0.21780023358051287,
+      "wristRadius": 0.0661878723509338,
+      "braceletRadius": 0.0728066595860272,
+      "autoScale": 0.06489007093228805,
+      "finalRenderScale": 0.06489007093228805,
+      "fitRatio": null,
+      "estimatedWristDiameter": 0.1323757447018676,
+      "wristMinorDiameter": 0.09531053618534467,
+      "braceletInnerDiameter": 0.1456133191720544,
+      "braceletInnerMinorDiameter": 0.12231518810452569,
+      "baseScale": 0.06489007093228805,
+      "manualFitMultiplier": 1,
+      "finalWorldScale": 0.06489007093228805,
+      "projectedBraceletDiameterPx": 87.11197593661339,
+      "estimatedWristWidthPx": 74.15297353504997,
+      "baseWristWidthPx": 74.15297353504997,
+      "observedWristWidthPx": null
+    },
+    "after": {
+      "method": "measuring",
+      "message": "Chưa thấy đủ hai biên cổ tay; đổi nền/ánh sáng hoặc dùng Manual Calibration. Auto Fit đang chờ biên rõ để hiệu chuẩn; có thể tắt Dynamic Auto Fit để dùng Manual Calibration.",
+      "confidence": 0,
+      "frameWidth": 640,
+      "fitMode": "Visual Auto Fit",
+      "status": "rejected",
+      "effectiveFitMultiplier": 1,
+      "collisionLimited": false,
+      "nativeWristWidthPx": null,
+      "nativeBraceletWidthPx": null,
+      "rawWristWidthPx": null,
+      "acceptedSlices": 0,
+      "rejectedCandidates": 12,
+      "proxyWorldScale": 0,
+      "braceletWorldScale": 0,
+      "calibrationRadius": null,
+      "distanceScale": 0.21780023358051287,
+      "wristRadius": 0,
+      "braceletRadius": 0,
+      "autoScale": 0,
+      "finalRenderScale": 0,
+      "fitRatio": null,
+      "estimatedWristDiameter": 0,
+      "wristMinorDiameter": 0,
+      "braceletInnerDiameter": 0,
+      "braceletInnerMinorDiameter": 0,
+      "baseScale": 0.06489007093228805,
+      "manualFitMultiplier": 1,
+      "finalWorldScale": 0,
+      "projectedBraceletDiameterPx": 0,
+      "estimatedWristWidthPx": 0,
+      "baseWristWidthPx": 74.15297353504997,
+      "observedWristWidthPx": null
+    },
+    "legacyRequested240": {
+      "method": "manual",
+      "message": "old clamp 240% -> 140%",
+      "confidence": 0,
+      "frameWidth": 640,
+      "fitMode": "Visual Auto Fit",
+      "status": "manual",
+      "effectiveFitMultiplier": 1.4,
+      "collisionLimited": false,
+      "nativeWristWidthPx": null,
+      "nativeBraceletWidthPx": null,
+      "rawWristWidthPx": null,
+      "acceptedSlices": 0,
+      "rejectedCandidates": 12,
+      "proxyWorldScale": 0.06489007093228805,
+      "braceletWorldScale": 0.0999307092357236,
+      "calibrationRadius": null,
+      "distanceScale": 0.21780023358051287,
+      "wristRadius": 0.0661878723509338,
+      "braceletRadius": 0.10192932342043808,
+      "autoScale": 0.06489007093228805,
+      "finalRenderScale": 0.09084609930520327,
+      "fitRatio": null,
+      "estimatedWristDiameter": 0.1323757447018676,
+      "wristMinorDiameter": 0.09531053618534467,
+      "braceletInnerDiameter": 0.20385864684087615,
+      "braceletInnerMinorDiameter": 0.17124126334633596,
+      "baseScale": 0.06489007093228805,
+      "manualFitMultiplier": 1.4,
+      "finalWorldScale": 0.09084609930520327,
+      "projectedBraceletDiameterPx": 122.0066718509436,
+      "estimatedWristWidthPx": 74.15297353504997,
+      "baseWristWidthPx": 74.15297353504997,
+      "observedWristWidthPx": null
+    },
+    "fixedRequested240": {
+      "method": "manual",
+      "message": "no renderer clamp",
+      "confidence": 0,
+      "frameWidth": 640,
+      "fitMode": "Visual Auto Fit",
+      "status": "manual",
+      "effectiveFitMultiplier": 2.4,
+      "collisionLimited": false,
+      "nativeWristWidthPx": null,
+      "nativeBraceletWidthPx": null,
+      "rawWristWidthPx": null,
+      "acceptedSlices": 0,
+      "rejectedCandidates": 12,
+      "proxyWorldScale": 0.06489007093228805,
+      "braceletWorldScale": 0.17130978726124046,
+      "calibrationRadius": null,
+      "distanceScale": 0.21780023358051287,
+      "wristRadius": 0.0661878723509338,
+      "braceletRadius": 0.17473598300646526,
+      "autoScale": 0.06489007093228805,
+      "finalRenderScale": 0.1557361702374913,
+      "fitRatio": null,
+      "estimatedWristDiameter": 0.1323757447018676,
+      "wristMinorDiameter": 0.09531053618534467,
+      "braceletInnerDiameter": 0.3494719660129305,
+      "braceletInnerMinorDiameter": 0.2935564514508617,
+      "baseScale": 0.06489007093228805,
+      "manualFitMultiplier": 2.4,
+      "finalWorldScale": 0.1557361702374913,
+      "projectedBraceletDiameterPx": 209.49951937093368,
+      "estimatedWristWidthPx": 74.15297353504997,
+      "baseWristWidthPx": 74.15297353504997,
+      "observedWristWidthPx": null
+    },
+    "controlled100px": {
+      "method": "image",
+      "message": "Controlled formula test, not actual skin measurement",
+      "confidence": 0.9,
+      "frameWidth": 640,
+      "fitMode": "Visual Auto Fit",
+      "status": "measured",
+      "effectiveFitMultiplier": 1,
+      "collisionLimited": false,
+      "nativeWristWidthPx": null,
+      "nativeBraceletWidthPx": null,
+      "rawWristWidthPx": null,
+      "acceptedSlices": 0,
+      "rejectedCandidates": 0,
+      "proxyWorldScale": 0.08748132976397957,
+      "braceletWorldScale": 0.09622946274037754,
+      "calibrationRadius": 0.4016585672376742,
+      "distanceScale": 0.21780023358051287,
+      "wristRadius": 0.08923095635925916,
+      "braceletRadius": 0.0981540519951851,
+      "autoScale": 0.08748132976397957,
+      "finalRenderScale": 0.08748132976397957,
+      "fitRatio": 1.174815409678891,
+      "estimatedWristDiameter": 0.17846191271851833,
+      "wristMinorDiameter": 0.12849257715733317,
+      "braceletInnerDiameter": 0.1963081039903702,
+      "braceletInnerMinorDiameter": 0.16489880735191095,
+      "baseScale": 0.08748132976397957,
+      "manualFitMultiplier": 1,
+      "finalWorldScale": 0.08748132976397957,
+      "projectedBraceletDiameterPx": 117.48154096788909,
+      "estimatedWristWidthPx": 100.0000000055713,
+      "baseWristWidthPx": 100.0000000055713,
+      "observedWristWidthPx": 100
+    }
+  },
+  "lowConfidence": {
+    "method": "measuring",
+    "message": "Chưa thấy đủ hai biên cổ tay; đổi nền/ánh sáng hoặc dùng Manual Calibration. Auto Fit đang chờ biên rõ để hiệu chuẩn; có thể tắt Dynamic Auto Fit để dùng Manual Calibration.",
+    "rendered": false
+  },
+  "errors": [],
+  "replayManualFit": 2.4
+}

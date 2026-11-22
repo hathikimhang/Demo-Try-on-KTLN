@@ -1,0 +1,148 @@
+{
+  "reference": "Exact captured pre-native-upload source; not a user-approved known-good version",
+  "backup": "backups/pre-3d-recovery-20261121T055941Z",
+  "images": [
+    {
+      "fixture": "pointing_up.jpg",
+      "mode": "straight-wrist",
+      "fallback": "no-forearm",
+      "before": {
+        "method": "image",
+        "radius": 0.1133400283389523,
+        "angleFromTracking": 4.887135197926857,
+        "centerShiftPx": 7.980775746241412,
+        "occlusion": true
+      },
+      "after": {
+        "method": "image",
+        "radius": 0.11326324130668675,
+        "angleFromTracking": 0,
+        "centerPreserved": true,
+        "occlusion": true,
+        "mask": true,
+        "measuredWidthPx": 80
+      },
+      "trackingInputUnmodified": true,
+      "measurementReturnsPose": false,
+      "comparisons": [
+        {
+          "color": "#c5a15e",
+          "maxDifference": 1,
+          "meanDifference": 0.000011143468441697374,
+          "visible": 2813
+        },
+        {
+          "color": "#aeb8c5",
+          "maxDifference": 0,
+          "meanDifference": 0,
+          "visible": 2813
+        },
+        {
+          "color": "#cc9587",
+          "maxDifference": 0,
+          "meanDifference": 0,
+          "visible": 2813
+        }
+      ],
+      "depth": {
+        "hidden": 655,
+        "visible": 1523
+      }
+    },
+    {
+      "fixture": "thumb_up.jpg",
+      "mode": "straight-wrist",
+      "fallback": "no-forearm",
+      "before": {
+        "method": "provisional",
+        "radius": 0.10396697328415673,
+        "angleFromTracking": 16.38591581603059,
+        "centerShiftPx": 0,
+        "occlusion": false
+      },
+      "after": {
+        "method": "image",
+        "radius": 0.11580474807394724,
+        "angleFromTracking": 0,
+        "centerPreserved": true,
+        "occlusion": true,
+        "mask": true,
+        "measuredWidthPx": 88
+      },
+      "trackingInputUnmodified": true,
+      "measurementReturnsPose": false,
+      "comparisons": [
+        {
+          "color": "#c5a15e",
+          "maxDifference": 1,
+          "meanDifference": 0.000022567250406210506,
+          "visible": 2697
+        },
+        {
+          "color": "#aeb8c5",
+          "maxDifference": 0,
+          "meanDifference": 0,
+          "visible": 2697
+        },
+        {
+          "color": "#cc9587",
+          "maxDifference": 0,
+          "meanDifference": 0,
+          "visible": 2697
+        }
+      ],
+      "depth": {
+        "hidden": 725,
+        "visible": 1916
+      }
+    },
+    {
+      "fixture": "woman_hands.jpg",
+      "mode": "straight-wrist",
+      "fallback": "arm-match",
+      "before": {
+        "method": "provisional",
+        "radius": 0.06489007093228805,
+        "angleFromTracking": 0,
+        "centerShiftPx": 0,
+        "occlusion": false
+      },
+      "after": {
+        "method": "provisional",
+        "radius": 0.06489007093228805,
+        "angleFromTracking": 0,
+        "centerPreserved": true,
+        "occlusion": true,
+        "mask": false,
+        "measuredWidthPx": null
+      },
+      "trackingInputUnmodified": true,
+      "measurementReturnsPose": false,
+      "comparisons": [
+        {
+          "color": "#c5a15e",
+          "maxDifference": 1,
+          "meanDifference": 0.000012613932291666667,
+          "visible": 1803
+        },
+        {
+          "color": "#aeb8c5",
+          "maxDifference": 0,
+          "meanDifference": 0,
+          "visible": 1803
+        },
+        {
+          "color": "#cc9587",
+          "maxDifference": 0,
+          "meanDifference": 0,
+          "visible": 1803
+        }
+      ],
+      "depth": {
+        "hidden": 676,
+        "visible": 1349
+      }
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,858 @@
+{
+  "schemaVersion": 1,
+  "units": "scene / normalized image; NOT mm",
+  "samples": [
+    {
+      "timestampMs": 4597.0999999940395,
+      "trackingStatus": "tracking",
+      "trackingReason": "ok",
+      "trackingSource": "Hand Landmarker",
+      "phase": "continuous",
+      "viewAngleDegrees": 38.02328215349834,
+      "requestedTrackingMode": "straight-wrist",
+      "workerTrackingMode": "straight-wrist",
+      "effectiveTrackingMode": "straight-wrist",
+      "uploadFallbackReason": null,
+      "roi": null,
+      "roiSeed": {
+        "ready": false,
+        "points": 0,
+        "candidates": 0,
+        "distributed": false
+      },
+      "manualFitMultiplier": 1,
+      "wristRadius": 0.11314338748970168,
+      "braceletInnerRadius": 0.12445772623867185,
+      "calibrationRadiusRatio": 0.3491587011718071,
+      "distanceScale": 0.3176918957583252,
+      "finalBraceletWorldScale": 0.12201737866536456,
+      "wristProxyScale": 0.11092488969578596,
+      "wristProjectedWidthPx": 335.01745807819793,
+      "braceletProjectedWidthPx": 370.96007921419925,
+      "observedWristWidthPx": 335.01745810055866,
+      "measurementConfidence": 0.8899790433976329,
+      "fitStatus": "measured",
+      "message": "Visual Auto Fit: dùng bề rộng đo trên ROI ảnh gốc; chưa phải True-to-Size theo mm.",
+      "imageMeasurement": {
+        "imageWidth": 2864,
+        "imageHeight": 3008,
+        "roi": {
+          "x": 0,
+          "y": 884,
+          "width": 2864,
+          "height": 2124,
+          "imageWidth": 2864,
+          "imageHeight": 3008
+        },
+        "axis": [
+          {
+            "x": 0.46846075839373974,
+            "y": 0.7569717383316488
+          },
+          {
+            "x": 0.5602294861005961,
+            "y": 0.9561842907318058
+          }
+        ],
+        "cuts": [
+          [
+            {
+              "x": 0.14268225456246608,
+              "y": 0.9585611208763399
+            },
+            {
+              "x": 0.8333939193799388,
+              "y": 0.6403797114776912
+            }
+          ],
+          [
+            {
+              "x": 0.14696479518878608,
+              "y": 0.9678577066550139
+            },
+            {
+              "x": 0.8376764600062587,
+              "y": 0.6496762972563652
+            }
+          ],
+          [
+            {
+              "x": 0.15124733581510602,
+              "y": 0.9771542924336879
+            },
+            {
+              "x": 0.8419590006325788,
+              "y": 0.6589728830350393
+            }
+          ],
+          [
+            {
+              "x": 0.15552987644142602,
+              "y": 0.9864508782123619
+            },
+            {
+              "x": 0.8462415412588986,
+              "y": 0.6682694688137133
+            }
+          ],
+          [
+            {
+              "x": 0.15981241706774596,
+              "y": 0.9957474639910359
+            },
+            {
+              "x": 0.8505240818852187,
+              "y": 0.6775660545923873
+            }
+          ],
+          [
+            {
+              "x": 0.1640949576940659,
+              "y": 1.00504404976971
+            },
+            {
+              "x": 0.8548066225115387,
+              "y": 0.6868626403710613
+            }
+          ],
+          [
+            {
+              "x": 0.1683774983203859,
+              "y": 1.014340635548384
+            },
+            {
+              "x": 0.8590891631378585,
+              "y": 0.6961592261497352
+            }
+          ],
+          [
+            {
+              "x": 0.17266003894670584,
+              "y": 1.023637221327058
+            },
+            {
+              "x": 0.8633717037641786,
+              "y": 0.7054558119284092
+            }
+          ],
+          [
+            {
+              "x": 0.17694257957302584,
+              "y": 1.032933807105732
+            },
+            {
+              "x": 0.8676542443904984,
+              "y": 0.7147523977070832
+            }
+          ],
+          [
+            {
+              "x": 0.18122512019934578,
+              "y": 1.0422303928844059
+            },
+            {
+              "x": 0.8719367850168185,
+              "y": 0.7240489834857572
+            }
+          ],
+          [
+            {
+              "x": 0.18550766082566572,
+              "y": 1.0515269786630799
+            },
+            {
+              "x": 0.8762193256431384,
+              "y": 0.7333455692644312
+            }
+          ],
+          [
+            {
+              "x": 0.18979020145198566,
+              "y": 1.0608235644417539
+            },
+            {
+              "x": 0.8805018662694584,
+              "y": 0.7426421550431052
+            }
+          ],
+          [
+            {
+              "x": 0.19407274207830566,
+              "y": 1.0701201502204278
+            },
+            {
+              "x": 0.8847844068957784,
+              "y": 0.7519387408217793
+            }
+          ],
+          [
+            {
+              "x": 0.19835528270462566,
+              "y": 1.0794167359991018
+            },
+            {
+              "x": 0.8890669475220982,
+              "y": 0.7612353266004532
+            }
+          ],
+          [
+            {
+              "x": 0.2026378233309456,
+              "y": 1.0887133217777758
+            },
+            {
+              "x": 0.8933494881484183,
+              "y": 0.7705319123791272
+            }
+          ]
+        ],
+        "method": "semantic-body",
+        "rejection": null,
+        "rejected": {},
+        "separation": 0,
+        "angleCorrection": 0,
+        "selected": [
+          {
+            "x": 0.38894094959286674,
+            "y": 0.9014670895935658
+          },
+          {
+            "x": 0.5887335799119704,
+            "y": 0.809431144726188
+          }
+        ],
+        "maskAvailable": true
+      },
+      "nativeWristWidthPx": 630,
+      "nativeBraceletWidthPx": 697.5900636043773,
+      "effectiveFitMultiplier": 1,
+      "collisionLimited": false
+    },
+    {
+      "timestampMs": 5218,
+      "trackingStatus": "tracking",
+      "trackingReason": "ok",
+      "trackingSource": "Hand Landmarker",
+      "phase": "continuous",
+      "viewAngleDegrees": 38.02328215349834,
+      "requestedTrackingMode": "straight-wrist",
+      "workerTrackingMode": "straight-wrist",
+      "effectiveTrackingMode": "straight-wrist",
+      "uploadFallbackReason": null,
+      "roi": null,
+      "roiSeed": {
+        "ready": false,
+        "points": 0,
+        "candidates": 0,
+        "distributed": false
+      },
+      "manualFitMultiplier": 1,
+      "wristRadius": 0.11314338748970168,
+      "braceletInnerRadius": 0.12445772623867185,
+      "calibrationRadiusRatio": 0.3491587011718071,
+      "distanceScale": 0.3176918957583252,
+      "finalBraceletWorldScale": 0.12201737866536456,
+      "wristProxyScale": 0.11092488969578596,
+      "wristProjectedWidthPx": 335.01745807819793,
+      "braceletProjectedWidthPx": 370.96007921419925,
+      "observedWristWidthPx": 335.01745810055866,
+      "measurementConfidence": 0.8899790433976329,
+      "fitStatus": "measured",
+      "message": "Visual Auto Fit: dùng bề rộng đo trên ROI ảnh gốc; chưa phải True-to-Size theo mm.",
+      "imageMeasurement": {
+        "imageWidth": 2864,
+        "imageHeight": 3008,
+        "roi": {
+          "x": 0,
+          "y": 884,
+          "width": 2864,
+          "height": 2124,
+          "imageWidth": 2864,
+          "imageHeight": 3008
+        },
+        "axis": [
+          {
+            "x": 0.46846075839373974,
+            "y": 0.7569717383316488
+          },
+          {
+            "x": 0.5602294861005961,
+            "y": 0.9561842907318058
+          }
+        ],
+        "cuts": [
+          [
+            {
+              "x": 0.14268225456246608,
+              "y": 0.9585611208763399
+            },
+            {
+              "x": 0.8333939193799388,
+              "y": 0.6403797114776912
+            }
+          ],
+          [
+            {
+              "x": 0.14696479518878608,
+              "y": 0.9678577066550139
+            },
+            {
+              "x": 0.8376764600062587,
+              "y": 0.6496762972563652
+            }
+          ],
+          [
+            {
+              "x": 0.15124733581510602,
+              "y": 0.9771542924336879
+            },
+            {
+              "x": 0.8419590006325788,
+              "y": 0.6589728830350393
+            }
+          ],
+          [
+            {
+              "x": 0.15552987644142602,
+              "y": 0.9864508782123619
+            },
+            {
+              "x": 0.8462415412588986,
+              "y": 0.6682694688137133
+            }
+          ],
+          [
+            {
+              "x": 0.15981241706774596,
+              "y": 0.9957474639910359
+            },
+            {
+              "x": 0.8505240818852187,
+              "y": 0.6775660545923873
+            }
+          ],
+          [
+            {
+              "x": 0.1640949576940659,
+              "y": 1.00504404976971
+            },
+            {
+              "x": 0.8548066225115387,
+              "y": 0.6868626403710613
+            }
+          ],
+          [
+            {
+              "x": 0.1683774983203859,
+              "y": 1.014340635548384
+            },
+            {
+              "x": 0.8590891631378585,
+              "y": 0.6961592261497352
+            }
+          ],
+          [
+            {
+              "x": 0.17266003894670584,
+              "y": 1.023637221327058
+            },
+            {
+              "x": 0.8633717037641786,
+              "y": 0.7054558119284092
+            }
+          ],
+          [
+            {
+              "x": 0.17694257957302584,
+              "y": 1.032933807105732
+            },
+            {
+              "x": 0.8676542443904984,
+              "y": 0.7147523977070832
+            }
+          ],
+          [
+            {
+              "x": 0.18122512019934578,
+              "y": 1.0422303928844059
+            },
+            {
+              "x": 0.8719367850168185,
+              "y": 0.7240489834857572
+            }
+          ],
+          [
+            {
+              "x": 0.18550766082566572,
+              "y": 1.0515269786630799
+            },
+            {
+              "x": 0.8762193256431384,
+              "y": 0.7333455692644312
+            }
+          ],
+          [
+            {
+              "x": 0.18979020145198566,
+              "y": 1.0608235644417539
+            },
+            {
+              "x": 0.8805018662694584,
+              "y": 0.7426421550431052
+            }
+          ],
+          [
+            {
+              "x": 0.19407274207830566,
+              "y": 1.0701201502204278
+            },
+            {
+              "x": 0.8847844068957784,
+              "y": 0.7519387408217793
+            }
+          ],
+          [
+            {
+              "x": 0.19835528270462566,
+              "y": 1.0794167359991018
+            },
+            {
+              "x": 0.8890669475220982,
+              "y": 0.7612353266004532
+            }
+          ],
+          [
+            {
+              "x": 0.2026378233309456,
+              "y": 1.0887133217777758
+            },
+            {
+              "x": 0.8933494881484183,
+              "y": 0.7705319123791272
+            }
+          ]
+        ],
+        "method": "semantic-body",
+        "rejection": null,
+        "rejected": {},
+        "separation": 0,
+        "angleCorrection": 0,
+        "selected": [
+          {
+            "x": 0.38894094959286674,
+            "y": 0.9014670895935658
+          },
+          {
+            "x": 0.5887335799119704,
+            "y": 0.809431144726188
+          }
+        ],
+        "maskAvailable": true
+      },
+      "nativeWristWidthPx": 630,
+      "nativeBraceletWidthPx": 697.5900636043773,
+      "effectiveFitMultiplier": 1,
+      "collisionLimited": false
+    },
+    {
+      "timestampMs": 5299,
+      "trackingStatus": "tracking",
+      "trackingReason": "ok",
+      "trackingSource": "Hand Landmarker",
+      "phase": "continuous",
+      "viewAngleDegrees": 38.02328215349834,
+      "requestedTrackingMode": "straight-wrist",
+      "workerTrackingMode": "straight-wrist",
+      "effectiveTrackingMode": "straight-wrist",
+      "uploadFallbackReason": null,
+      "roi": null,
+      "roiSeed": {
+        "ready": false,
+        "points": 0,
+        "candidates": 0,
+        "distributed": false
+      },
+      "manualFitMultiplier": 0.85,
+      "wristRadius": 0.11314338748970168,
+      "braceletInnerRadius": 0.11447710129115199,
+      "calibrationRadiusRatio": 0.3491587011718071,
+      "distanceScale": 0.3176918957583252,
+      "finalBraceletWorldScale": 0.11223245224622744,
+      "wristProxyScale": 0.11092488969578596,
+      "wristProjectedWidthPx": 335.01745807819793,
+      "braceletProjectedWidthPx": 341.08121210380676,
+      "observedWristWidthPx": 335.01745810055866,
+      "measurementConfidence": 0.8899790433976329,
+      "fitStatus": "measured",
+      "message": "Visual Auto Fit: dùng bề rộng đo trên ROI ảnh gốc; chưa phải True-to-Size theo mm.",
+      "imageMeasurement": {
+        "imageWidth": 2864,
+        "imageHeight": 3008,
+        "roi": {
+          "x": 0,
+          "y": 884,
+          "width": 2864,
+          "height": 2124,
+          "imageWidth": 2864,
+          "imageHeight": 3008
+        },
+        "axis": [
+          {
+            "x": 0.46846075839373974,
+            "y": 0.7569717383316488
+          },
+          {
+            "x": 0.5602294861005961,
+            "y": 0.9561842907318058
+          }
+        ],
+        "cuts": [
+          [
+            {
+              "x": 0.14268225456246608,
+              "y": 0.9585611208763399
+            },
+            {
+              "x": 0.8333939193799388,
+              "y": 0.6403797114776912
+            }
+          ],
+          [
+            {
+              "x": 0.14696479518878608,
+              "y": 0.9678577066550139
+            },
+            {
+              "x": 0.8376764600062587,
+              "y": 0.6496762972563652
+            }
+          ],
+          [
+            {
+              "x": 0.15124733581510602,
+              "y": 0.9771542924336879
+            },
+            {
+              "x": 0.8419590006325788,
+              "y": 0.6589728830350393
+            }
+          ],
+          [
+            {
+              "x": 0.15552987644142602,
+              "y": 0.9864508782123619
+            },
+            {
+              "x": 0.8462415412588986,
+              "y": 0.6682694688137133
+            }
+          ],
+          [
+            {
+              "x": 0.15981241706774596,
+              "y": 0.9957474639910359
+            },
+            {
+              "x": 0.8505240818852187,
+              "y": 0.6775660545923873
+            }
+          ],
+          [
+            {
+              "x": 0.1640949576940659,
+              "y": 1.00504404976971
+            },
+            {
+              "x": 0.8548066225115387,
+              "y": 0.6868626403710613
+            }
+          ],
+          [
+            {
+              "x": 0.1683774983203859,
+              "y": 1.014340635548384
+            },
+            {
+              "x": 0.8590891631378585,
+              "y": 0.6961592261497352
+            }
+          ],
+          [
+            {
+              "x": 0.17266003894670584,
+              "y": 1.023637221327058
+            },
+            {
+              "x": 0.8633717037641786,
+              "y": 0.7054558119284092
+            }
+          ],
+          [
+            {
+              "x": 0.17694257957302584,
+              "y": 1.032933807105732
+            },
+            {
+              "x": 0.8676542443904984,
+              "y": 0.7147523977070832
+            }
+          ],
+          [
+            {
+              "x": 0.18122512019934578,
+              "y": 1.0422303928844059
+            },
+            {
+              "x": 0.8719367850168185,
+              "y": 0.7240489834857572
+            }
+          ],
+          [
+            {
+              "x": 0.18550766082566572,
+              "y": 1.0515269786630799
+            },
+            {
+              "x": 0.8762193256431384,
+              "y": 0.7333455692644312
+            }
+          ],
+          [
+            {
+              "x": 0.18979020145198566,
+              "y": 1.0608235644417539
+            },
+            {
+              "x": 0.8805018662694584,
+              "y": 0.7426421550431052
+            }
+          ],
+          [
+            {
+              "x": 0.19407274207830566,
+              "y": 1.0701201502204278
+            },
+            {
+              "x": 0.8847844068957784,
+              "y": 0.7519387408217793
+            }
+          ],
+          [
+            {
+              "x": 0.19835528270462566,
+              "y": 1.0794167359991018
+            },
+            {
+              "x": 0.8890669475220982,
+              "y": 0.7612353266004532
+            }
+          ],
+          [
+            {
+              "x": 0.2026378233309456,
+              "y": 1.0887133217777758
+            },
+            {
+              "x": 0.8933494881484183,
+              "y": 0.7705319123791272
+            }
+          ]
+        ],
+        "method": "semantic-body",
+        "rejection": null,
+        "rejected": {},
+        "separation": 0,
+        "angleCorrection": 0,
+        "selected": [
+          {
+            "x": 0.38894094959286674,
+            "y": 0.9014670895935658
+          },
+          {
+            "x": 0.5887335799119704,
+            "y": 0.809431144726188
+          }
+        ],
+        "maskAvailable": true
+      },
+      "nativeWristWidthPx": 630,
+      "nativeBraceletWidthPx": 641.4028834309275,
+      "effectiveFitMultiplier": 0.9198071084122164,
+      "collisionLimited": true
+    },
+    {
+      "timestampMs": 4597.0999999940395,
+      "trackingStatus": "tracking",
+      "trackingReason": "ok",
+      "trackingSource": "Hand Landmarker",
+      "phase": "continuous",
+      "viewAngleDegrees": 38.02328215349834,
+      "requestedTrackingMode": "straight-wrist",
+      "workerTrackingMode": "straight-wrist",
+      "effectiveTrackingMode": "straight-wrist",
+      "uploadFallbackReason": null,
+      "roi": null,
+      "roiSeed": {
+        "ready": false,
+        "points": 0,
+        "candidates": 0,
+        "distributed": false
+      },
+      "manualFitMultiplier": 1,
+      "wristRadius": 0.1135811052916172,
+      "braceletInnerRadius": 0.12493921582077894,
+      "calibrationRadiusRatio": 0.3505094913734043,
+      "distanceScale": 0.3176918957583252,
+      "finalBraceletWorldScale": 0.12248942727527347,
+      "wristProxyScale": 0.11135402479570314,
+      "wristProjectedWidthPx": 335.0261659246302,
+      "braceletProjectedWidthPx": 371.1369938018565,
+      "observedWristWidthPx": 335.02616587120764,
+      "measurementConfidence": 1,
+      "fitStatus": "manual",
+      "message": "Đã hiệu chuẩn bề rộng từ hai mép bạn chọn trên ảnh gốc. Đây là calibration thủ công, không phải Auto Fit hay số đo mm.",
+      "imageMeasurement": {
+        "imageWidth": 2864,
+        "imageHeight": 3008,
+        "roi": {
+          "x": 0,
+          "y": 0,
+          "width": 2864,
+          "height": 3008,
+          "imageWidth": 2864,
+          "imageHeight": 3008
+        },
+        "axis": [
+          {
+            "x": 0.5067020127860613,
+            "y": 0.8399862693689892,
+            "z": 1.4479602259243913
+          },
+          {
+            "x": 0.4888369134052754,
+            "y": 0.8554491134801132
+          }
+        ],
+        "cuts": [
+          [
+            {
+              "x": 0.38893745575631966,
+              "y": 0.9014670967631575
+            },
+            {
+              "x": 0.5887363710542312,
+              "y": 0.809431130197069
+            }
+          ]
+        ],
+        "selected": [
+          {
+            "x": 0.38893745575631966,
+            "y": 0.9014670967631575
+          },
+          {
+            "x": 0.5887363710542312,
+            "y": 0.809431130197069
+          }
+        ],
+        "method": "manual-edges",
+        "rejection": null,
+        "rejected": {},
+        "separation": 0,
+        "angleCorrection": 0.0006797831830187616,
+        "maskAvailable": true
+      },
+      "nativeWristWidthPx": 630.0163749541291,
+      "nativeBraceletWidthPx": 697.9227513122239,
+      "effectiveFitMultiplier": 1,
+      "collisionLimited": false
+    },
+    {
+      "timestampMs": 5616.299999982119,
+      "trackingStatus": "tracking",
+      "trackingReason": "ok",
+      "trackingSource": "Hand Landmarker",
+      "phase": "continuous",
+      "viewAngleDegrees": 38.02328215349834,
+      "requestedTrackingMode": "straight-wrist",
+      "workerTrackingMode": "straight-wrist",
+      "effectiveTrackingMode": "straight-wrist",
+      "uploadFallbackReason": null,
+      "roi": null,
+      "roiSeed": {
+        "ready": false,
+        "points": 0,
+        "candidates": 0,
+        "distributed": false
+      },
+      "manualFitMultiplier": 1,
+      "wristRadius": 0.1135811052916172,
+      "braceletInnerRadius": 0.12493921582077894,
+      "calibrationRadiusRatio": 0.3505094913734043,
+      "distanceScale": 0.3176918957583252,
+      "finalBraceletWorldScale": 0.12248942727527347,
+      "wristProxyScale": 0.11135402479570314,
+      "wristProjectedWidthPx": 335.0261659246302,
+      "braceletProjectedWidthPx": 371.1369938018565,
+      "observedWristWidthPx": 335.02616587120764,
+      "measurementConfidence": 1,
+      "fitStatus": "manual",
+      "message": "Đã hiệu chuẩn bề rộng từ hai mép bạn chọn trên ảnh gốc. Đây là calibration thủ công, không phải Auto Fit hay số đo mm.",
+      "imageMeasurement": {
+        "imageWidth": 2864,
+        "imageHeight": 3008,
+        "roi": {
+          "x": 0,
+          "y": 0,
+          "width": 2864,
+          "height": 3008,
+          "imageWidth": 2864,
+          "imageHeight": 3008
+        },
+        "axis": [
+          {
+            "x": 0.5067020127860613,
+            "y": 0.8399862693689892,
+            "z": 1.4479602259243913
+          },
+          {
+            "x": 0.4888369134052754,
+            "y": 0.8554491134801132
+          }
+        ],
+        "cuts": [
+          [
+            {
+              "x": 0.38893745575631966,
+              "y": 0.9014670967631575
+            },
+            {
+              "x": 0.5887363710542312,
+              "y": 0.809431130197069
+            }
+          ]
+        ],
+        "selected": [
+          {
+            "x": 0.38893745575631966,
+            "y": 0.9014670967631575
+          },
+          {
+            "x": 0.5887363710542312,
+            "y": 0.809431130197069
+          }
+        ],
+        "method": "manual-edges",
+        "rejection": null,
+        "rejected": {},
+        "separation": 0,
+        "angleCorrection": 0.0006797831830187616,
+        "maskAvailable": true
+      },
+      "nativeWristWidthPx": 630.0163749541291,
+      "nativeBraceletWidthPx": 697.9227513122239,
+      "effectiveFitMultiplier": 1,
+      "collisionLimited": false
+    }
+  ]
+}

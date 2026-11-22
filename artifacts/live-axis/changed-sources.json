@@ -1,0 +1,57 @@
+[
+  {
+    "path": "src/liveForearm.test.ts",
+    "new": true,
+    "sha256": "7117acbde4588c15b633e78300727f77c15fc99744ca87b08bbb8ca79605d20b"
+  },
+  {
+    "path": "src/liveForearmContour.ts",
+    "new": true,
+    "sha256": "b74c03e68b747ac3116e4bdb38bd3148e237fd95eeb376fe9a8c0ce49ddd6274"
+  },
+  {
+    "path": "src/liveForearmDebug.ts",
+    "new": true,
+    "sha256": "9a0cfe481cc8f24167b457665693232d1e779a88e527d5d6e371a49aac8a51bd"
+  },
+  {
+    "path": "src/liveForearmPose.ts",
+    "new": true,
+    "sha256": "6e7de8ec07a87d968f54cd2440f2e9caebfedaf37dca922c0228dff67fe342bb"
+  },
+  {
+    "path": "src/liveWristFrame.ts",
+    "new": true,
+    "sha256": "86c1a94bad5e9a654e86ade0a749ff0d1b0fbeed0beaed9cfb2972b30ab6c60a"
+  },
+  {
+    "path": "src/liveWristTracking.ts",
+    "new": false,
+    "sha256": "c3f36d87ebbd8b1c2c97c36fb8d5ddef6c9dc6018bc4d333b6c2baf7ba48ed8b"
+  },
+  {
+    "path": "src/useTryOn.ts",
+    "new": false,
+    "sha256": "5b65689f2a0a86dce0886a1826e87d6b8b2594d289e85a639fd4d0e185f0d684"
+  },
+  {
+    "path": "src/vision.worker.ts",
+    "new": false,
+    "sha256": "562174173998aff0fc8d99dfb7f06357df2df8b6e5eae55ec115d6fbf9f78897"
+  },
+  {
+    "path": "src/wristGeometry.ts",
+    "new": false,
+    "sha256": "ff6ec82db96a978856c106539170eddf93482acbecd76fde352c55b03ecf3237"
+  },
+  {
+    "path": "src/wristRoiTracking.ts",
+    "new": false,
+    "sha256": "5b70604d37887a231e1108319dc8bdda3a0425aebcf2c11cd0ad69cf0751e282"
+  },
+  {
+    "path": "src/wristTracking.ts",
+    "new": false,
+    "sha256": "4474f65e99b5470e61ef6af639b62db905ebf8a66b9271e0079b455e53862305"
+  }
+]

@@ -1,0 +1,280 @@
+{
+  "originalArchiveSha256": "8db583fc2728c95e2dbf20cacd4622c7df18a9a688e9640fb740107366af86d7",
+  "originalArchiveIntact": true,
+  "files": [
+    {
+      "file": ".gitignore",
+      "changed": false,
+      "beforeSha256": "03d972b313e90c139431c38d1ff4cd314d12180e1f48f96315eed0d7b7b04c2d",
+      "afterSha256": "03d972b313e90c139431c38d1ff4cd314d12180e1f48f96315eed0d7b7b04c2d"
+    },
+    {
+      "file": "README.md",
+      "changed": true,
+      "beforeSha256": "242fd315417f1e97d28e2e20b5b627815fa575fac9fa6e3e0c9a8214231008b7",
+      "afterSha256": "8db07c1e708727c6b845e370cc6e042895471fea48033facf1e1531cc37fb394"
+    },
+    {
+      "file": "package.json",
+      "changed": true,
+      "beforeSha256": "ca02c41fb08109b0e59400a25aa30a4b40589b6b9067445154ab0654cafaa858",
+      "afterSha256": "f478b2112960e11e25223ff61674c296486a810a22e9665e7568d21d8aa1e360"
+    },
+    {
+      "file": "scripts/prepare-assets.mjs",
+      "changed": false,
+      "beforeSha256": "6aecbe82e432efac5c4711ff9a4461583a4f8498fe8f60232676bb4c3e56772b",
+      "afterSha256": "6aecbe82e432efac5c4711ff9a4461583a4f8498fe8f60232676bb4c3e56772b"
+    },
+    {
+      "file": "scripts/verify-ar.mjs",
+      "changed": false,
+      "beforeSha256": "6d786ed28d638b6e403e8805690f4c58115a6cef87d53b0ccd0cff3967e35476",
+      "afterSha256": "6d786ed28d638b6e403e8805690f4c58115a6cef87d53b0ccd0cff3967e35476"
+    },
+    {
+      "file": "scripts/verify-dynamic-fit.mjs",
+      "changed": true,
+      "beforeSha256": "08b9103c2fff7cb8b10c81dc025cd66482a414ff69e7fe3053d59de9a0baafc8",
+      "afterSha256": "4d134c2e0dfaecbebd5c51cded480e822bce589b579dfb63a5cabe2a74aca801"
+    },
+    {
+      "file": "scripts/verify-session-fit.mjs",
+      "changed": false,
+      "beforeSha256": "e79a0ced94436713a117db4d6087f875648393fb18975611a25c3da03a1389e4",
+      "afterSha256": "e79a0ced94436713a117db4d6087f875648393fb18975611a25c3da03a1389e4"
+    },
+    {
+      "file": "scripts/verify-sizing.mjs",
+      "changed": false,
+      "beforeSha256": "c466295b400a766972d5e3437918c3b05e7f4c7e71433b9f06a71c023d1ca44b",
+      "afterSha256": "c466295b400a766972d5e3437918c3b05e7f4c7e71433b9f06a71c023d1ca44b"
+    },
+    {
+      "file": "scripts/verify-upload-fit.mjs",
+      "changed": false,
+      "beforeSha256": "ed654cde96852043ffd0624dfa49f6d94c2667240124bfdb66725789441503fd",
+      "afterSha256": "ed654cde96852043ffd0624dfa49f6d94c2667240124bfdb66725789441503fd"
+    },
+    {
+      "file": "scripts/verify-upload-measurement.mjs",
+      "changed": true,
+      "beforeSha256": "c19f15ad7f20eea453c191cd25ec4d21ade5eb42ff9c46010261ebe106712a31",
+      "afterSha256": "72627980cc3e43c68d0eb24c60bcccea5ac41ce0da1758c36d154b17efa44573"
+    },
+    {
+      "file": "src/App.tsx",
+      "changed": true,
+      "beforeSha256": "d8736da26c845eff6447447932588ea0b982679ea35b66f74c00333f3cb1a6f9",
+      "afterSha256": "7c31eaf58247364e7786b7f79ccf44619b5c1586b3129dce5726d5187150ed26"
+    },
+    {
+      "file": "src/ProductArt.tsx",
+      "changed": false,
+      "beforeSha256": "7f5bc399733268947a4bc0454fdcef2560f458035e583666a7f0c9b968e255b8",
+      "afterSha256": "7f5bc399733268947a4bc0454fdcef2560f458035e583666a7f0c9b968e255b8"
+    },
+    {
+      "file": "src/braceletDimensions.ts",
+      "changed": false,
+      "beforeSha256": "455250126c504dd563b43b921687862e07bb04a73cf20e37c158175b4190e8c5",
+      "afterSha256": "455250126c504dd563b43b921687862e07bb04a73cf20e37c158175b4190e8c5"
+    },
+    {
+      "file": "src/braceletModel.test.ts",
+      "changed": false,
+      "beforeSha256": "ce7a874d8a304562ff5e0cf8678f5c9b04f05bad149b3e7b6eccefbcc6e37de3",
+      "afterSha256": "ce7a874d8a304562ff5e0cf8678f5c9b04f05bad149b3e7b6eccefbcc6e37de3"
+    },
+    {
+      "file": "src/braceletModel.ts",
+      "changed": false,
+      "beforeSha256": "08d318c02debf563be6959e17dd8c4e6198803c6676704c909b1e8bfc980dfbd",
+      "afterSha256": "08d318c02debf563be6959e17dd8c4e6198803c6676704c909b1e8bfc980dfbd"
+    },
+    {
+      "file": "src/braceletRenderer.ts",
+      "changed": true,
+      "beforeSha256": "808ff117cad7cdf29527d5fde471827298a50d3c58454fbae90c2e5ef9cea7b1",
+      "afterSha256": "4bd7430e33d32e1123b09c6794ab9c0e98f07888a5487ad6b1086df737c04108"
+    },
+    {
+      "file": "src/braceletSizing.test.ts",
+      "changed": false,
+      "beforeSha256": "1979f88aee75582d22a404a44b9e573e95a0dd1392d38e0df5f894314b1002a5",
+      "afterSha256": "1979f88aee75582d22a404a44b9e573e95a0dd1392d38e0df5f894314b1002a5"
+    },
+    {
+      "file": "src/braceletSizing.ts",
+      "changed": false,
+      "beforeSha256": "65ff0dd5e5f1a0145221298d1a215cf6bc732edb6f9f644f31b0a04fcdc7168c",
+      "afterSha256": "65ff0dd5e5f1a0145221298d1a215cf6bc732edb6f9f644f31b0a04fcdc7168c"
+    },
+    {
+      "file": "src/draw.ts",
+      "changed": false,
+      "beforeSha256": "f31bc9b5b554b6564dac12bd3e8ed050f145a4199c16b37c6b824f3362fa1142",
+      "afterSha256": "f31bc9b5b554b6564dac12bd3e8ed050f145a4199c16b37c6b824f3362fa1142"
+    },
+    {
+      "file": "src/dynamicAutoFit.test.ts",
+      "changed": false,
+      "beforeSha256": "2d31a116b3ec6c772cbfa2c170c763b5185cde9f277c407fff354b003ad20416",
+      "afterSha256": "2d31a116b3ec6c772cbfa2c170c763b5185cde9f277c407fff354b003ad20416"
+    },
+    {
+      "file": "src/forearm.test.ts",
+      "changed": false,
+      "beforeSha256": "6c64475b426f4fcb08cc7c85ddda5b88825324bd984b3a9c9c80d24d8750ef2a",
+      "afterSha256": "6c64475b426f4fcb08cc7c85ddda5b88825324bd984b3a9c9c80d24d8750ef2a"
+    },
+    {
+      "file": "src/geometry.test.ts",
+      "changed": false,
+      "beforeSha256": "611e213357f75260cb1e565af25eb2b017057692d8e9c3a7b5b7a4ff9a410de0",
+      "afterSha256": "611e213357f75260cb1e565af25eb2b017057692d8e9c3a7b5b7a4ff9a410de0"
+    },
+    {
+      "file": "src/geometry.ts",
+      "changed": false,
+      "beforeSha256": "106996804f9824ea286c8b0755f65e1d422f19760f7aacb1e1afc0f5b726293d",
+      "afterSha256": "106996804f9824ea286c8b0755f65e1d422f19760f7aacb1e1afc0f5b726293d"
+    },
+    {
+      "file": "src/imageCoordinates.ts",
+      "changed": false,
+      "beforeSha256": "b9f234be3896e1b003c778882b301105a313cd24829a911a4b516189c3918afa",
+      "afterSha256": "b9f234be3896e1b003c778882b301105a313cd24829a911a4b516189c3918afa"
+    },
+    {
+      "file": "src/imageOcclusion.ts",
+      "changed": true,
+      "beforeSha256": "34adef631fbce2150bcc16eb4b12fe7601dfd0f4092a9cd4e03ffeaf013d1bc4",
+      "afterSha256": "85035faebe1ec008247f4f654d09f22e96912c14d3996a774931f75b48efe8f6"
+    },
+    {
+      "file": "src/imageWristMeasurement.test.ts",
+      "changed": true,
+      "beforeSha256": "54ff5ab400185ed56b02597b38da8b82896d7a1d3c24f5c9b0e0d70997a6a9ec",
+      "afterSha256": "454da578d7e3d690c865887b2818f3d7e10f79e2438660463c59efa88d66b3e2"
+    },
+    {
+      "file": "src/imageWristMeasurement.ts",
+      "changed": true,
+      "beforeSha256": "56fa74caf304f094f8ff8f0eabefbf8c5ea9bb018bc69a29fe1e03d3dcb5ed21",
+      "afterSha256": "5330f274a52e26901f057489f0f7f4bef8e4dbf22c287ccbbcb94efe965ceb08"
+    },
+    {
+      "file": "src/main.tsx",
+      "changed": false,
+      "beforeSha256": "8a3d8691d9aec326d3d73f44bf4b88c03372ff24dbcc269e8024528a49a93d02",
+      "afterSha256": "8a3d8691d9aec326d3d73f44bf4b88c03372ff24dbcc269e8024528a49a93d02"
+    },
+    {
+      "file": "src/sessionFit.test.ts",
+      "changed": false,
+      "beforeSha256": "71f7db4a4d617190d52ec1429e92f2a970618f0aa9f5aa66e9edfa61411d0943",
+      "afterSha256": "71f7db4a4d617190d52ec1429e92f2a970618f0aa9f5aa66e9edfa61411d0943"
+    },
+    {
+      "file": "src/style.css",
+      "changed": false,
+      "beforeSha256": "28ce9af68a1534b64823a60da13f02ebdbff3fc3eb1fe982122a476387a734ca",
+      "afterSha256": "28ce9af68a1534b64823a60da13f02ebdbff3fc3eb1fe982122a476387a734ca"
+    },
+    {
+      "file": "src/testing/renderScenarios.ts",
+      "changed": false,
+      "beforeSha256": "53bf1759bd5901e3298f56e6a034c611adee9cff5d8fc4dde6390907b84ad03f",
+      "afterSha256": "53bf1759bd5901e3298f56e6a034c611adee9cff5d8fc4dde6390907b84ad03f"
+    },
+    {
+      "file": "src/testing/wristFixtures.ts",
+      "changed": false,
+      "beforeSha256": "0b9351e76c122ea7ab2ffbffd214172ce2e2f321709c09c308e16fab4ff4c8dc",
+      "afterSha256": "0b9351e76c122ea7ab2ffbffd214172ce2e2f321709c09c308e16fab4ff4c8dc"
+    },
+    {
+      "file": "src/tracking.test.ts",
+      "changed": false,
+      "beforeSha256": "1daa4e2db5c85b6b13564e504b0a42a3c313501499e47fdcf21cbd8a89df2685",
+      "afterSha256": "1daa4e2db5c85b6b13564e504b0a42a3c313501499e47fdcf21cbd8a89df2685"
+    },
+    {
+      "file": "src/types.ts",
+      "changed": false,
+      "beforeSha256": "0e976bde49f427b1893ddb9d953a69517d56c2deda46f8ff48b0f92ab72131ca",
+      "afterSha256": "0e976bde49f427b1893ddb9d953a69517d56c2deda46f8ff48b0f92ab72131ca"
+    },
+    {
+      "file": "src/uploadImage.test.ts",
+      "changed": false,
+      "beforeSha256": "61b9b9db0e6ab84213719154670a957506fbe2c9f9aa6527d207ade4cf9ab17b",
+      "afterSha256": "61b9b9db0e6ab84213719154670a957506fbe2c9f9aa6527d207ade4cf9ab17b"
+    },
+    {
+      "file": "src/useTryOn.ts",
+      "changed": true,
+      "beforeSha256": "ee078512562746825bce217b54bb84aea80a2f35f00c956e61f201328f86ea59",
+      "afterSha256": "ec61d4bce6318c685aa0ffb18cc9c6b9052611b8d913244c0ea5a1c8de1592bb"
+    },
+    {
+      "file": "src/vision.worker.ts",
+      "changed": false,
+      "beforeSha256": "3b5720b336576874475c620f80c7d2ca7aa5099b8e9d266c0df5a546b44f9008",
+      "afterSha256": "3b5720b336576874475c620f80c7d2ca7aa5099b8e9d266c0df5a546b44f9008"
+    },
+    {
+      "file": "src/wrist.test.ts",
+      "changed": false,
+      "beforeSha256": "7d6dc77cafaef6fe7204b6a90e751794b1b7bda8ba9903ae828ee92035dec774",
+      "afterSha256": "7d6dc77cafaef6fe7204b6a90e751794b1b7bda8ba9903ae828ee92035dec774"
+    },
+    {
+      "file": "src/wristDebug.ts",
+      "changed": false,
+      "beforeSha256": "6b1bcae91a7e42c04a911758c8aacafa6e44f474e518db988526a5deecdea3ea",
+      "afterSha256": "6b1bcae91a7e42c04a911758c8aacafa6e44f474e518db988526a5deecdea3ea"
+    },
+    {
+      "file": "src/wristDiagnostics.ts",
+      "changed": false,
+      "beforeSha256": "b3e5b6582103cff4b2ba2bebe818b1d54ddfbce5edea79bf6d48f399f4aa4584",
+      "afterSha256": "b3e5b6582103cff4b2ba2bebe818b1d54ddfbce5edea79bf6d48f399f4aa4584"
+    },
+    {
+      "file": "src/wristGeometry.ts",
+      "changed": false,
+      "beforeSha256": "4dd708b8fdbaa3616ff6d7060075d484768b26b690176bc3e56ee64adabff91b",
+      "afterSha256": "4dd708b8fdbaa3616ff6d7060075d484768b26b690176bc3e56ee64adabff91b"
+    },
+    {
+      "file": "src/wristMeasurement.test.ts",
+      "changed": false,
+      "beforeSha256": "3790851b1db16cf403625e1c5810c30b02844ae6cc56af16e778195aa3c75b3c",
+      "afterSha256": "3790851b1db16cf403625e1c5810c30b02844ae6cc56af16e778195aa3c75b3c"
+    },
+    {
+      "file": "src/wristRoiTracking.ts",
+      "changed": false,
+      "beforeSha256": "e6be10d72172af3958ab98cf237e5d3b53d8cb40a31225eb09a520c953c4ae59",
+      "afterSha256": "e6be10d72172af3958ab98cf237e5d3b53d8cb40a31225eb09a520c953c4ae59"
+    },
+    {
+      "file": "src/wristTracking.ts",
+      "changed": true,
+      "beforeSha256": "62f52738a38eff58bf46058ed88295f6d71587b8f57bedf0ab60a92a5050f858",
+      "afterSha256": "3f2a5f4b22cf4f4d36f933f20b7462bc814196dd1e847edb5701a5adcb626545"
+    },
+    {
+      "file": "src/braceletRenderFrame.test.ts",
+      "new": true,
+      "afterSha256": "194a374c9fdc90b6c875a6a916338b68610d99ef2f395dae00c0282131f5b50e"
+    },
+    {
+      "file": "src/braceletRenderFrame.ts",
+      "new": true,
+      "afterSha256": "e7a813c4832c94c9b1919b6804f62e03e6c7a377ac8faa4b6096312e6beb5491"
+    }
+  ]
+}

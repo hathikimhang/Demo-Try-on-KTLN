@@ -1,0 +1,3192 @@
+{
+  "scope": "Official MediaPipe photos; current user photo unavailable",
+  "images": [
+    {
+      "fixture": "mira-dynamic-pointing-up.jpg",
+      "image": {
+        "width": 358,
+        "height": 376
+      },
+      "mode": "straight-wrist",
+      "segmentation": true,
+      "method": "image",
+      "measuredBy": "semantic-body",
+      "reason": "Biên da tay được segmentation và pixel ảnh gốc xác nhận",
+      "centerPx": {
+        "x": 174.99214104124488,
+        "y": 306.08957615099916
+      },
+      "originalCenterPx": {
+        "x": 181.25822839991022,
+        "y": 300.5762901116001
+      },
+      "orientationDelta": 0,
+      "rejected": {},
+      "slices": [
+        {
+          "center": {
+            "x": 0.4876179665116722,
+            "y": 0.799115325942524
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.37603081214593753,
+                "y": 0.8506318560252033
+              },
+              "side": -1,
+              "distancePx": 44,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.5738444039761036,
+                "y": 0.7593070981513628
+              },
+              "side": 1,
+              "distancePx": 34,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            }
+          ],
+          "accepted": true,
+          "reason": "measured",
+          "left": {
+            "x": 0.37603081214593753,
+            "y": 0.8506318560252033
+          },
+          "right": {
+            "x": 0.5738444039761036,
+            "y": 0.7593070981513628
+          }
+        },
+        {
+          "center": {
+            "x": 0.49191306056228645,
+            "y": 0.8084186956002251
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.37778983450642145,
+                "y": 0.8611060559120561
+              },
+              "side": -1,
+              "distancePx": 45,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.5756034263365875,
+                "y": 0.7697812980382155
+              },
+              "side": 1,
+              "distancePx": 33,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            }
+          ],
+          "accepted": true,
+          "reason": "measured",
+          "left": {
+            "x": 0.37778983450642145,
+            "y": 0.8611060559120561
+          },
+          "right": {
+            "x": 0.5756034263365875,
+            "y": 0.7697812980382155
+          }
+        },
+        {
+          "center": {
+            "x": 0.4962081546129007,
+            "y": 0.817722065257926
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.3820849285570357,
+                "y": 0.8704094255697571
+              },
+              "side": -1,
+              "distancePx": 45,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.3795488568669053,
+                "y": 0.871580255798909
+              },
+              "side": -1,
+              "distancePx": 46,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.5773624486970714,
+                "y": 0.7802554979250683
+              },
+              "side": 1,
+              "distancePx": 32,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            }
+          ],
+          "accepted": true,
+          "reason": "measured",
+          "left": {
+            "x": 0.3795488568669053,
+            "y": 0.871580255798909
+          },
+          "right": {
+            "x": 0.5773624486970714,
+            "y": 0.7802554979250683
+          }
+        },
+        {
+          "center": {
+            "x": 0.5005032486635149,
+            "y": 0.827025434915627
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.3838439509175196,
+                "y": 0.8808836254566099
+              },
+              "side": -1,
+              "distancePx": 46,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.5816575427476857,
+                "y": 0.7895588675827694
+              },
+              "side": 1,
+              "distancePx": 32,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            }
+          ],
+          "accepted": true,
+          "reason": "measured",
+          "left": {
+            "x": 0.3838439509175196,
+            "y": 0.8808836254566099
+          },
+          "right": {
+            "x": 0.5816575427476857,
+            "y": 0.7895588675827694
+          }
+        },
+        {
+          "center": {
+            "x": 0.5047983427141292,
+            "y": 0.836328804573328
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.38813904496813384,
+                "y": 0.890186995114311
+              },
+              "side": -1,
+              "distancePx": 46,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.3856029732780035,
+                "y": 0.8913578253434628
+              },
+              "side": -1,
+              "distancePx": 47,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.5834165651081695,
+                "y": 0.8000330674696221
+              },
+              "side": 1,
+              "distancePx": 31,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.5859526367982999,
+                "y": 0.7988622372404703
+              },
+              "side": 1,
+              "distancePx": 32,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            }
+          ],
+          "accepted": true,
+          "reason": "measured",
+          "left": {
+            "x": 0.3856029732780035,
+            "y": 0.8913578253434628
+          },
+          "right": {
+            "x": 0.5834165651081695,
+            "y": 0.8000330674696221
+          }
+        },
+        {
+          "center": {
+            "x": 0.5090934367647434,
+            "y": 0.845632174231029
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.3898980673286177,
+                "y": 0.9006611950011637
+              },
+              "side": -1,
+              "distancePx": 47,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.3873619956384874,
+                "y": 0.9018320252303156
+              },
+              "side": -1,
+              "distancePx": 48,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.5877116591587838,
+                "y": 0.8093364371273232
+              },
+              "side": 1,
+              "distancePx": 31,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            }
+          ],
+          "accepted": true,
+          "reason": "measured",
+          "left": {
+            "x": 0.3898980673286177,
+            "y": 0.9006611950011637
+          },
+          "right": {
+            "x": 0.5877116591587838,
+            "y": 0.8093364371273232
+          }
+        },
+        {
+          "center": {
+            "x": 0.5133885308153576,
+            "y": 0.85493554388873
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.3916570896891016,
+                "y": 0.9111353948880165
+              },
+              "side": -1,
+              "distancePx": 48,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.5894706815192676,
+                "y": 0.819810637014176
+              },
+              "side": 1,
+              "distancePx": 30,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.592006753209398,
+                "y": 0.8186398067850241
+              },
+              "side": 1,
+              "distancePx": 31,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            }
+          ],
+          "accepted": true,
+          "reason": "measured",
+          "left": {
+            "x": 0.3916570896891016,
+            "y": 0.9111353948880165
+          },
+          "right": {
+            "x": 0.592006753209398,
+            "y": 0.8186398067850241
+          }
+        },
+        {
+          "center": {
+            "x": 0.5176836248659719,
+            "y": 0.864238913546431
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.39595218373971586,
+                "y": 0.9204387645457175
+              },
+              "side": -1,
+              "distancePx": 48,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.39341611204958554,
+                "y": 0.9216095947748694
+              },
+              "side": -1,
+              "distancePx": 49,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.5937657755698819,
+                "y": 0.829114006671877
+              },
+              "side": 1,
+              "distancePx": 30,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            }
+          ],
+          "accepted": true,
+          "reason": "measured",
+          "left": {
+            "x": 0.39341611204958554,
+            "y": 0.9216095947748694
+          },
+          "right": {
+            "x": 0.5937657755698819,
+            "y": 0.829114006671877
+          }
+        },
+        {
+          "center": {
+            "x": 0.5219787189165861,
+            "y": 0.8735422832041321
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.3977112061001997,
+                "y": 0.9309129644325703
+              },
+              "side": -1,
+              "distancePx": 49,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.5980608696204961,
+                "y": 0.8384173763295779
+              },
+              "side": 1,
+              "distancePx": 30,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            }
+          ],
+          "accepted": true,
+          "reason": "measured",
+          "left": {
+            "x": 0.3977112061001997,
+            "y": 0.9309129644325703
+          },
+          "right": {
+            "x": 0.5980608696204961,
+            "y": 0.8384173763295779
+          }
+        },
+        {
+          "center": {
+            "x": 0.5262738129672003,
+            "y": 0.882845652861833
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.3994702284606837,
+                "y": 0.9413871643194232
+              },
+              "side": -1,
+              "distancePx": 50,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.5998198919809801,
+                "y": 0.8488915762164307
+              },
+              "side": 1,
+              "distancePx": 29,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.6023559636711103,
+                "y": 0.847720745987279
+              },
+              "side": 1,
+              "distancePx": 30,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            }
+          ],
+          "accepted": true,
+          "reason": "measured",
+          "left": {
+            "x": 0.3994702284606837,
+            "y": 0.9413871643194232
+          },
+          "right": {
+            "x": 0.5998198919809801,
+            "y": 0.8488915762164307
+          }
+        },
+        {
+          "center": {
+            "x": 0.5305689070178146,
+            "y": 0.892149022519534
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.4037653225112979,
+                "y": 0.9506905339771241
+              },
+              "side": -1,
+              "distancePx": 50,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.6041149860315943,
+                "y": 0.8581949458741318
+              },
+              "side": 1,
+              "distancePx": 29,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            }
+          ],
+          "accepted": true,
+          "reason": "measured",
+          "left": {
+            "x": 0.4037653225112979,
+            "y": 0.9506905339771241
+          },
+          "right": {
+            "x": 0.6041149860315943,
+            "y": 0.8581949458741318
+          }
+        },
+        {
+          "center": {
+            "x": 0.5348640010684288,
+            "y": 0.901452392177235
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.4055243448717818,
+                "y": 0.9611647338639769
+              },
+              "side": -1,
+              "distancePx": 51,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.6058740083920782,
+                "y": 0.8686691457609845
+              },
+              "side": 1,
+              "distancePx": 28,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.6084100800822085,
+                "y": 0.8674983155318328
+              },
+              "side": 1,
+              "distancePx": 29,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            }
+          ],
+          "accepted": true,
+          "reason": "measured",
+          "left": {
+            "x": 0.4055243448717818,
+            "y": 0.9611647338639769
+          },
+          "right": {
+            "x": 0.6084100800822085,
+            "y": 0.8674983155318328
+          }
+        },
+        {
+          "center": {
+            "x": 0.539159095119043,
+            "y": 0.910755761834936
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.40981943892239603,
+                "y": 0.970468103521678
+              },
+              "side": -1,
+              "distancePx": 51,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4072833672322657,
+                "y": 0.9716389337508298
+              },
+              "side": -1,
+              "distancePx": 52,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.6101691024426924,
+                "y": 0.8779725154186856
+              },
+              "side": 1,
+              "distancePx": 28,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.6127051741328228,
+                "y": 0.8768016851895337
+              },
+              "side": 1,
+              "distancePx": 29,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            }
+          ],
+          "accepted": true,
+          "reason": "measured",
+          "left": {
+            "x": 0.4072833672322657,
+            "y": 0.9716389337508298
+          },
+          "right": {
+            "x": 0.6127051741328228,
+            "y": 0.8768016851895337
+          }
+        },
+        {
+          "center": {
+            "x": 0.5434541891696573,
+            "y": 0.9200591314926371
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.41157846128287995,
+                "y": 0.9809423034085307
+              },
+              "side": -1,
+              "distancePx": 52,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.6144641964933066,
+                "y": 0.8872758850763866
+              },
+              "side": 1,
+              "distancePx": 28,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.617000268183437,
+                "y": 0.8861050548472348
+              },
+              "side": 1,
+              "distancePx": 29,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            }
+          ],
+          "accepted": true,
+          "reason": "measured",
+          "left": {
+            "x": 0.41157846128287995,
+            "y": 0.9809423034085307
+          },
+          "right": {
+            "x": 0.6144641964933066,
+            "y": 0.8872758850763866
+          }
+        },
+        {
+          "center": {
+            "x": 0.5477492832202715,
+            "y": 0.929362501150338
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.41333748364336387,
+                "y": 0.9914165032953836
+              },
+              "side": -1,
+              "distancePx": 53,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.6187592905439209,
+                "y": 0.8965792547340876
+              },
+              "side": 1,
+              "distancePx": 28,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            }
+          ],
+          "accepted": true,
+          "reason": "measured",
+          "left": {
+            "x": 0.41333748364336387,
+            "y": 0.9914165032953836
+          },
+          "right": {
+            "x": 0.6187592905439209,
+            "y": 0.8965792547340876
+          }
+        }
+      ],
+      "confidence": 0.9163398271818778,
+      "selected": [
+        {
+          "x": 0.3898980673286177,
+          "y": 0.9006611950011637
+        },
+        {
+          "x": 0.5877116591587838,
+          "y": 0.8093364371273232
+        }
+      ],
+      "rgbRejected": {
+        "no-persistent-pair: không có hai mép với nền liên tục": 3
+      },
+      "rgbReason": "Đo silhouette trên ROI ảnh gốc",
+      "semanticReason": "Biên da tay được segmentation và pixel ảnh gốc xác nhận",
+      "views": [
+        {
+          "manual": 1,
+          "widthPx": 78,
+          "innerPx": 86.38811235967447,
+          "ratio": 1.1075399020471086,
+          "baseScale": 0.11000459485620279,
+          "finalWorldScale": 0.11000459485620279,
+          "fullPixels": 2099,
+          "visiblePixels": 1519,
+          "hiddenPixels": 558,
+          "hiddenOutsideSkin": 0,
+          "unmaskedHiddenOutsideSkin": 55,
+          "borderPixels": 0,
+          "uiComparison": {
+            "different": 0,
+            "maxDifference": 0,
+            "fraction": 0
+          }
+        },
+        {
+          "manual": 0.98,
+          "widthPx": 78,
+          "innerPx": 84.65227585447829,
+          "ratio": 1.0852855878779268,
+          "baseScale": 0.11000459485620279,
+          "finalWorldScale": 0.10780450295907873,
+          "fullPixels": 2016,
+          "visiblePixels": 1431,
+          "hiddenPixels": 563,
+          "hiddenOutsideSkin": 0,
+          "unmaskedHiddenOutsideSkin": 45,
+          "borderPixels": 0,
+          "uiComparison": null
+        }
+      ],
+      "uiComparison98": {
+        "different": 0,
+        "fraction": 0
+      }
+    },
+    {
+      "fixture": "mira-dynamic-thumb-up.jpg",
+      "image": {
+        "width": 382,
+        "height": 406
+      },
+      "mode": "straight-wrist",
+      "segmentation": true,
+      "method": "image",
+      "measuredBy": "semantic-body",
+      "reason": "Biên da tay được segmentation và pixel ảnh gốc xác nhận",
+      "centerPx": {
+        "x": 268.7902987413877,
+        "y": 281.21348503359695
+      },
+      "originalCenterPx": {
+        "x": 263.61181910126254,
+        "y": 279.53450596896243
+      },
+      "orientationDelta": 0,
+      "rejected": {},
+      "slices": [
+        {
+          "center": {
+            "x": 0.6545055897510006,
+            "y": 0.7202306333246891
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.6246327425082295,
+                "y": 0.8123675363377885
+              },
+              "side": -1,
+              "distancePx": 37,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.6238253682584249,
+                "y": 0.8148577229057101
+              },
+              "side": -1,
+              "distancePx": 38,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.6948743022412318,
+                "y": 0.5957213049286089
+              },
+              "side": 1,
+              "distancePx": 50,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.6956816764910364,
+                "y": 0.5932311183606872
+              },
+              "side": 1,
+              "distancePx": 51,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            }
+          ],
+          "accepted": true,
+          "reason": "measured",
+          "left": {
+            "x": 0.6246327425082295,
+            "y": 0.8123675363377885
+          },
+          "right": {
+            "x": 0.6956816764910364,
+            "y": 0.5932311183606872
+          }
+        },
+        {
+          "center": {
+            "x": 0.6643323769010034,
+            "y": 0.7234166977768177
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.6328447811586231,
+                "y": 0.8205339739257603
+              },
+              "side": -1,
+              "distancePx": 39,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.70389371514143,
+                "y": 0.6013975559486591
+              },
+              "side": 1,
+              "distancePx": 49,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.7047010893912347,
+                "y": 0.5989073693807375
+              },
+              "side": 1,
+              "distancePx": 50,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            }
+          ],
+          "accepted": true,
+          "reason": "measured",
+          "left": {
+            "x": 0.6328447811586231,
+            "y": 0.8205339739257603
+          },
+          "right": {
+            "x": 0.70389371514143,
+            "y": 0.6013975559486591
+          }
+        },
+        {
+          "center": {
+            "x": 0.6741591640510063,
+            "y": 0.7266027622289464
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.6418641940588213,
+                "y": 0.8262102249458106
+              },
+              "side": -1,
+              "distancePx": 40,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.6410568198090167,
+                "y": 0.8287004115137322
+              },
+              "side": -1,
+              "distancePx": 41,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.7121057537918236,
+                "y": 0.6095639935366309
+              },
+              "side": 1,
+              "distancePx": 47,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.7129131280416282,
+                "y": 0.6070738069687094
+              },
+              "side": 1,
+              "distancePx": 48,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            }
+          ],
+          "accepted": true,
+          "reason": "measured",
+          "left": {
+            "x": 0.6418641940588213,
+            "y": 0.8262102249458106
+          },
+          "right": {
+            "x": 0.7129131280416282,
+            "y": 0.6070738069687094
+          }
+        },
+        {
+          "center": {
+            "x": 0.6839859512010091,
+            "y": 0.729788826681075
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.6508836069590195,
+                "y": 0.8318864759658608
+              },
+              "side": -1,
+              "distancePx": 41,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.6500762327092149,
+                "y": 0.8343766625337825
+              },
+              "side": -1,
+              "distancePx": 42,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.7219325409418265,
+                "y": 0.6127500579887596
+              },
+              "side": 1,
+              "distancePx": 47,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.722739915191631,
+                "y": 0.6102598714208379
+              },
+              "side": 1,
+              "distancePx": 48,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            }
+          ],
+          "accepted": true,
+          "reason": "measured",
+          "left": {
+            "x": 0.6500762327092149,
+            "y": 0.8343766625337825
+          },
+          "right": {
+            "x": 0.7219325409418265,
+            "y": 0.6127500579887596
+          }
+        },
+        {
+          "center": {
+            "x": 0.693812738351012,
+            "y": 0.7329748911332037
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.6590956456094131,
+                "y": 0.8400529135538327
+              },
+              "side": -1,
+              "distancePx": 43,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.6582882713596085,
+                "y": 0.8425431001217543
+              },
+              "side": -1,
+              "distancePx": 44,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.7309519538420246,
+                "y": 0.6184263090088098
+              },
+              "side": 1,
+              "distancePx": 46,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            }
+          ],
+          "accepted": true,
+          "reason": "measured",
+          "left": {
+            "x": 0.6590956456094131,
+            "y": 0.8400529135538327
+          },
+          "right": {
+            "x": 0.7309519538420246,
+            "y": 0.6184263090088098
+          }
+        },
+        {
+          "center": {
+            "x": 0.7036395255010148,
+            "y": 0.7361609555853323
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.6673076842598067,
+                "y": 0.8482193511418046
+              },
+              "side": -1,
+              "distancePx": 45,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.7391639924924183,
+                "y": 0.6265927465967817
+              },
+              "side": 1,
+              "distancePx": 44,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.7399713667422229,
+                "y": 0.6241025600288601
+              },
+              "side": 1,
+              "distancePx": 45,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            }
+          ],
+          "accepted": true,
+          "reason": "measured",
+          "left": {
+            "x": 0.6673076842598067,
+            "y": 0.8482193511418046
+          },
+          "right": {
+            "x": 0.7399713667422229,
+            "y": 0.6241025600288601
+          }
+        },
+        {
+          "center": {
+            "x": 0.7134663126510176,
+            "y": 0.739347020037461
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.6763270971600049,
+                "y": 0.8538956021618549
+              },
+              "side": -1,
+              "distancePx": 46,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.6755197229102002,
+                "y": 0.8563857887297764
+              },
+              "side": -1,
+              "distancePx": 47,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.748990779642421,
+                "y": 0.6297788110489103
+              },
+              "side": 1,
+              "distancePx": 44,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.7497981538922257,
+                "y": 0.6272886244809888
+              },
+              "side": 1,
+              "distancePx": 45,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            }
+          ],
+          "accepted": true,
+          "reason": "measured",
+          "left": {
+            "x": 0.6763270971600049,
+            "y": 0.8538956021618549
+          },
+          "right": {
+            "x": 0.748990779642421,
+            "y": 0.6297788110489103
+          }
+        },
+        {
+          "center": {
+            "x": 0.7232930998010204,
+            "y": 0.7425330844895897
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.6853465100602031,
+                "y": 0.8595718531819051
+              },
+              "side": -1,
+              "distancePx": 47,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.6845391358103985,
+                "y": 0.8620620397498266
+              },
+              "side": -1,
+              "distancePx": 48,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.7580101925426193,
+                "y": 0.6354550620689605
+              },
+              "side": 1,
+              "distancePx": 43,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            }
+          ],
+          "accepted": true,
+          "reason": "measured",
+          "left": {
+            "x": 0.6845391358103985,
+            "y": 0.8620620397498266
+          },
+          "right": {
+            "x": 0.7580101925426193,
+            "y": 0.6354550620689605
+          }
+        },
+        {
+          "center": {
+            "x": 0.7331198869510233,
+            "y": 0.7457191489417183
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.6935585487105967,
+                "y": 0.867738290769877
+              },
+              "side": -1,
+              "distancePx": 49,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.692751174460792,
+                "y": 0.8702284773377985
+              },
+              "side": -1,
+              "distancePx": 50,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.7662222311930128,
+                "y": 0.6436214996569325
+              },
+              "side": 1,
+              "distancePx": 41,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.7670296054428174,
+                "y": 0.6411313130890108
+              },
+              "side": 1,
+              "distancePx": 42,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            }
+          ],
+          "accepted": true,
+          "reason": "measured",
+          "left": {
+            "x": 0.6935585487105967,
+            "y": 0.867738290769877
+          },
+          "right": {
+            "x": 0.7670296054428174,
+            "y": 0.6411313130890108
+          }
+        },
+        {
+          "center": {
+            "x": 0.7429466741010261,
+            "y": 0.7489052133938469
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.7025779616107949,
+                "y": 0.8734145417899272
+              },
+              "side": -1,
+              "distancePx": 50,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.7017705873609903,
+                "y": 0.8759047283578487
+              },
+              "side": -1,
+              "distancePx": 51,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.7752416440932111,
+                "y": 0.6492977506769827
+              },
+              "side": 1,
+              "distancePx": 40,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.7760490183430157,
+                "y": 0.6468075641090612
+              },
+              "side": 1,
+              "distancePx": 41,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            }
+          ],
+          "accepted": true,
+          "reason": "measured",
+          "left": {
+            "x": 0.7017705873609903,
+            "y": 0.8759047283578487
+          },
+          "right": {
+            "x": 0.7760490183430157,
+            "y": 0.6468075641090612
+          }
+        },
+        {
+          "center": {
+            "x": 0.752773461251029,
+            "y": 0.7520912778459755
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.7107900002611885,
+                "y": 0.881580979377899
+              },
+              "side": -1,
+              "distancePx": 52,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.7842610569934092,
+                "y": 0.6549740016970329
+              },
+              "side": 1,
+              "distancePx": 39,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.7850684312432139,
+                "y": 0.6524838151291114
+              },
+              "side": 1,
+              "distancePx": 40,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            }
+          ],
+          "accepted": true,
+          "reason": "measured",
+          "left": {
+            "x": 0.7107900002611885,
+            "y": 0.881580979377899
+          },
+          "right": {
+            "x": 0.7842610569934092,
+            "y": 0.6549740016970329
+          }
+        },
+        {
+          "center": {
+            "x": 0.7626002484010318,
+            "y": 0.7552773422981042
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.7198094131613867,
+                "y": 0.8872572303979492
+              },
+              "side": -1,
+              "distancePx": 53,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.7190020389115821,
+                "y": 0.8897474169658708
+              },
+              "side": -1,
+              "distancePx": 54,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.7924730956438029,
+                "y": 0.6631404392850048
+              },
+              "side": 1,
+              "distancePx": 37,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.7932804698936075,
+                "y": 0.6606502527170832
+              },
+              "side": 1,
+              "distancePx": 38,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            }
+          ],
+          "accepted": true,
+          "reason": "measured",
+          "left": {
+            "x": 0.7198094131613867,
+            "y": 0.8872572303979492
+          },
+          "right": {
+            "x": 0.7932804698936075,
+            "y": 0.6606502527170832
+          }
+        },
+        {
+          "center": {
+            "x": 0.7724270355510345,
+            "y": 0.7584634067502328
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.7280214518117802,
+                "y": 0.8954236679859211
+              },
+              "side": -1,
+              "distancePx": 55,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.801492508544001,
+                "y": 0.668816690305055
+              },
+              "side": 1,
+              "distancePx": 36,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.8022998827938057,
+                "y": 0.6663265037371334
+              },
+              "side": 1,
+              "distancePx": 37,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            }
+          ],
+          "accepted": true,
+          "reason": "measured",
+          "left": {
+            "x": 0.7280214518117802,
+            "y": 0.8954236679859211
+          },
+          "right": {
+            "x": 0.8022998827938057,
+            "y": 0.6663265037371334
+          }
+        },
+        {
+          "center": {
+            "x": 0.7822538227010375,
+            "y": 0.7616494712023615
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.7370408647119785,
+                "y": 0.9010999190059714
+              },
+              "side": -1,
+              "distancePx": 56,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.7362334904621739,
+                "y": 0.903590105573893
+              },
+              "side": -1,
+              "distancePx": 57,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.8105119214441993,
+                "y": 0.6744929413251053
+              },
+              "side": 1,
+              "distancePx": 35,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.8113192956940039,
+                "y": 0.6720027547571836
+              },
+              "side": 1,
+              "distancePx": 36,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            }
+          ],
+          "accepted": true,
+          "reason": "measured",
+          "left": {
+            "x": 0.7370408647119785,
+            "y": 0.9010999190059714
+          },
+          "right": {
+            "x": 0.8113192956940039,
+            "y": 0.6720027547571836
+          }
+        },
+        {
+          "center": {
+            "x": 0.7920806098510402,
+            "y": 0.7648355356544901
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.7460602776121767,
+                "y": 0.9067761700260216
+              },
+              "side": -1,
+              "distancePx": 57,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.745252903362372,
+                "y": 0.9092663565939433
+              },
+              "side": -1,
+              "distancePx": 58,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.8195313343443975,
+                "y": 0.6801691923451555
+              },
+              "side": 1,
+              "distancePx": 34,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            }
+          ],
+          "accepted": true,
+          "reason": "measured",
+          "left": {
+            "x": 0.745252903362372,
+            "y": 0.9092663565939433
+          },
+          "right": {
+            "x": 0.8195313343443975,
+            "y": 0.6801691923451555
+          }
+        }
+      ],
+      "confidence": 0.9008281359132938,
+      "selected": [
+        {
+          "x": 0.6673076842598067,
+          "y": 0.8482193511418046
+        },
+        {
+          "x": 0.7399713667422229,
+          "y": 0.6241025600288601
+        }
+      ],
+      "rgbRejected": {
+        "no-persistent-pair: không có hai mép với nền liên tục": 3,
+        "roi-clipped: thiếu nền ở hai bên": 3
+      },
+      "rgbReason": "Đo silhouette trên ROI ảnh gốc",
+      "semanticReason": "Biên da tay được segmentation và pixel ảnh gốc xác nhận",
+      "views": [
+        {
+          "manual": 1,
+          "widthPx": 90,
+          "innerPx": 99.1009027560532,
+          "ratio": 1.1011211417339244,
+          "baseScale": 0.11843237182087958,
+          "finalWorldScale": 0.11843237182087958,
+          "fullPixels": 2807,
+          "visiblePixels": 2003,
+          "hiddenPixels": 768,
+          "hiddenOutsideSkin": 0,
+          "unmaskedHiddenOutsideSkin": 96,
+          "borderPixels": 0,
+          "uiComparison": {
+            "different": 0,
+            "maxDifference": 0,
+            "fraction": 0
+          }
+        },
+        {
+          "manual": 0.98,
+          "widthPx": 90,
+          "innerPx": 97.1107831581674,
+          "ratio": 1.0790087017574155,
+          "baseScale": 0.11843237182087958,
+          "finalWorldScale": 0.11606372438446198,
+          "fullPixels": 2704,
+          "visiblePixels": 1901,
+          "hiddenPixels": 763,
+          "hiddenOutsideSkin": 0,
+          "unmaskedHiddenOutsideSkin": 91,
+          "borderPixels": 0,
+          "uiComparison": null
+        }
+      ],
+      "uiComparison98": {
+        "different": 0,
+        "fraction": 0
+      }
+    },
+    {
+      "fixture": "mira-dynamic-woman-hands.jpg",
+      "image": {
+        "width": 640,
+        "height": 960
+      },
+      "mode": "straight-wrist",
+      "segmentation": true,
+      "method": "image",
+      "measuredBy": "semantic-body",
+      "reason": "Biên da tay được segmentation và pixel ảnh gốc xác nhận",
+      "centerPx": {
+        "x": 285.330763300741,
+        "y": 663.2826093823073
+      },
+      "originalCenterPx": {
+        "x": 281.57412738356294,
+        "y": 683.9442620222005
+      },
+      "orientationDelta": 0,
+      "rejected": {
+        "implausible-pair: tâm/bề rộng không hợp lý": 1,
+        "skin-core-uncertain: tâm lát cắt không đủ tin cậy là da tay": 4,
+        "contour-width-outlier: độ rộng khác nhóm biên nhất quán": 3
+      },
+      "slices": [
+        {
+          "center": {
+            "x": 0.40462070527717625,
+            "y": 1.0620161762901972
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.3945120222357957,
+                "y": 1.1157612894021713
+              },
+              "side": -1,
+              "distancePx": 35,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.3942232027203277,
+                "y": 1.1172968640625134
+              },
+              "side": -1,
+              "distancePx": 36,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.39393438320485963,
+                "y": 1.1188324387228556
+              },
+              "side": -1,
+              "distancePx": 37,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.39364556368939163,
+                "y": 1.1203680133831977
+              },
+              "side": -1,
+              "distancePx": 38,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.42021695911244916,
+                "y": 0.9790951446317226
+              },
+              "side": 1,
+              "distancePx": 54,
+              "quality": 0.7303377349913358,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4205057786279172,
+                "y": 0.9775595699713805
+              },
+              "side": 1,
+              "distancePx": 55,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4207945981433852,
+                "y": 0.9760239953110383
+              },
+              "side": 1,
+              "distancePx": 56,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4210834176588532,
+                "y": 0.9744884206506962
+              },
+              "side": 1,
+              "distancePx": 57,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            }
+          ],
+          "accepted": true,
+          "reason": "measured",
+          "left": {
+            "x": 0.39393438320485963,
+            "y": 1.1188324387228556
+          },
+          "right": {
+            "x": 0.4210834176588532,
+            "y": 0.9744884206506962
+          }
+        },
+        {
+          "center": {
+            "x": 0.41164938578825694,
+            "y": 1.0633381700375657
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.4026959808087484,
+                "y": 1.1109409845081715
+              },
+              "side": -1,
+              "distancePx": 31,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.40240716129328036,
+                "y": 1.1124765591685135
+              },
+              "side": -1,
+              "distancePx": 32,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.40211834177781236,
+                "y": 1.1140121338288556
+              },
+              "side": -1,
+              "distancePx": 33,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.42753445913899785,
+                "y": 0.978881563718749
+              },
+              "side": 1,
+              "distancePx": 55,
+              "quality": 0.600435323001923,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.42782327865446584,
+                "y": 0.9773459890584069
+              },
+              "side": 1,
+              "distancePx": 56,
+              "quality": 0.9947386811565443,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4281120981699339,
+                "y": 0.9758104143980647
+              },
+              "side": 1,
+              "distancePx": 57,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            }
+          ],
+          "accepted": true,
+          "reason": "measured",
+          "left": {
+            "x": 0.40240716129328036,
+            "y": 1.1124765591685135
+          },
+          "right": {
+            "x": 0.4281120981699339,
+            "y": 0.9758104143980647
+          }
+        },
+        {
+          "center": {
+            "x": 0.41867806629933757,
+            "y": 1.0646601637849342
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.4105911198662331,
+                "y": 1.1076562542745134
+              },
+              "side": -1,
+              "distancePx": 28,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4103023003507651,
+                "y": 1.1091918289348557
+              },
+              "side": -1,
+              "distancePx": 29,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.41001348083529704,
+                "y": 1.1107274035951977
+              },
+              "side": -1,
+              "distancePx": 30,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.40972466131982904,
+                "y": 1.11226297825554
+              },
+              "side": -1,
+              "distancePx": 31,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4345631396500785,
+                "y": 0.9802035574661174
+              },
+              "side": 1,
+              "distancePx": 55,
+              "quality": 0.5511381399724224,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4348519591655465,
+                "y": 0.9786679828057754
+              },
+              "side": 1,
+              "distancePx": 56,
+              "quality": 0.9371806015508509,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.43514077868101453,
+                "y": 0.9771324081454332
+              },
+              "side": 1,
+              "distancePx": 57,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4354295981964825,
+                "y": 0.9755968334850911
+              },
+              "side": 1,
+              "distancePx": 58,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            }
+          ],
+          "accepted": true,
+          "reason": "measured",
+          "left": {
+            "x": 0.41001348083529704,
+            "y": 1.1107274035951977
+          },
+          "right": {
+            "x": 0.4354295981964825,
+            "y": 0.9755968334850911
+          }
+        },
+        {
+          "center": {
+            "x": 0.4257067468104182,
+            "y": 1.0659821575323027
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.41819743940824977,
+                "y": 1.1059070987011979
+              },
+              "side": -1,
+              "distancePx": 26,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4179086198927817,
+                "y": 1.10744267336154
+              },
+              "side": -1,
+              "distancePx": 27,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4176198003773137,
+                "y": 1.108978248021882
+              },
+              "side": -1,
+              "distancePx": 28,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4173309808618457,
+                "y": 1.1105138226822242
+              },
+              "side": -1,
+              "distancePx": 29,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.41704216134637767,
+                "y": 1.1120493973425662
+              },
+              "side": -1,
+              "distancePx": 30,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.44216945919209516,
+                "y": 0.9784544018928018
+              },
+              "side": 1,
+              "distancePx": 57,
+              "quality": 0.46159261440612487,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.44245827870756316,
+                "y": 0.9769188272324596
+              },
+              "side": 1,
+              "distancePx": 58,
+              "quality": 0.7274232415944965,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4427470982230312,
+                "y": 0.9753832525721176
+              },
+              "side": 1,
+              "distancePx": 59,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4430359177384992,
+                "y": 0.9738476779117754
+              },
+              "side": 1,
+              "distancePx": 60,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4433247372539672,
+                "y": 0.9723121032514332
+              },
+              "side": 1,
+              "distancePx": 61,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            }
+          ],
+          "accepted": true,
+          "reason": "measured",
+          "left": {
+            "x": 0.4179086198927817,
+            "y": 1.10744267336154
+          },
+          "right": {
+            "x": 0.4433247372539672,
+            "y": 0.9723121032514332
+          }
+        },
+        {
+          "center": {
+            "x": 0.43273542732149883,
+            "y": 1.067304151279671
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.4255149394347984,
+                "y": 1.1056935177882241
+              },
+              "side": -1,
+              "distancePx": 25,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4252261199193304,
+                "y": 1.1072290924485664
+              },
+              "side": -1,
+              "distancePx": 26,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4249373004038624,
+                "y": 1.1087646671089084
+              },
+              "side": -1,
+              "distancePx": 27,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4503534177650479,
+                "y": 0.9736340969988018
+              },
+              "side": 1,
+              "distancePx": 61,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4506422372805159,
+                "y": 0.9720985223384596
+              },
+              "side": 1,
+              "distancePx": 62,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4509310567959839,
+                "y": 0.9705629476781176
+              },
+              "side": 1,
+              "distancePx": 63,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.45121987631145194,
+                "y": 0.9690273730177754
+              },
+              "side": 1,
+              "distancePx": 64,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            }
+          ],
+          "accepted": true,
+          "reason": "measured",
+          "left": {
+            "x": 0.4255149394347984,
+            "y": 1.1056935177882241
+          },
+          "right": {
+            "x": 0.4506422372805159,
+            "y": 0.9720985223384596
+          }
+        },
+        {
+          "center": {
+            "x": 0.43976410783257947,
+            "y": 1.0686261450270396
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.43341007849228314,
+                "y": 1.1024087875545663
+              },
+              "side": -1,
+              "distancePx": 22,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4331212589768151,
+                "y": 1.1039443622149085
+              },
+              "side": -1,
+              "distancePx": 23,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4328324394613471,
+                "y": 1.1054799368752506
+              },
+              "side": -1,
+              "distancePx": 24,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4325436199458791,
+                "y": 1.1070155115355926
+              },
+              "side": -1,
+              "distancePx": 25,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.43225480043041103,
+                "y": 1.108551086195935
+              },
+              "side": -1,
+              "distancePx": 26,
+              "quality": 0.6366821949346235,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4576709177915965,
+                "y": 0.9734205160858281
+              },
+              "side": 1,
+              "distancePx": 62,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4579597373070645,
+                "y": 0.9718849414254861
+              },
+              "side": 1,
+              "distancePx": 63,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.45824855682253257,
+                "y": 0.9703493667651439
+              },
+              "side": 1,
+              "distancePx": 64,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.45853737633800057,
+                "y": 0.9688137921048018
+              },
+              "side": 1,
+              "distancePx": 65,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4588261958534686,
+                "y": 0.9672782174444596
+              },
+              "side": 1,
+              "distancePx": 66,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            }
+          ],
+          "accepted": true,
+          "reason": "measured",
+          "left": {
+            "x": 0.4328324394613471,
+            "y": 1.1054799368752506
+          },
+          "right": {
+            "x": 0.4588261958534686,
+            "y": 0.9672782174444596
+          }
+        },
+        {
+          "center": {
+            "x": 0.44679278834366015,
+            "y": 1.069948138774408
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.4408161407753423,
+                "y": 1.1017243452569667
+              },
+              "side": -1,
+              "distancePx": 20.693364707827936,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.44052732125987426,
+                "y": 1.1032599199173088
+              },
+              "side": -1,
+              "distancePx": 21.693364707827936,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.44023850174440626,
+                "y": 1.104795494577651
+              },
+              "side": -1,
+              "distancePx": 22.693364707827936,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.43994968222893827,
+                "y": 1.106331069237993
+              },
+              "side": -1,
+              "distancePx": 23.693364707827936,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.43966086271347027,
+                "y": 1.1078666438983351
+              },
+              "side": -1,
+              "distancePx": 24.693364707827936,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.46441077878720916,
+                "y": 0.9762780844935388
+              },
+              "side": 1,
+              "distancePx": 61,
+              "quality": 0.7832434620424694,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.46469959830267715,
+                "y": 0.9747425098331967
+              },
+              "side": 1,
+              "distancePx": 62,
+              "quality": 0.9858390801350033,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4649884178181452,
+                "y": 0.9732069351728545
+              },
+              "side": 1,
+              "distancePx": 63,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4652772373336132,
+                "y": 0.9716713605125125
+              },
+              "side": 1,
+              "distancePx": 64,
+              "quality": 0.8658117028816736,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.46556605684908126,
+                "y": 0.9701357858521703
+              },
+              "side": 1,
+              "distancePx": 65,
+              "quality": 0.17944780046410938,
+              "rejected": true,
+              "reason": "native-edge-weak: RGB/semantic không cùng xác nhận biên"
+            }
+          ],
+          "accepted": true,
+          "reason": "measured",
+          "left": {
+            "x": 0.44023850174440626,
+            "y": 1.104795494577651
+          },
+          "right": {
+            "x": 0.4649884178181452,
+            "y": 0.9732069351728545
+          }
+        },
+        {
+          "center": {
+            "x": 0.4538214688547408,
+            "y": 1.0712701325217766
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.44813364080189094,
+                "y": 1.101510764343993
+              },
+              "side": -1,
+              "distancePx": 19.693364707827936,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.44784482128642294,
+                "y": 1.1030463390043352
+              },
+              "side": -1,
+              "distancePx": 20.693364707827936,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.44755600177095495,
+                "y": 1.1045819136646773
+              },
+              "side": -1,
+              "distancePx": 21.693364707827936,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4472671822554869,
+                "y": 1.1061174883250193
+              },
+              "side": -1,
+              "distancePx": 22.693364707827936,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4697065422054817,
+                "y": 0.98681352620296
+              },
+              "side": 1,
+              "distancePx": 55,
+              "quality": 0.7146107231712976,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4699953617209497,
+                "y": 0.9852779515426179
+              },
+              "side": 1,
+              "distancePx": 56,
+              "quality": 0.9021492224418858,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4702841812364177,
+                "y": 0.9837423768822757
+              },
+              "side": 1,
+              "distancePx": 57,
+              "quality": 0.711668469299217,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.47057300075188574,
+                "y": 0.9822068022219337
+              },
+              "side": 1,
+              "distancePx": 58,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            }
+          ],
+          "accepted": false,
+          "reason": "contour-width-outlier: độ rộng khác nhóm biên nhất quán",
+          "left": {
+            "x": 0.44784482128642294,
+            "y": 1.1030463390043352
+          },
+          "right": {
+            "x": 0.4699953617209497,
+            "y": 0.9852779515426179
+          }
+        },
+        {
+          "center": {
+            "x": 0.4608501493658214,
+            "y": 1.0725921262691451
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.4554511408284396,
+                "y": 1.1012971834310195
+              },
+              "side": -1,
+              "distancePx": 18.693364707827936,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.45516232131297163,
+                "y": 1.1028327580913615
+              },
+              "side": -1,
+              "distancePx": 19.693364707827936,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4548735017975036,
+                "y": 1.1043683327517038
+              },
+              "side": -1,
+              "distancePx": 20.693364707827936,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4545846822820356,
+                "y": 1.1059039074120458
+              },
+              "side": -1,
+              "distancePx": 21.693364707827936,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4744246665928182,
+                "y": 1.0004201172330656
+              },
+              "side": 1,
+              "distancePx": 47,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.47471348610828623,
+                "y": 0.9988845425727234
+              },
+              "side": 1,
+              "distancePx": 48,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.47500230562375423,
+                "y": 0.9973489679123813
+              },
+              "side": 1,
+              "distancePx": 49,
+              "quality": 0.5013656903021585,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4752911251392222,
+                "y": 0.9958133932520391
+              },
+              "side": 1,
+              "distancePx": 50,
+              "quality": 0.6573485502576745,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4755799446546903,
+                "y": 0.9942778185916971
+              },
+              "side": 1,
+              "distancePx": 51,
+              "quality": 0.5262103711073188,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4758687641701583,
+                "y": 0.9927422439313549
+              },
+              "side": 1,
+              "distancePx": 52,
+              "quality": 0.5319552521000314,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            }
+          ],
+          "accepted": false,
+          "reason": "contour-width-outlier: độ rộng khác nhóm biên nhất quán",
+          "left": {
+            "x": 0.45516232131297163,
+            "y": 1.1028327580913615
+          },
+          "right": {
+            "x": 0.47471348610828623,
+            "y": 0.9988845425727234
+          }
+        },
+        {
+          "center": {
+            "x": 0.46787882987690205,
+            "y": 1.0739141200165137
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.46276864085498826,
+                "y": 1.101083602518046
+              },
+              "side": -1,
+              "distancePx": 17.693364707827936,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.46247982133952026,
+                "y": 1.102619177178388
+              },
+              "side": -1,
+              "distancePx": 18.693364707827936,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.46219100182405226,
+                "y": 1.10415475183873
+              },
+              "side": -1,
+              "distancePx": 19.693364707827936,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4619021823085842,
+                "y": 1.1056903264990723
+              },
+              "side": -1,
+              "distancePx": 20.693364707827936,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4771210543718786,
+                "y": 1.0247757308855658
+              },
+              "side": 1,
+              "distancePx": 32,
+              "quality": 0.9698162695582322,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.47740987388734657,
+                "y": 1.0232401562252238
+              },
+              "side": 1,
+              "distancePx": 33,
+              "quality": 0.8009567269845514,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4776986934028146,
+                "y": 1.0217045815648815
+              },
+              "side": 1,
+              "distancePx": 34,
+              "quality": 0.6708002750174266,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4779875129182826,
+                "y": 1.0201690069045395
+              },
+              "side": 1,
+              "distancePx": 35,
+              "quality": 0.08237765853536685,
+              "rejected": true,
+              "reason": "native-edge-weak: RGB/semantic không cùng xác nhận biên"
+            },
+            {
+              "point": {
+                "x": 0.4782763324337507,
+                "y": 1.0186334322441974
+              },
+              "side": 1,
+              "distancePx": 36,
+              "quality": 0.06930844024214064,
+              "rejected": true,
+              "reason": "native-edge-weak: RGB/semantic không cùng xác nhận biên"
+            },
+            {
+              "point": {
+                "x": 0.47856515194921867,
+                "y": 1.0170978575838552
+              },
+              "side": 1,
+              "distancePx": 37,
+              "quality": 0.4722868886832618,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.47885397146468667,
+                "y": 1.0155622829235131
+              },
+              "side": 1,
+              "distancePx": 38,
+              "quality": 0.5344871713912782,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.47914279098015466,
+                "y": 1.0140267082631709
+              },
+              "side": 1,
+              "distancePx": 39,
+              "quality": 0.6120959458413825,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            }
+          ],
+          "accepted": false,
+          "reason": "contour-width-outlier: độ rộng khác nhóm biên nhất quán",
+          "left": {
+            "x": 0.46247982133952026,
+            "y": 1.102619177178388
+          },
+          "right": {
+            "x": 0.4771210543718786,
+            "y": 1.0247757308855658
+          }
+        },
+        {
+          "center": {
+            "x": 0.4749075103879827,
+            "y": 1.0752361137638822
+          },
+          "candidates": [
+            {
+              "point": {
+                "x": 0.47008614088153694,
+                "y": 1.1008700216050722
+              },
+              "side": -1,
+              "distancePx": 16.693364707827936,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4697973213660689,
+                "y": 1.1024055962654145
+              },
+              "side": -1,
+              "distancePx": 17.693364707827936,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4695085018506009,
+                "y": 1.1039411709257565
+              },
+              "side": -1,
+              "distancePx": 18.693364707827936,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4692196823351329,
+                "y": 1.1054767455860985
+              },
+              "side": -1,
+              "distancePx": 19.693364707827936,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4689308628196649,
+                "y": 1.1070123202464408
+              },
+              "side": -1,
+              "distancePx": 20.693364707827936,
+              "quality": 0.9711673847280189,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4797288798944285,
+                "y": 1.0496022059226922
+              },
+              "side": 1,
+              "distancePx": 16.693364707827936,
+              "quality": 0.41241183605215653,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.48001769940989647,
+                "y": 1.0480666312623501
+              },
+              "side": 1,
+              "distancePx": 17.693364707827936,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.48030651892536447,
+                "y": 1.0465310566020078
+              },
+              "side": 1,
+              "distancePx": 18.693364707827936,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.48059533844083246,
+                "y": 1.0449954819416658
+              },
+              "side": 1,
+              "distancePx": 19.693364707827936,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4808841579563005,
+                "y": 1.0434599072813238
+              },
+              "side": 1,
+              "distancePx": 20.693364707827936,
+              "quality": 1,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.4811729774717685,
+                "y": 1.0419243326209815
+              },
+              "side": 1,
+              "distancePx": 21.693364707827936,
+              "quality": 0.30254705852328495,
+              "rejected": true,
+              "reason": "native-edge-weak: RGB/semantic không cùng xác nhận biên"
+            },
+            {
+              "point": {
+                "x": 0.48146179698723657,
+                "y": 1.0403887579606395
+              },
+              "side": 1,
+              "distancePx": 22.693364707827936,
+              "quality": 0.6744423361292672,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.48175061650270457,
+                "y": 1.0388531833002974
+              },
+              "side": 1,
+              "distancePx": 23.693364707827936,
+              "quality": 0.5739056113356736,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            },
+            {
+              "point": {
+                "x": 0.48203943601817256,
+                "y": 1.0373176086399551
+              },
+              "side": 1,
+              "distancePx": 24.693364707827936,
+              "quality": 0.5288206126483065,
+              "rejected": false,
+              "reason": "semantic-native-edge"
+            }
+          ],
+          "accepted": false,
+          "reason": "implausible-pair: tâm/bề rộng không hợp lý",
+          "left": {
+            "x": 0.4697973213660689,
+            "y": 1.1024055962654145
+          },
+          "right": {
+            "x": 0.4808841579563005,
+            "y": 1.0434599072813238
+          }
+        },
+        {
+          "center": {
+            "x": 0.4819361908990633,
+            "y": 1.0765581075112507
+          },
+          "candidates": [],
+          "accepted": false,
+          "reason": "skin-core-uncertain: tâm lát cắt không đủ tin cậy là da tay"
+        },
+        {
+          "center": {
+            "x": 0.488964871410144,
+            "y": 1.0778801012586192
+          },
+          "candidates": [],
+          "accepted": false,
+          "reason": "skin-core-uncertain: tâm lát cắt không đủ tin cậy là da tay"
+        },
+        {
+          "center": {
+            "x": 0.49599355192122463,
+            "y": 1.0792020950059877
+          },
+          "candidates": [],
+          "accepted": false,
+          "reason": "skin-core-uncertain: tâm lát cắt không đủ tin cậy là da tay"
+        },
+        {
+          "center": {
+            "x": 0.5030222324323053,
+            "y": 1.0805240887533563
+          },
+          "candidates": [],
+          "accepted": false,
+          "reason": "skin-core-uncertain: tâm lát cắt không đủ tin cậy là da tay"
+        }
+      ],
+      "confidence": 0.8300144356370296,
+      "selected": [
+        {
+          "x": 0.4328324394613471,
+          "y": 1.1054799368752506
+        },
+        {
+          "x": 0.4588261958534686,
+          "y": 0.9672782174444596
+        }
+      ],
+      "rgbRejected": {
+        "foreground-ambiguous: da/nền chưa tách rõ hoặc nền không đồng nhất": 15
+      },
+      "rgbReason": "too-few-slices: cần ít nhất 5 đường cắt có hai biên đáng tin cậy",
+      "semanticReason": "Biên da tay được segmentation và pixel ảnh gốc xác nhận",
+      "views": [
+        {
+          "manual": 1,
+          "widthPx": 90,
+          "innerPx": 105.4842742796874,
+          "ratio": 1.1720474919965267,
+          "baseScale": 0.07853650679314234,
+          "finalWorldScale": 0.07853650679314234,
+          "fullPixels": 2986,
+          "visiblePixels": 2206,
+          "hiddenPixels": 741,
+          "hiddenOutsideSkin": 0,
+          "unmaskedHiddenOutsideSkin": 194,
+          "borderPixels": 0,
+          "uiComparison": {
+            "different": 0,
+            "maxDifference": 0,
+            "fraction": 0
+          }
+        },
+        {
+          "manual": 0.98,
+          "widthPx": 90,
+          "innerPx": 103.37202939375416,
+          "ratio": 1.1485781043750463,
+          "baseScale": 0.07853650679314234,
+          "finalWorldScale": 0.07696577665727948,
+          "fullPixels": 2877,
+          "visiblePixels": 2092,
+          "hiddenPixels": 745,
+          "hiddenOutsideSkin": 0,
+          "unmaskedHiddenOutsideSkin": 163,
+          "borderPixels": 0,
+          "uiComparison": null
+        }
+      ],
+      "uiComparison98": {
+        "different": 0,
+        "fraction": 0
+      }
+    }
+  ],
+  "errors": []
+}

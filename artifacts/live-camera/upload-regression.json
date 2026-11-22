@@ -1,0 +1,67 @@
+{
+  "renderPNGsCompared": 15,
+  "identicalBytes": true,
+  "scope": "Actual renderer A/B and measurement overlays, three photos, Manual 100%/98%. Browser report screenshot comparison.png excluded: page timing/font rasterization is not the renderer baseline.",
+  "files": [
+    {
+      "file": "mira-dynamic-pointing-up.jpg-100-A.png",
+      "identicalBytes": true
+    },
+    {
+      "file": "mira-dynamic-pointing-up.jpg-100-B.png",
+      "identicalBytes": true
+    },
+    {
+      "file": "mira-dynamic-pointing-up.jpg-98-A.png",
+      "identicalBytes": true
+    },
+    {
+      "file": "mira-dynamic-pointing-up.jpg-98-B.png",
+      "identicalBytes": true
+    },
+    {
+      "file": "mira-dynamic-pointing-up.jpg-measurement.png",
+      "identicalBytes": true
+    },
+    {
+      "file": "mira-dynamic-thumb-up.jpg-100-A.png",
+      "identicalBytes": true
+    },
+    {
+      "file": "mira-dynamic-thumb-up.jpg-100-B.png",
+      "identicalBytes": true
+    },
+    {
+      "file": "mira-dynamic-thumb-up.jpg-98-A.png",
+      "identicalBytes": true
+    },
+    {
+      "file": "mira-dynamic-thumb-up.jpg-98-B.png",
+      "identicalBytes": true
+    },
+    {
+      "file": "mira-dynamic-thumb-up.jpg-measurement.png",
+      "identicalBytes": true
+    },
+    {
+      "file": "mira-dynamic-woman-hands.jpg-100-A.png",
+      "identicalBytes": true
+    },
+    {
+      "file": "mira-dynamic-woman-hands.jpg-100-B.png",
+      "identicalBytes": true
+    },
+    {
+      "file": "mira-dynamic-woman-hands.jpg-98-A.png",
+      "identicalBytes": true
+    },
+    {
+      "file": "mira-dynamic-woman-hands.jpg-98-B.png",
+      "identicalBytes": true
+    },
+    {
+      "file": "mira-dynamic-woman-hands.jpg-measurement.png",
+      "identicalBytes": true
+    }
+  ]
+}
