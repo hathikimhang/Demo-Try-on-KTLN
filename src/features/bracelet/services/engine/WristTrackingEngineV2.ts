@@ -1,8 +1,10 @@
 import type { Point } from '../../../../shared/types/vision';
 import type { WristEngineEstimate, WristEngineObservation } from '../../models/wristEngine.types';
+import { WRIST_ENGINE_V2_VERSION } from '../../models/wristEngine.types';
 import type { Quaternion, V3 } from '../../models/wrist.types';
-import { cross, dot, length, sub, unit } from '../geometry/wristGeometry';
-import { wristFrame } from '../live/liveWristFrame';
+import { cross, dot, length, sub } from '../geometry/wristGeometry';
+import { registerWristAnchor } from './wristAnchorRegistration';
+import { axisFromScreen, wristFrame } from '../live/liveWristFrame';
 
 const finite = (p: Point | undefined) => !!p && Number.isFinite(p.x) && Number.isFinite(p.y);
 const world = (p: Point | undefined): p is Point & V3 => finite(p) && Number.isFinite(p!.z);
@@ -17,9 +19,10 @@ export class WristTrackingEngineV2 {
   reset() { this.previous = undefined; this.lastTime = -Infinity; this.depthAt = null; }
   update(o: WristEngineObservation, now = o.timestamp): WristEngineEstimate {
     const out: WristEngineEstimate = {
+      engineVersion: WRIST_ENGINE_V2_VERSION, trackingState: 'UNCONFIRMED', coordinateSpace: 'unmirrored-x/W-y/W',
       frameId: o.frameId, timestamp: o.timestamp, width: o.width, height: o.height, focal: o.focal,
       hand0: null, anchor: null, anchorState: 'UNCONFIRMED', anchorReason: 'no-hand',
-      anchorExtrapolated: false, wearCenter: null, axis2D: null, axis3D: null, orientation: null,
+      anchorExtrapolated: false, wearCenter: null, rawAnchor: null, filteredAnchor: null, filterApplied: false, anchorEdges: null, traceInput: o, axis2D: null, axis3D: null, orientation: null,
       orientationState: 'UNCONFIRMED', orientationSource: 'None', reason: 'no-hand',
       axis2DSource: 'None', confidence2D: 0, confidence3D: 0,
       depthAgeMs: this.depthAt === null ? null : Math.max(0, o.timestamp - this.depthAt), contourLine: null,
@@ -34,25 +37,18 @@ export class WristTrackingEngineV2 {
     if (!finite(h) || h.x < 0 || h.x > 1 || h.y < 0 || h.y > 1) { this.previous = undefined; return reject('no-hand'); }
     const h0 = { x: h.x, y: h.y * aspect };
     out.hand0 = h0; out.anchor = h0; out.anchorState = 'ESTIMATED'; out.anchorReason = 'Hand0-reference-only';
-    // Project Hand0 onto the observed centerline. Outside its support interval is
-    // explicitly extrapolation; never call this an observed anatomical wear center.
-    const c = o.contour;
+    const c = o.contour, registration = registerWristAnchor(h0, c);
+    out.anchor = registration.anchor;
+    out.anchorState = registration.observed ? 'OBSERVED' : 'ESTIMATED';
+    out.anchorReason = registration.reason;
+    out.rawAnchor = out.filteredAnchor = out.anchor; // Deliberately no temporal filter.
+    out.anchorEdges = registration.edges;
     if (c?.direction && c.confidence >= .75 && c.line && c.sections.length >= 6) {
-      const [a, b] = c.line, dx = b.x - a.x, dy = b.y - a.y, n2 = dx * dx + dy * dy;
-      if ([a.x, a.y, b.x, b.y, c.confidence].every(Number.isFinite) && n2 > 1e-8) {
-        const t = ((h0.x - a.x) * dx + (h0.y - a.y) * dy) / n2;
-        const d = Math.hypot(c.direction.x, c.direction.y);
-        if (Number.isFinite(d) && d > 1e-8) {
-          out.axis2D = { x: c.direction.x / d, y: c.direction.y / d };
-          out.axis2DSource = c.source; out.confidence2D = Math.min(1, c.confidence); out.contourLine = c.line;
-          out.anchorExtrapolated = t < 0 || t > 1;
-          // Do not extend a line beyond the length of its observed support.
-          if (t >= -1 && t <= 2) {
-            out.anchor = { x: a.x + t * dx, y: a.y + t * dy };
-            out.anchorState = out.anchorExtrapolated ? 'ESTIMATED' : 'OBSERVED';
-            out.anchorReason = out.anchorExtrapolated ? 'centerline-extrapolation-at-Hand0' : 'centerline-supported-at-Hand0';
-          } else out.anchorReason = 'centerline-too-far-for-extrapolation';
-        }
+      const direction = registration.direction ?? c.direction, n = Math.hypot(direction.x, direction.y);
+      if (Number.isFinite(n) && n > 1e-8) {
+        out.axis2D = { x: direction.x / n, y: direction.y / n };
+        out.axis2DSource = registration.observed ? `${c.source}-local-wrist` : c.source;
+        out.confidence2D = Math.min(1, c.confidence); out.contourLine = c.line;
       }
     }
     // Associate in IMAGE space. Never subtract Hand world positions from Pose world.
@@ -72,10 +68,15 @@ export class WristTrackingEngineV2 {
     const dx = e.x - w.x, dy = (e.y - w.y) * aspect, xy = Math.hypot(wd.x, wd.y), screen = Math.hypot(dx, dy);
     if (xy < .045 || length(wd) < .1 || length(wd) > .55 || screen < span * .8) return reject('pose-axis-degenerate');
     // Same relative image camera convention as V1; this is not metric depth.
-    const z = unit({ x: dx, y: dy, z: wd.z * screen / xy });
+    // Lift the observed IMAGE tangent under the SAME perspective camera used
+    // by debug/Three, instead of treating image XY as a camera-space vector.
+    const at = { x: out.anchor.x - .5, y: out.anchor.y - aspect / 2, z: o.focal };
+    const tangent = registration.observed && out.axis2D ? out.axis2D : { x: dx / screen, y: dy / screen };
+    const z = axisFromScreen(tangent, wd.z / length(wd), at);
+    if (!z) return reject('forearm-perspective-lift-unobservable');
     if (out.axis2D && (dx * out.axis2D.x + dy * out.axis2D.y) / screen < .8) return reject('pose-contour-disagreement');
     out.axis3D = z; this.depthAt = o.timestamp; out.depthAgeMs = 0;
-    out.orientationSource = 'Pose-image-XY+Pose-world-relative-depth';
+    out.orientationSource = registration.observed ? 'local-contour-XY+Pose-relative-depth' : 'Pose-image-XY+Pose-relative-depth';
     // Fit world Hand XY to image Hand XY, using only differences within Hand.
     let a = 0, b = 0, den = 0;
     if (![0, 5, 9, 13, 17].every(i => world(o.handWorld[i]) && finite(o.hand[i]))) return reject('hand-roll-unobserved');
@@ -102,6 +103,7 @@ export class WristTrackingEngineV2 {
     out.orientation = q; this.previous = q;
     out.orientationState = 'OBSERVED'; out.confidence3D = Math.min(1, matches[0].quality);
     out.orientationSource += '+Hand-roll';
+    out.trackingState = out.anchorState;
     out.reason = 'current-model-supported-relative-3D';
     return out;
   }

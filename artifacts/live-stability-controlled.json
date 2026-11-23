@@ -1,0 +1,8 @@
+{
+  "scope": "deterministic alternating position noise at 62.5Hz, same input; NOT webcam",
+  "inputRmsPx": 1.2803556543484242,
+  "outputRmsPx": 0.3962801341845895,
+  "ratio": 0.30950785653870316,
+  "maxAdditionalCenterErrorScene": 0.001553095095265806,
+  "centerErrorLimitScene": 0.005907064110151258
+}

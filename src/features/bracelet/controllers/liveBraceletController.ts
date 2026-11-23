@@ -66,6 +66,23 @@ export function updateLiveBracelet(bindings: BraceletBindings, data: Detection, 
   const trackingSource: TrackingSource = held ? 'Grace frame' : result.source === 'ROI' ? 'ROI' : result.source === 'Hand' ? s.liveOrientation?.source === 'Pose' ? 'Hand Landmarker + Pose' : 'Hand Landmarker' : 'None';
   s.tracking = { state: s.wrist && !s.renderFailed && result.fit?.method !== 'provisional' ? 'tracking' : result.status === 'LOST' ? 'lost' : 'low-confidence', reason, metrics: analysis.metrics, mode: analysis.effectiveMode, landmarks: data.points.length, radius: (held?.pose ?? s.wrist)?.radius, source: trackingSource, phase: s.wrist || held ? 'continuous' : 'initial', viewAngle: result.tracked ? wristViewAngle(result.tracked) : undefined, roi: result.roi ? { matches: result.roi.matches, inliers: result.roi.inliers, rms: result.roi.rms, ageMs: result.roi.ageMs, quality: result.roi.quality } : undefined, roiSeed: result.seed };
   s.liveHint = held ? 'Đang giữ khung hình ổn định · đang nhận lại cổ tay.' : result.fit?.method === 'provisional' || reason === 'sizing' ? result.fit?.message ?? trackingMessage(reason) : trackingMessage(reason);
+  const v2Mode = appearance.current.engineDebugMode ?? 'v1';
+  if (s.v2Mode !== v2Mode) { s.v2Continuity.reset(); s.v2FrameBuffer.clear(); s.v2FrameMeta = null; s.v2Mode = v2Mode; s.v2Painted = null; }
+  if (v2Mode !== 'v1') {
+    const stable = s.v2Continuity.update(s.wrist, data.timestamp, s.receivedAt, !liveStale && !mismatch && !s.renderFailed, Math.min(s.liveOrientation?.confidence ?? 0, data.liveObservation?.poc?.confidence3D ?? 0), reason);
+    if (stable.accepted && stable.pose && s.frame && s.sizing) {
+      s.v2FrameBuffer.capture(s.frame, { pose: stable.pose, renderPose: stable.pose, sizing: s.sizing, points: s.points, mask: s.liveMask, orientation: s.liveOrientation, contour: s.forearmContour,
+        capturedAt: data.timestamp, receivedAt: s.receivedAt, validUntil: Math.min(data.timestamp + 1000, s.receivedAt + 240) });
+      s.v2FrameMeta = { frameId: data.liveObservation?.frameId ?? null, poc: data.liveObservation?.poc };
+    }
+  }
+  if (appearance.current.debug) s.stability.observe({
+    frameId: data.liveObservation?.frameId ?? null, capturedAt: data.timestamp, receivedAt: s.receivedAt,
+    raw: v2Mode === 'v2' ? s.wrist : observed, filtered: v2Mode === 'v2' ? s.v2Continuity.read(s.receivedAt).pose : s.wrist, source: s.liveOrientation?.source ?? 'None',
+    trackingState: result.status, confidence: s.liveOrientation?.confidence ?? 0,
+    rejectReason: reason === 'orientation' ? s.liveOrientation?.reason ?? reason : reason === 'reacquiring' ? 'filter-or-roi-rejected' : reason,
+    inferenceLatencyMs: data.elapsed, mask: s.liveMask,
+  });
   s.performance.pose(performance.now(), s.wrist, result.status, s.frame?.width ?? 0);
   if (appearance.current.debug) {
     const width = s.frame?.width ?? 0, manual = appearance.current.scale;
@@ -74,7 +91,9 @@ export function updateLiveBracelet(bindings: BraceletBindings, data: Detection, 
     const o = s.liveOrientation;
     const imagePoint = (p: WristPose | null) => p ? { x: project(p.center, p).x * width, y: project(p.center, p).y * width } : null;
     const live = { state: result.status, capturedAt: data.timestamp, receivedAt: s.receivedAt, inferenceMs: data.elapsed, totalAgeMs: performance.now() - data.timestamp, frameSize: { width, height: s.frame?.height ?? 0 }, wristCenter: result.tracked?.center ?? null, wristLandmark: data.points[0] ?? null, wristLandmarkImagePx: data.points[0] ? { x: data.points[0].x * width, y: data.points[0].y * width * aspect } : null, expectedWearCenterImagePx: imagePoint(o?.pose ?? null), braceletCenterImagePx: imagePoint(s.wrist), rawHandMetrics: handAnalysis.metrics, rawHandAxis: handAnalysis.pose ? rotate(handAnalysis.pose.orientation, { x: 0, y: 0, z: 1 }) : null, estimatedForearmAxis: o?.forearmAxis ?? null, forearmSource: o?.source ?? 'None', orientationConfidence: o?.confidence ?? 0, depthSource: o?.depth ?? null, orientationReason: o?.reason ?? handAnalysis.reason, contour: s.forearmContour, forearmAxis: result.tracked ? rotate(result.tracked.orientation, { x: 0, y: 0, z: 1 }) : null, braceletCenter: s.wrist?.center ?? null, quaternion: result.tracked?.orientation ?? null, rotationDeltaRadians: result.rotationDelta, landmarks: data.points, measurementReason: measurement.reason, roiReason: result.roi?.reason ?? null, measuredWidthPx: measurement.width === null ? null : measurement.width * width, fitRatio: values?.fitRatio ?? null, occlusion: s.liveMask ? 'depth-proxy-current-foreground' : 'depth-proxy-estimated', sameInferenceFrame: true };
-    Object.assign(live, { observationFrameId: data.liveObservation?.frameId ?? null, wristEngineV2: appearance.current.engineDebugMode !== 'v1' ? data.liveObservation?.poc ?? null : null, pipelineVersion: LIVE_PIPELINE_VERSION, workerPipelineVersion: data.pipelineVersion ?? 'unknown', optionalPoseStatus: data.armStatus ?? 'unknown', presentation: held ? 'hold' : result.presentation, renderFrameTimestamp: held?.capturedAt ?? data.timestamp, frameHeldMs: held ? performance.now() - held.receivedAt : 0, displayedLandmarks: held?.points ?? s.points, hasRenderPose: !!(held || s.wrist), estimatedSize: displayedSizing?.method === 'provisional', renderedQuaternion: (held?.pose ?? s.wrist)?.orientation ?? null, renderedCenterImagePx: imagePoint(held?.pose ?? s.wrist) });
+    Object.assign(live, { engineDebugMode: appearance.current.engineDebugMode ?? 'v1', braceletEngine: v2Mode === 'v2' ? 'v1-geometry+v2-continuity' : 'v1', v2Continuity: v2Mode !== 'v1' ? s.v2Continuity.read(performance.now()) : null,
+      wearCenters: { v1Estimated: imagePoint(s.liveOrientation?.pose ?? null), v1Rendered: imagePoint(s.wrist), v2: null },
+      observationFrameId: data.liveObservation?.frameId ?? null, wristEngineV2: appearance.current.engineDebugMode !== 'v1' ? data.liveObservation?.poc ?? null : null, pipelineVersion: LIVE_PIPELINE_VERSION, workerPipelineVersion: data.pipelineVersion ?? 'unknown', optionalPoseStatus: data.armStatus ?? 'unknown', presentation: held ? 'hold' : result.presentation, renderFrameTimestamp: held?.capturedAt ?? data.timestamp, frameHeldMs: held ? performance.now() - held.receivedAt : 0, displayedLandmarks: held?.points ?? s.points, hasRenderPose: !!(held || s.wrist), estimatedSize: displayedSizing?.method === 'provisional', renderedQuaternion: (held?.pose ?? s.wrist)?.orientation ?? null, renderedCenterImagePx: imagePoint(held?.pose ?? s.wrist) });
     const row = debugSample(data.timestamp, s.tracking, values, manual, live);
     s.logCount = debugLog.current.append(row); console.debug('[mira-live]', JSON.stringify(row));
   }

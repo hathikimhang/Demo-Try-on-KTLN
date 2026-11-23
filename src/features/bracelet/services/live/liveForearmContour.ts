@@ -11,8 +11,8 @@ const prototype = (a: number[][]) => a[0].map((_, i) => median(a.map(v => v[i]))
 
 
 /** Đường tâm CẲNG TAY từ vùng nhìn thấy, không phải hướng nối các mốc ngón tay. ROI native rộng, nhiều tiết diện và consensus đường tâm; chỉ quan sát XY, không đo depth/roll cẳng tay. */
-export function measureForearmContour(roi: NativeRoi, pose: WristPose, wrist?: { x: number; y: number }, skin?: SkinSegmentation): ForearmContour {
-  const W = roi.imageWidth, f = imageWristFrame(pose, wrist), span = f.span * W;
+export function measureForearmContour(roi: NativeRoi, pose: WristPose, wrist?: { x: number; y: number }, skin?: SkinSegmentation, sampling?: { frame: ReturnType<typeof imageWristFrame>; firstAlong: number; stepAlong: number }): ForearmContour {
+  const W = roi.imageWidth, f = sampling?.frame ?? imageWristFrame(pose, wrist), span = f.span * W;
   const source = skin ? 'contour-segmentation' : 'contour-rgb';
   const sections: Section[] = [];
   const fail = (reason: string): ForearmContour => ({ direction: null, confidence: 0, reason, source, sections });
@@ -27,7 +27,7 @@ export function measureForearmContour(roi: NativeRoi, pose: WristPose, wrist?: {
   const prob = (p: ImagePoint) => skin ? skinProbability(skin, p, pose.aspect) : 0;
   let offset = 0;
   for (let j = 0; j < 19; j++) {
-    const a = .08 + j * .06, at = (t: number) => point(a, t + offset);
+    const a = (sampling?.firstAlong ?? .08) + j * (sampling?.stepAlong ?? .06), at = (t: number) => point(a, t + offset);
     const core = [-.025, 0, .025].map(t => rgb(at(t * span)));
     if (core.some(v => !v)) continue;
     const seed = prototype(core as number[][]), noise = median((core as number[][]).map(c => distance(c, seed)));

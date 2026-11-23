@@ -1,3 +1,4 @@
+import { measureWristAnchorContour } from '../engine/wristAnchorContour';
 import { WristTrackingEngineV2 } from '../engine/WristTrackingEngineV2';
 import { analyzeWrist } from '../geometry/wristGeometry';
 import type { TrackingMode } from '../../models/wrist.types';
@@ -25,12 +26,14 @@ export class LiveVision {
     const arm = armPoints.length ? analyzeWrist(points, worldPoints, aspect, handedness, { mode: 'forearm', armPoints, armWorldPoints }) : null;
     const raw = hand.pose ?? (hand.reason === 'axial-view' ? arm?.pose : null);
     const out: LiveObservation = { frameId: input.frameId, hand, pose: raw ? { ...raw, source: mode } : null, orientation: null, contour: null, measurement: { width: null, confidence: 0, reason: 'Không có phép đo biên hợp lệ trên frame này.' }, mask: null, pixels: null, needsArmObservation: false };
+    let pocContour: ReturnType<typeof measureWristAnchorContour> = null;
     const observePoc = () => {
       if (!input.pocEnabled) return;
       try { out.poc = this.poc.update({
         frameId: input.frameId ?? timestamp, timestamp, width: frame.width, height: frame.height,
         focal: 1.35 * Math.max(1, aspect), hand: points, handWorld: worldPoints,
-        pose: armPoints, poseWorld: armWorldPoints, contour: out.contour,
+        pose: armPoints, poseWorld: armWorldPoints, contour: pocContour?.contour ?? null, contourSearchSource: pocContour?.searchSource ?? 'unavailable',
+        contourRoi: pocContour?.roi ?? null,
       }); } catch { this.poc.reset(); }
     };
     const factor = Math.min(1, 640 / Math.max(frame.width, frame.height)), sw = Math.round(frame.width * factor), sh = Math.round(frame.height * factor);
@@ -45,8 +48,9 @@ export class LiveVision {
         const native = { ...region, data: this.nativeContext!.getImageData(0, 0, region.width, region.height).data };
         const semanticContour = skin ? measureForearmContour(native, out.pose, points[0], skin) : null;
         out.contour = semanticContour?.direction ? semanticContour : measureForearmContour(native, out.pose, points[0]);
-        // Shared contour is measured from raw Hand ROI, BEFORE V1 orientation.
-        // V2 never receives out.pose, forearm state, filtered pose or calibration.
+        // V2 gets an independent LOCAL pixel scan before V1 orientation.
+        // A debug failure must not enter V1's ROI exception handler.
+        if (input.pocEnabled) try { pocContour = measureWristAnchorContour(native, out.pose, points, armPoints, skin); } catch { pocContour = null; }
         observePoc();
         const quality = (arm?.metrics.armVisibility ?? 0) * Math.max(0, 1 - (arm?.metrics.fitResidual ?? 1));
         out.orientation = this.forearm.update(out.pose, out.contour, timestamp, arm?.pose, quality);
@@ -59,6 +63,7 @@ export class LiveVision {
         }
       } catch { out.pose = null; out.measurement = { width: null, confidence: 0, reason: 'Không phân tích được ROI trên frame webcam.' }; }
     } else { observePoc(); this.forearm.missing(timestamp); }
+    if (input.pocEnabled && !out.poc) observePoc();
     out.needsArmObservation = this.forearm.needsArmObservation;
     return out;
   }

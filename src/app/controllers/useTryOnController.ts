@@ -71,7 +71,7 @@ export function useTryOn(mode: Mode, color: string, scale: number, showPoints: b
     s.sensorCaptureTime = s.requestSensorCaptureTime = s.frameSensorCaptureTime = undefined;
     s.latestCameraFrame = null;
     s.lastCapturedVideoFrame = -1; s.skinCostMs = null;
-    s.performance.reset(performance.now());
+    s.performance.reset(performance.now()); s.stability.reset(); s.stabilityTrace = null; s.v2Continuity.reset(); s.v2FrameBuffer.clear(); s.v2FrameMeta = null; s.v2Mode = 'v1'; s.v2Painted = null;
     s.frameBuffer.clear(); s.presentation = 'hidden'; s.holdUntil = s.lastResultTimestamp = 0;
     s.imagePose = null; s.imageMask = null; s.trackingPose = null; s.renderPose = null; s.manualEdges = null; s.picked = []; s.pickingEdges = false; setCalibration({ picking: false, count: 0, message: '' });
     if (s.url) { URL.revokeObjectURL(s.url); s.url = ''; }

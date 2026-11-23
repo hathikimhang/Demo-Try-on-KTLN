@@ -1,0 +1,51 @@
+{
+  "scope": "photo captureStream, input image motions only; NO webcam anatomical benchmark",
+  "errors": [],
+  "results": [
+    {
+      "scenario": "v2/slow-image-rotation",
+      "samples": 201,
+      "visibleSamples": 201,
+      "transitions": 0,
+      "hiddenReasons": {},
+      "cameraFPSMedian": 24,
+      "inferenceFPSMedian": 21,
+      "renderFPSMedian": 21,
+      "inferenceLatencyP95Ms": 54.100000001490116,
+      "poseAgeP95Ms": 66.69999999925494,
+      "rawDeltaP95ImageWidth": 0.0019027775181342222,
+      "filteredDeltaP95ImageWidth": 0.0008641486175442657,
+      "maxPendingRequests": 1
+    },
+    {
+      "scenario": "v2/back-forth",
+      "samples": 196,
+      "visibleSamples": 196,
+      "transitions": 0,
+      "hiddenReasons": {},
+      "cameraFPSMedian": 24,
+      "inferenceFPSMedian": 19,
+      "renderFPSMedian": 19.5,
+      "inferenceLatencyP95Ms": 54.600000001490116,
+      "poseAgeP95Ms": 66.09999999776483,
+      "rawDeltaP95ImageWidth": 0.002277417320712921,
+      "filteredDeltaP95ImageWidth": 0.0009310709232084147,
+      "maxPendingRequests": 1
+    },
+    {
+      "scenario": "v2/near-far",
+      "samples": 208,
+      "visibleSamples": 208,
+      "transitions": 0,
+      "hiddenReasons": {},
+      "cameraFPSMedian": 24,
+      "inferenceFPSMedian": 21,
+      "renderFPSMedian": 21.5,
+      "inferenceLatencyP95Ms": 48.29999999701977,
+      "poseAgeP95Ms": 60.19999999925494,
+      "rawDeltaP95ImageWidth": 0.0015231968592340198,
+      "filteredDeltaP95ImageWidth": 0.0005959387536729789,
+      "maxPendingRequests": 1
+    }
+  ]
+}

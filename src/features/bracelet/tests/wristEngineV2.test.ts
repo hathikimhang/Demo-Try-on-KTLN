@@ -3,11 +3,15 @@ import { test } from 'node:test';
 import type { WristEngineObservation } from '../models/wristEngine.types';
 import type { ForearmContour } from '../models/wrist.types';
 import { WristTrackingEngineV2 } from '../services/engine/WristTrackingEngineV2';
-import { cross, dot, length, rotate, sub } from '../services/geometry/wristGeometry';
+import { cross, dot, length, rotate, sub, project, add, mul } from '../services/geometry/wristGeometry';
 import { handFixture } from './fixtures/wristFixtures';
 import { matchesPocFrame } from '../views/debug/wristEngineDebug';
 import * as THREE from 'three';
 import { configureCamera } from '../views/rendering/braceletModel';
+import { analyzeWrist } from '../services/geometry/wristGeometry';
+import { measureWristAnchorContour } from '../services/engine/wristAnchorContour';
+import { measureForearmContour } from '../services/live/liveForearmContour';
+import { registerWristAnchor } from '../services/engine/wristAnchorRegistration';
 
 function observation(time = 100, angle = 0): WristEngineObservation {
   const h = handFixture({ roll: angle });
@@ -37,17 +41,17 @@ test('V2 keeps Hand0, supported centerline anchor and unknown wear center distin
   assert.equal(r.anchorState, 'OBSERVED'); assert.equal(r.anchorExtrapolated, false);
   assert.equal(r.wearCenter, null);
 });
-test('V2 labels extrapolation outside observed centerline support', () => {
+test('V2 refuses extrapolation outside observed boundary support', () => {
   const o = observation(); o.contour = contour(.38, .55);
   const r = new WristTrackingEngineV2().update(o);
-  assert.equal(r.anchorState, 'ESTIMATED'); assert.equal(r.anchorExtrapolated, true);
+  assert.equal(r.anchorState, 'ESTIMATED'); assert.equal(r.anchorExtrapolated, false); assert.deepEqual(r.anchor, r.hand0);
   assert.equal(r.wearCenter, null);
 });
 test('V2 does not extrapolate a centerline arbitrarily far', () => {
   const o = observation(); o.contour = contour(.6, .65);
   const r = new WristTrackingEngineV2().update(o);
   assert.deepEqual(r.anchor, r.hand0); assert.equal(r.anchorState, 'ESTIMATED');
-  assert.equal(r.anchorReason, 'centerline-too-far-for-extrapolation');
+  assert.equal(r.anchorReason, 'wrist-plane-not-bracketed');
 });
 test('V2 contour confidence never confirms depth or learns a fabricated 3D relationship', () => {
   const engine = new WristTrackingEngineV2();
@@ -123,7 +127,10 @@ test('V2 quaternion sign continuity does not hold an old rotation', () => {
   }
 });
 test('V2 refuses disagreement between independent contour and Pose', () => {
-  const o = observation(); o.contour = { ...contour(), direction: { x: 1, y: 0 } };
+  const o = observation(), c = contour();
+  const turn = (p: { x: number; y: number }) => ({ x: .5 + (p.y - .3375), y: .3375 - (p.x - .5) });
+  o.contour = { ...c, direction: { x: 1, y: 0 }, line: c.line!.map(turn) as [{ x: number; y: number }, { x: number; y: number }],
+    sections: c.sections.map(s => ({ ...s, center: turn(s.center), left: turn(s.left), right: turn(s.right) })) };
   assert.equal(new WristTrackingEngineV2().update(o).reason, 'pose-contour-disagreement');
 });
 test('V2 refuses singular local frame instead of transporting stale roll', () => {
@@ -155,4 +162,129 @@ test('V2 raw image axes and CV coordinates project consistently through actual T
 test('V2 rejects inconsistent Hand image/world fit before confirming roll', () => {
   const o = observation(); o.hand = o.hand.map((p, i) => i === 5 ? { ...p, x: p.x + .15 } : p);
   assert.equal(new WristTrackingEngineV2().update(o).reason, 'hand-reprojection-inconsistent');
+});
+
+test('regression: remote forearm centerline must not drag the local wrist anchor', () => {
+  const o = observation(), c = contour();
+  // Local wrist edges remain at x=.47/.57; the distant forearm curves away.
+  c.sections = c.sections.map((s, i) => i < 3 ? s : {
+    ...s, center: { ...s.center, x: s.center.x + .12 },
+    left: { ...s.left, x: s.left.x + .12 }, right: { ...s.right, x: s.right.x + .12 },
+  });
+  c.line = [{ x: .52, y: .30 }, { x: .64, y: .55 }];
+  c.direction = { x: .12 / Math.hypot(.12, .25), y: .25 / Math.hypot(.12, .25) };
+  o.contour = c;
+  const r = new WristTrackingEngineV2().update(o);
+  assert.ok(r.anchor && Math.abs(r.anchor.x - .52) < 1e-10, 'use bracketing wrist edges, not the global line');
+  assert.ok(Math.abs(r.anchor.y - .3375) < 1e-10, 'preserve Hand0 longitudinal station');
+});
+
+test('regression: unsupported contour extrapolation must leave Hand0 as an unconfirmed reference', () => {
+  const o = observation(); o.contour = contour(.38, .55);
+  const r = new WristTrackingEngineV2().update(o);
+  assert.deepEqual(r.anchor, r.hand0);
+  assert.equal(r.anchorExtrapolated, false);
+  assert.equal(r.anchorState, 'ESTIMATED');
+});
+
+test('regression: off-center pitched forearm must round-trip to the observed image tangent', () => {
+  const o = observation();
+  o.hand = o.hand.map(p => ({ ...p, x: p.x + .20, y: p.y + .08 }));
+  o.pose = o.pose.map((p, i) => i === 13 || i === 15 ? { ...p, x: p.x + .20, y: p.y + .08 } : p);
+  o.poseWorld = o.poseWorld.map((p, i) => i === 13 ? { ...p, z: p.z! + .15 } : p);
+  const r = new WristTrackingEngineV2().update(o); assert.ok(r.axis3D && r.anchor);
+  const start = { x: r.anchor.x - .5, y: r.anchor.y - .375, z: r.focal };
+  const a = project(start, { focal: r.focal, aspect: .75 });
+  const b = project(add(start, mul(r.axis3D, .05)), { focal: r.focal, aspect: .75 });
+  assert.ok(Math.abs(b.x - a.x) < 1e-10, 'vertical Pose in image must remain vertical after perspective projection');
+  assert.ok(b.y > a.y);
+});
+
+test('regression: overlay must not use an equally sized newer video or expired received result', () => {
+  const p = new WristTrackingEngineV2().update(observation());
+  const meta = { isInferenceImage: true, receivedAt: 120, frameId: p.frameId };
+  assert.equal(matchesPocFrame(p, 100, 200, 640, 480, false, meta), true);
+  assert.equal(matchesPocFrame(p, 100, 200, 640, 480, false, { ...meta, isInferenceImage: false }), false);
+  assert.equal(matchesPocFrame(p, 100, 700, 640, 480, false, meta), false);
+  assert.equal(matchesPocFrame(p, 100, 200, 640, 480, false, { ...meta, frameId: p.frameId + 1 }), false);
+});
+
+test('V2 trace contains raw evidence and unfiltered anchor without implying smoothing', () => {
+  const o = observation(); o.contour = contour();
+  const r = new WristTrackingEngineV2().update(o);
+  const trace = JSON.parse(JSON.stringify(r));
+  assert.deepEqual(trace.traceInput.hand, o.hand);
+  assert.deepEqual(trace.traceInput.handWorld, o.handWorld);
+  assert.deepEqual(trace.traceInput.pose, o.pose);
+  assert.deepEqual(trace.traceInput.poseWorld, o.poseWorld);
+  assert.deepEqual(trace.traceInput.contour, o.contour);
+  assert.deepEqual(trace.rawAnchor, trace.filteredAnchor);
+  assert.equal(trace.filterApplied, false);
+});
+
+test('V2 local pixel scan covers the Hand0 plane on translated ROI at several angles/distances', () => {
+  // Synthetic labeled silhouette, NOT a real webcam accuracy test.
+  for (const degrees of [0, 20, 45, 90]) for (const scale of [1.6, 2.2]) for (const bentHand of [false, true]) {
+    const angle = degrees * Math.PI / 180, h = handFixture({ roll: bentHand ? 0 : angle, scale });
+    const pose = analyzeWrist(h.points, h.world, h.aspect, 'Right', { mode: 'straight-wrist', deferAxialCheck: true }).pose;
+    assert.ok(pose);
+    const W = 640, H = 480, x = 120, y = 70, width = 400, height = 370;
+    const data = new Uint8ClampedArray(width * height * 4);
+    const h0 = { x: h.points[0].x, y: h.points[0].y * h.aspect };
+    const along = { x: -Math.sin(angle), y: Math.cos(angle) }, across = { x: along.y, y: -along.x };
+    const palmSpan = Math.hypot(...[0, 1].map(dim => {
+      const key = dim === 0 ? 'x' : 'y';
+      return [5, 9, 13, 17].reduce((s, i) => s + (h.points[i][key] - h.points[0][key]) / 4 * (dim === 0 ? 1 : h.aspect), 0);
+    }) as [number, number]);
+    const offset = palmSpan * .06;
+    for (let row = 0; row < height; row++) for (let col = 0; col < width; col++) {
+      const dx = (col + x) / W - h0.x, dy = (row + y) / W - h0.y;
+      const a = dx * along.x + dy * along.y, t = dx * across.x + dy * across.y;
+      const inside = Math.abs(t - offset) < palmSpan * .4 && a > -palmSpan * .5 && a < palmSpan * 1.3;
+      data.set(inside ? [185, 126, 99, 255] : [234, 235, 237, 255], (row * width + col) * 4);
+    }
+    const roi = { x, y, width, height, imageWidth: W, imageHeight: H, data };
+    const arm = bentHand ? Array.from({ length: 33 }, () => ({ x: 0, y: 0, z: 0, visibility: 0 })) : [];
+    if (bentHand) {
+      arm[15] = { ...h.points[0], visibility: .95 };
+      arm[13] = { x: arm[15].x + along.x * .25, y: arm[15].y + along.y * .25 / h.aspect, z: 0, visibility: .95 };
+    }
+    const local = measureWristAnchorContour(roi, pose, h.points, arm);
+    assert.equal(local?.searchSource, bentHand ? 'Pose-image-search-prior' : 'Hand-search-prior');
+    assert.ok(local?.contour.direction, `${degrees}/${scale}: local contour available`);
+    const registered = registerWristAnchor(h0, local.contour);
+    assert.equal(registered.observed, true, `${degrees}/${scale}: ${registered.reason}`);
+    const expected = { x: h0.x + across.x * offset, y: h0.y + across.y * offset };
+    assert.ok(Math.hypot(registered.anchor.x - expected.x, registered.anchor.y - expected.y) * W < 2, 'within 2 pixels of independent synthetic skin midpoint');
+    const v1 = measureForearmContour(roi, pose, h.points[0]);
+    assert.ok(v1.sections.every(s => s.along >= .08), 'default V1 sampling unchanged');
+  }
+});
+
+test('V2 perspective axis round-trip at off-center positions, pitch, palm roll and distances', () => {
+  // Independent Three camera generates the observed elbow projection. These are
+  // controlled geometry cases, not measurements of anatomical webcam accuracy.
+  const focal = 1.35, aspect = .75, camera = new THREE.PerspectiveCamera();
+  configureCamera(camera, focal, aspect); camera.updateMatrixWorld();
+  for (const degrees of [0, 20, 45, 90]) for (const palmRoll of [0, 45, 90, 180]) for (const pitch of [-45, 0, 45]) for (const distance of [.8, 1.2]) for (const x of [.35, .65]) {
+    const angle = degrees * Math.PI / 180, pitchRad = pitch * Math.PI / 180;
+    const h = handFixture({ x, roll: angle, twist: palmRoll * Math.PI / 180, scale: 2 * distance });
+    const o = observation(); o.hand = h.points; o.handWorld = h.world;
+    const expected = { x: -Math.sin(angle) * Math.cos(pitchRad), y: Math.cos(angle) * Math.cos(pitchRad), z: Math.sin(pitchRad) };
+    const C = { x: x - .5, y: h.points[0].y * aspect - aspect / 2, z: focal };
+    const elbow = add(C, mul(expected, .3 * distance));
+    const projected = new THREE.Vector3(elbow.x, -elbow.y, -elbow.z).project(camera);
+    const pose = o.pose.map(p => ({ ...p })), world = o.poseWorld.map(p => ({ ...p }));
+    pose[15] = { ...h.points[0], visibility: .95 };
+    pose[13] = { x: (projected.x + 1) / 2, y: (1 - projected.y) / 2, z: 0, visibility: .95 };
+    world[13] = { ...add(world[15] as { x: number; y: number; z: number }, mul(expected, .25)), visibility: .95 };
+    o.pose = pose; o.poseWorld = world;
+    const r = new WristTrackingEngineV2().update(o);
+    if (pose[13].x < .01 || pose[13].x > .99 || pose[13].y < .01 || pose[13].y > .99) {
+      assert.equal(r.orientationState, 'UNCONFIRMED', 'an offscreen elbow must not be confirmed'); continue;
+    }
+    assert.ok(r.orientation && r.axis3D, `${degrees}/${palmRoll}/${pitch}/${distance}/${x}: ${r.reason}`);
+    assert.ok(length(sub(r.axis3D, expected)) < 1e-10, 'recover the independently projected forearm axis');
+    assert.ok(length(sub(rotate(r.orientation, { x: 0, y: 0, z: 1 }), expected)) < 1e-10);
+  }
 });

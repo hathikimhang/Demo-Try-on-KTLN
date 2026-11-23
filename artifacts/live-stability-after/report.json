@@ -1,0 +1,71 @@
+{
+  "scope": "photo captureStream, input image motions only; NO webcam anatomical benchmark",
+  "errors": [],
+  "results": [
+    {
+      "scenario": "v1/stationary",
+      "samples": 219,
+      "visibleSamples": 219,
+      "transitions": 0,
+      "hiddenReasons": {},
+      "cameraFPSMedian": 24,
+      "inferenceFPSMedian": 22.5,
+      "renderFPSMedian": 22.5,
+      "inferenceLatencyP95Ms": 33.399999998509884,
+      "poseAgeP95Ms": 49.100000001490116,
+      "rawDeltaP95ImageWidth": 0.0006544736879320224,
+      "filteredDeltaP95ImageWidth": 0.00018987218668948218,
+      "maxPendingRequests": 1
+    },
+    {
+      "scenario": "v1/leave-return",
+      "samples": 220,
+      "visibleSamples": 178,
+      "transitions": 2,
+      "hiddenReasons": {
+        "no-hand": 42
+      },
+      "cameraFPSMedian": 24,
+      "inferenceFPSMedian": 22.5,
+      "renderFPSMedian": 21.5,
+      "inferenceLatencyP95Ms": 32.70000000298023,
+      "poseAgeP95Ms": 48.19999999925494,
+      "rawDeltaP95ImageWidth": 0.0005919580050318189,
+      "filteredDeltaP95ImageWidth": 0.00023120534639197747,
+      "maxPendingRequests": 1
+    },
+    {
+      "scenario": "v2/stationary",
+      "samples": 220,
+      "visibleSamples": 217,
+      "transitions": 1,
+      "hiddenReasons": {
+        "tracking-lost": 1,
+        "confirming-reacquisition": 2
+      },
+      "cameraFPSMedian": 24,
+      "inferenceFPSMedian": 22.5,
+      "renderFPSMedian": 22.5,
+      "inferenceLatencyP95Ms": 34.899999998509884,
+      "poseAgeP95Ms": 167.39999999850988,
+      "rawDeltaP95ImageWidth": 0.00019234593735492075,
+      "filteredDeltaP95ImageWidth": 0.00014536681620010343,
+      "maxPendingRequests": 1
+    },
+    {
+      "scenario": "v2/leave-return",
+      "samples": 0,
+      "visibleSamples": 0,
+      "transitions": 0,
+      "hiddenReasons": {},
+      "cameraFPSMedian": null,
+      "inferenceFPSMedian": null,
+      "renderFPSMedian": null,
+      "inferenceLatencyP95Ms": null,
+      "poseAgeP95Ms": null,
+      "rawDeltaP95ImageWidth": null,
+      "filteredDeltaP95ImageWidth": null,
+      "maxPendingRequests": 0
+    }
+  ]
+}

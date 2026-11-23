@@ -1,3 +1,6 @@
+import { LiveV2Continuity } from '../services/engine/liveV2Continuity';
+import type { WristEngineEstimate } from '../models/wristEngine.types';
+import { LiveStabilityDiagnostics } from '../services/diagnostics/liveStabilityDiagnostics';
 import type { WristEngineMode } from '../models/wristEngine.types';
 import type { Point } from '../../../shared/types/vision';
 import type { TrackingMode, WristPose, ForearmContour, LiveOrientation } from '../models/wrist.types';
@@ -21,6 +24,13 @@ import type { BraceletDetection as Detection } from '../models/vision.types';
 import type { InputWristAnalysis } from '../models/wrist.types';
 export function createBraceletState() {
   return {
+    v2Continuity: new LiveV2Continuity(),
+    v2FrameBuffer: new LiveFrameBuffer(),
+    v2FrameMeta: null as { frameId: number | null; poc: WristEngineEstimate | undefined } | null,
+    v2Painted: null as unknown[] | null,
+    v2Mode: 'v1' as WristEngineMode,
+    stability: new LiveStabilityDiagnostics(),
+    stabilityTrace: null as ReturnType<LiveStabilityDiagnostics['snapshot']> | null,
     pocFrameId: 0,
     wrist: null as WristPose | null,
     lastDetection: null as Detection | null,

@@ -1,0 +1,15 @@
+{
+  "scope": "Photo captureStream, real MediaPipe; no hardware webcam accuracy claim",
+  "checks": [
+    "PASS default V1, no V2 output",
+    "PASS Compare shares actual frame/Hand0; no fabricated wear center",
+    "PASS V2 debug retains V1 bracelet rendering",
+    "PASS exported per-frame raw Hand/Pose/contour, anchor/filter/quaternion trace",
+    "PASS V1 rollback without reopening camera",
+    "PASS camera cleanup, no page errors"
+  ],
+  "parity": "PASS all V1 output fields identical with V2 on/off across Hand loss",
+  "result": "PASS",
+  "errors": [],
+  "samples": 23
+}

@@ -6,7 +6,7 @@ import { join } from 'node:path';
 
 // Real MediaPipe on a photograph captureStream. NOT a physical webcam test.
 const base = process.env.AR_URL ?? 'http://127.0.0.1:5173';
-const out = 'artifacts/wrist-engine-v2';
+const out = process.env.MIRA_V2_OUT ?? 'artifacts/wrist-engine-v2-fix';
 const fixture = process.env.MIRA_HAND_FIXTURE ?? join(tmpdir(), 'mira-dynamic-pointing_up.jpg');
 let fixtureBytes;
 try { fixtureBytes = await readFile(fixture); } catch {
@@ -18,12 +18,12 @@ try { fixtureBytes = await readFile(fixture); } catch {
 const bytes = fixtureBytes.toString('base64');
 await mkdir(out, { recursive: true });
 const browser = await chromium.launch({ channel: process.env.AR_BROWSER ?? 'chrome', headless: true });
-const rows = [], errors = [];
+const rows = [], errors = [], stabilityRows = [];
 const report = { scope: 'Photo captureStream, real MediaPipe; no hardware webcam accuracy claim', checks: [] };
 try {
-  const page = await browser.newPage({ viewport: { width: 1440, height: 1100 } });
+  const page = await browser.newPage({ viewport: { width: 1440, height: 1100 }, acceptDownloads: true });
   page.on('pageerror', e => errors.push(e.message));
-  page.on('console', m => { if (m.text().startsWith('[mira-live] ')) rows.push(JSON.parse(m.text().slice(12))); });
+  page.on('console', m => { if (m.text().startsWith('[mira-live] ')) rows.push(JSON.parse(m.text().slice(12))); if (m.text().startsWith('[mira-stability] ')) stabilityRows.push(JSON.parse(m.text().slice(17))); });
   await page.goto(base); await page.waitForLoadState('networkidle');
   await page.getByRole('checkbox', { name: 'Debug Mode', exact: true }).check();
   await page.evaluate(async bytes => {
@@ -56,14 +56,33 @@ try {
       assert.ok(Math.abs(p.hand0.y - r.live.wristLandmark.y * p.height / p.width) < 1e-12);
     }
     assert.equal(p.wearCenter, null);
+    assert.deepEqual(p.rawAnchor, p.filteredAnchor);
+    assert.equal(p.filterApplied, false);
+    assert.deepEqual(p.traceInput.hand, r.live.landmarks);
+    assert.equal(p.traceInput.frameId, p.frameId);
+    assert.equal(p.traceInput.timestamp, p.timestamp);
+    assert.ok(Array.isArray(p.traceInput.pose) && Array.isArray(p.traceInput.poseWorld));
     if (p.orientationState === 'UNCONFIRMED') assert.equal(p.orientation, null);
   }
   report.checks.push('PASS Compare shares actual frame/Hand0; no fabricated wear center');
   await page.screenshot({ path: `${out}/compare.png`, fullPage: true });
   const start = rows.length; await selector.selectOption('v2');
   await until(() => rows.slice(start).some(r => r.live.wristEngineV2 && r.live.hasRenderPose));
-  report.checks.push('PASS V2 debug retains V1 bracelet rendering');
+  await until(() => stabilityRows.some(r => r.braceletEngine === 'v1-geometry+v2-continuity' && r.braceletVisible));
+  const stable = stabilityRows.filter(r => r.braceletEngine === 'v1-geometry+v2-continuity');
+  for (const r of stable.filter(r => r.braceletVisible)) {
+    assert.equal(r.imageTimestamp, r.poseTimestamp);
+    assert.ok(r.poseAgeMs <= 1000);
+    assert.equal(typeof r.filterResetCount, 'number');
+  }
+  report.checks.push('PASS V2 continuity uses matched image/pose and records actual reset counter');
   await page.screenshot({ path: `${out}/v2.png`, fullPage: true });
+  const downloadPromise = page.waitForEvent('download');
+  await page.getByRole('button', { name: 'Xuất trace JSON', exact: true }).click();
+  await (await downloadPromise).saveAs(`${out}/trace.json`);
+  const exported = JSON.parse(await readFile(`${out}/trace.json`, 'utf8'));
+  assert.ok(exported.samples.some(r => r.live?.wristEngineV2?.traceInput?.hand?.length === 21));
+  report.checks.push('PASS exported per-frame raw Hand/Pose/contour, anchor/filter/quaternion trace');
   const before = rows.length; await selector.selectOption('v1');
   await until(() => rows.slice(before + 1).some(r => r.live.wristEngineV2 == null && r.live.hasRenderPose));
   assert.equal(await page.evaluate(() => window.cameraRequests), 1);

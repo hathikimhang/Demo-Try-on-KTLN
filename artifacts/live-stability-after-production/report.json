@@ -1,0 +1,107 @@
+{
+  "scope": "photo captureStream, input image motions only; NO webcam anatomical benchmark",
+  "errors": [],
+  "results": [
+    {
+      "scenario": "v1/stationary",
+      "samples": 217,
+      "visibleSamples": 217,
+      "transitions": 0,
+      "hiddenReasons": {},
+      "cameraFPSMedian": 24,
+      "inferenceFPSMedian": 22.5,
+      "renderFPSMedian": 22.5,
+      "inferenceLatencyP95Ms": 34,
+      "poseAgeP95Ms": 50.19999999925494,
+      "rawDeltaP95ImageWidth": 0.000649143291448964,
+      "filteredDeltaP95ImageWidth": 0.0002051467161541572,
+      "maxPendingRequests": 1
+    },
+    {
+      "scenario": "v1/leave-return",
+      "samples": 219,
+      "visibleSamples": 177,
+      "transitions": 2,
+      "hiddenReasons": {
+        "no-hand": 42
+      },
+      "cameraFPSMedian": 24,
+      "inferenceFPSMedian": 22.5,
+      "renderFPSMedian": 21,
+      "inferenceLatencyP95Ms": 33,
+      "poseAgeP95Ms": 49.69999999925494,
+      "rawDeltaP95ImageWidth": 0.0005727881695448069,
+      "filteredDeltaP95ImageWidth": 0.0002331043786016756,
+      "maxPendingRequests": 1
+    },
+    {
+      "scenario": "v2/stationary",
+      "samples": 223,
+      "visibleSamples": 223,
+      "transitions": 0,
+      "hiddenReasons": {},
+      "cameraFPSMedian": 24,
+      "inferenceFPSMedian": 22.5,
+      "renderFPSMedian": 22.5,
+      "inferenceLatencyP95Ms": 32.399999998509884,
+      "poseAgeP95Ms": 168.5,
+      "rawDeltaP95ImageWidth": 0.00018634739714858782,
+      "filteredDeltaP95ImageWidth": 0.0001480448711770313,
+      "maxPendingRequests": 1
+    },
+    {
+      "scenario": "v2/leave-return",
+      "samples": 298,
+      "visibleSamples": 186,
+      "transitions": 2,
+      "hiddenReasons": {
+        "tracking-lost": 110,
+        "confirming-reacquisition": 2
+      },
+      "cameraFPSMedian": 24,
+      "inferenceFPSMedian": 22.5,
+      "renderFPSMedian": 19.5,
+      "inferenceLatencyP95Ms": 31.800000000745058,
+      "poseAgeP95Ms": 195.89999999850988,
+      "rawDeltaP95ImageWidth": 0.00021768670633149186,
+      "filteredDeltaP95ImageWidth": 0.0001781481930343665,
+      "maxPendingRequests": 1
+    },
+    {
+      "scenario": "compare/stationary",
+      "samples": 219,
+      "visibleSamples": 219,
+      "transitions": 0,
+      "hiddenReasons": {},
+      "cameraFPSMedian": 24,
+      "inferenceFPSMedian": 22.5,
+      "renderFPSMedian": 22.5,
+      "inferenceLatencyP95Ms": 37.19999999925494,
+      "poseAgeP95Ms": 50.5,
+      "rawDeltaP95ImageWidth": 0.000649143291448964,
+      "filteredDeltaP95ImageWidth": 0.0002016641222761155,
+      "maxPendingRequests": 1
+    },
+    {
+      "scenario": "compare/leave-return",
+      "samples": 217,
+      "visibleSamples": 176,
+      "transitions": 2,
+      "hiddenReasons": {
+        "no-hand": 41
+      },
+      "cameraFPSMedian": 24,
+      "inferenceFPSMedian": 22.5,
+      "renderFPSMedian": 21.5,
+      "inferenceLatencyP95Ms": 36.69999999925494,
+      "poseAgeP95Ms": 50.70000000298023,
+      "rawDeltaP95ImageWidth": 0.0006294929139580333,
+      "filteredDeltaP95ImageWidth": 0.00022659697207542577,
+      "maxPendingRequests": 1
+    },
+    {
+      "webglCanvasCount": 1,
+      "scope": "unique WebGL canvas count across mode switches"
+    }
+  ]
+}

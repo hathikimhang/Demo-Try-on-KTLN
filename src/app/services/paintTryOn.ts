@@ -1,3 +1,5 @@
+import { paintLiveV2 } from '../../features/bracelet/views/rendering/liveV2Presentation';
+import { debugSample as stabilitySample } from '../../features/bracelet/services/diagnostics/wristDiagnostics';
 import { drawWristEngineDebug, matchesPocFrame } from '../../features/bracelet/views/debug/wristEngineDebug';
 import { beginCanvasFrame } from '../../shared/canvas/canvasCompositor';
 import { drawProduct } from '../../features/clothing/controllers/clothingController';
@@ -15,6 +17,7 @@ export function paintTryOn(bindings: ApplicationBindings) {
   const { state, canvas, video, mode, appearance, setTracking, setDetected, setSizing, setTrackingHint, setDebugCount, debugLog, setError, publishLive } = bindings;
 
   const c = canvas.current, s = state.current, v = video.current;
+  if (mode === 'bracelet' && s.source === 'camera' && appearance.current.engineDebugMode === 'v2') { paintLiveV2(bindings); return; }
   if (!c) return;
   const ctx = c.getContext('2d'); if (!ctx) return;
   const held = s.source === 'camera' && mode === 'bracelet' && s.presentation === 'hold' && !s.renderFailed ? s.frameBuffer.read(performance.now(), s.holdUntil) : null;
@@ -82,7 +85,7 @@ export function paintTryOn(bindings: ApplicationBindings) {
   }
   if (a.debug && liveCamera && a.engineDebugMode && a.engineDebugMode !== 'v1') {
     const poc = s.lastDetection?.liveObservation?.poc;
-    if (matchesPocFrame(poc, s.capturedAt, performance.now(), w, h, !!held)) drawWristEngineDebug(ctx, poc!, a.engineDebugMode, s.liveOrientation);
+    if (matchesPocFrame(poc, s.capturedAt, performance.now(), w, h, !!held, { isInferenceImage: image === s.frame && !expired, receivedAt: s.receivedAt, frameId: s.lastDetection?.liveObservation?.frameId })) drawWristEngineDebug(ctx, poc!, a.engineDebugMode, s.liveOrientation, renderWrist, s.stabilityTrace);
   }
   if (a.showPoints || a.debug) {
     const ids = mode === 'bracelet' ? points.map((_, i) => i) : [11, 12, 23, 24];
@@ -99,6 +102,14 @@ export function paintTryOn(bindings: ApplicationBindings) {
     if (s.presentation === 'current' && s.wrist && s.presentedTimestamp !== s.capturedAt) {
       s.presentedTimestamp = s.capturedAt; s.performance.add('captureToPresentMs', now, now - s.capturedAt);
       if (s.frameSensorCaptureTime !== undefined && now >= s.frameSensorCaptureTime) s.performance.add('sensorToPresentMs', now, now - s.frameSensorCaptureTime);
+    }
+    if (a.debug) {
+      const visible = !!renderWrist && !s.renderFailed;
+      const visibilityReason = s.renderFailed ? 'render-error' : visible ? held ? 'matched-grace-image' : 'current-frame-pose' : expired ? 'stale-frame' : s.presentation === 'hold' ? 'hold-buffer-expired' : s.tracking.reason;
+      const stability = s.stability.snapshot(now, visible, visibilityReason, s.performance.snapshot(now), held?.capturedAt ?? (image === s.frame ? s.capturedAt : null));
+      s.stabilityTrace = stability;
+      const row = stabilitySample(s.capturedAt, s.tracking, null, a.scale, { stability });
+      s.logCount = debugLog.current.append(row); console.debug('[mira-stability]', JSON.stringify(stability));
     }
     publishLive();
   }
